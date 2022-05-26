@@ -8,7 +8,7 @@ type LanguageSwitcherProps = {
 
 const LanguageSwitcher = ({ className }: LanguageSwitcherProps) => {
   const router = useRouter();
-  console.log(router.locale);
+
   return (
     <div
       className={

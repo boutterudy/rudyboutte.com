@@ -8,8 +8,10 @@ import Icon from '../common/components/Icon/Icon';
 import Navbar from '../common/components/Navbar/Navbar';
 import PageContent from '../common/components/PageContent/PageContent';
 import TextHeader from '../common/components/TextHeader/TextHeader';
+import WorkExperiences from '../common/components/WorkExperiences/WorkExperiences';
+import styles from '../styles/pages/MyJourney.module.scss';
 
-const MonParcours: NextPage = () => {
+const MyJourney: NextPage = () => {
   const headerTitle = (
     <h1>
       Découvrez en un peu plus sur mon parcours :{' '}
@@ -33,6 +35,10 @@ const MonParcours: NextPage = () => {
 
       <PageContent>
         <TextHeader title={headerTitle} />
+        <div className={styles.container}>
+          <WorkExperiences />
+          <div></div>
+        </div>
         <ContactMeBlock />
       </PageContent>
 
@@ -41,4 +47,4 @@ const MonParcours: NextPage = () => {
   );
 };
 
-export default MonParcours;
+export default MyJourney;

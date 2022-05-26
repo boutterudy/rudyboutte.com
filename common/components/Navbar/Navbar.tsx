@@ -4,6 +4,8 @@ import LanguageSwitcher from '../LanguageSwitcher/LanguageSwitcher';
 import styles from './Navbar.module.scss';
 
 const Navbar = () => {
+  const router = useRouter();
+
   return (
     <nav className={styles.navbar}>
       <LanguageSwitcher className={styles.languageSwitcher} />
@@ -18,22 +20,22 @@ const Navbar = () => {
       </div>
       <ul className={styles.links}>
         <li>
-          <Link href={'mes-projets'}>
+          <Link href='/mes-projets'>
             <a>Mes projets</a>
           </Link>
         </li>
         <li>
-          <Link href={'mon-parcours'}>
+          <Link href='/mon-parcours'>
             <a>Mon parcours</a>
           </Link>
         </li>
         <li>
-          <Link href={'a-propos'}>
+          <Link href='/a-propos'>
             <a>A propos</a>
           </Link>
         </li>
         <li>
-          <Link href={'contact'}>
+          <Link href='/contact'>
             <a>Contact</a>
           </Link>
         </li>
