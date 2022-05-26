@@ -15,8 +15,8 @@ const monthInMs = dayInMs * 30.4167;
  */
 const getDifferenceBetweenDates = (d1: Date, d2: Date) => {
   const diffInMs = Math.abs(d2.getTime() - d1.getTime());
-  // If in months
-  if (diffInMs >= monthInMs) {
+  // If in months (round to month if >= 28 days)
+  if (diffInMs >= 28 * dayInMs) {
     return Math.round(diffInMs / monthInMs) + ' mois';
   }
 

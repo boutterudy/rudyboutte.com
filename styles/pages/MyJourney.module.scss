@@ -2,11 +2,13 @@
   display: flex;
   flex-direction: row;
 
-  & > div:first-of-type {
+  & > section:first-of-type {
     flex: 55;
+    margin-right: 14px;
   }
 
-  & > div:last-of-type {
+  & > section:last-of-type {
     flex: 45;
+    margin-left: 14px;
   }
 }

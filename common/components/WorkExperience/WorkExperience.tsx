@@ -29,10 +29,13 @@ const WorkExperience = ({ workExperience }: WorkExperienceProps) => {
             {capitalizeFirstLetter(getMonthName(begin)) +
               ' ' +
               begin.getFullYear() +
-              ' à ' +
-              capitalizeFirstLetter(getMonthName(end)) +
-              ' ' +
-              end.getFullYear() +
+              (begin.getMonth() !== end.getMonth() ||
+              begin.getFullYear() !== end.getFullYear()
+                ? ' à ' +
+                  capitalizeFirstLetter(getMonthName(end)) +
+                  ' ' +
+                  end.getFullYear()
+                : '') +
               ' (' +
               getDifferenceBetweenDates(begin, end) +
               ') - ' +

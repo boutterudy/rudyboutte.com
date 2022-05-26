@@ -2,6 +2,7 @@ import { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
 import ContactMeBlock from '../common/components/ContactMeBlock/ContactMeBlock';
+import Education from '../common/components/Education/Education';
 import Footer from '../common/components/Footer/Footer';
 import Header from '../common/components/Header/Header';
 import Icon from '../common/components/Icon/Icon';
@@ -37,7 +38,7 @@ const MyJourney: NextPage = () => {
         <TextHeader title={headerTitle} />
         <div className={styles.container}>
           <WorkExperiences />
-          <div></div>
+          <Education />
         </div>
         <ContactMeBlock />
       </PageContent>
