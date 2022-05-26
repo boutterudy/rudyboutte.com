@@ -1,0 +1,18 @@
+.languageSwitcher {
+  font-size: 1.6rem;
+  font-weight: 700;
+
+  .inactive {
+    font-weight: 400;
+    opacity: 0.5;
+  }
+
+  a {
+    margin-right: 5px;
+
+    &:last-of-type {
+      margin-right: 0;
+      margin-left: 5px;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+.pictureOfMe {
+  filter: grayscale(100%);
+  transition: all 250ms ease-in-out;
+
+  &:hover {
+    filter: grayscale(0);
+    cursor: pointer;
+  }
+}
