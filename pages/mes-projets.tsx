@@ -28,7 +28,12 @@ const MesProjets: NextPage = () => {
       demo: 'https://rest-countries-api-lac.vercel.app/',
       github: 'https://github.com/boutterudy/REST-Countries-API',
       tags: ['React', 'Next.js'],
-      preview: <Image src={ProjectPreviewCountriesAPI} />,
+      preview: (
+        <Image
+          src={ProjectPreviewCountriesAPI}
+          alt='REST Countries API with color theme switcher screenshot'
+        />
+      ),
       date: new Date(),
       icon: <Icon lib='remix-icon' icon='globe-line' />,
     },
@@ -39,7 +44,12 @@ const MesProjets: NextPage = () => {
       demo: 'https://rest-countries-api-lac.vercel.app/',
       github: 'https://github.com/boutterudy/REST-Countries-API',
       tags: ['React', 'Next.js'],
-      preview: <Image src={ProjectPreviewCountriesAPI} />,
+      preview: (
+        <Image
+          src={ProjectPreviewCountriesAPI}
+          alt='REST Countries API with color theme switcher screenshot'
+        />
+      ),
       date: new Date(),
       icon: <Icon lib='remix-icon' icon='globe-line' />,
     },
@@ -50,7 +60,12 @@ const MesProjets: NextPage = () => {
       demo: 'https://rest-countries-api-lac.vercel.app/',
       github: 'https://github.com/boutterudy/REST-Countries-API',
       tags: ['React', 'Next.js'],
-      preview: <Image src={ProjectPreviewCountriesAPI} />,
+      preview: (
+        <Image
+          src={ProjectPreviewCountriesAPI}
+          alt='REST Countries API with color theme switcher screenshot'
+        />
+      ),
       date: new Date(),
       icon: <Icon lib='remix-icon' icon='globe-line' />,
     },
@@ -61,7 +76,12 @@ const MesProjets: NextPage = () => {
       demo: 'https://rest-countries-api-lac.vercel.app/',
       github: 'https://github.com/boutterudy/REST-Countries-API',
       tags: ['React', 'Next.js'],
-      preview: <Image src={ProjectPreviewCountriesAPI} />,
+      preview: (
+        <Image
+          src={ProjectPreviewCountriesAPI}
+          alt='REST Countries API with color theme switcher screenshot'
+        />
+      ),
       date: new Date(),
       icon: <Icon lib='remix-icon' icon='globe-line' />,
     },
