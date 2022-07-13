@@ -1,7 +1,10 @@
 import Image from 'next/image';
-import { WorkExperienceType } from '../../types/WorkExperienceType';
-import { getDifferenceBetweenDates, getMonthName } from '../../utils/DateUtil';
-import { capitalizeFirstLetter } from '../../utils/StringUtil';
+import { WorkExperienceType } from '../../../types/WorkExperienceType';
+import {
+  getDifferenceBetweenDates,
+  getMonthName,
+} from '../../../utils/DateUtil';
+import { capitalizeFirstLetter } from '../../../utils/StringUtil';
 import styles from './WorkExperience.module.scss';
 
 type WorkExperienceProps = {
@@ -56,7 +59,8 @@ const WorkExperience = ({ workExperience }: WorkExperienceProps) => {
         <p className={styles.title}>Missions réalisées :</p>
         <ul className={styles.tasks}>
           {workExperience.tasks.map((task, index) => {
-            const skills = '(' + task.skills.join(' / ') + ')';
+            const skills =
+              task.skills.length > 0 ? '(' + task.skills.join(' / ') + ')' : '';
             return (
               <li key={index}>
                 {task.description}{' '}

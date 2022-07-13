@@ -1,7 +1,7 @@
 import Image from 'next/image';
-import { DegreeType } from '../../types/DegreeType';
-import { getDifferenceBetweenDates, getMonthName } from '../../utils/DateUtil';
-import { capitalizeFirstLetter } from '../../utils/StringUtil';
+import { DegreeType } from '../../../types/DegreeType';
+import { getMonthName } from '../../../utils/DateUtil';
+import { capitalizeFirstLetter } from '../../../utils/StringUtil';
 import styles from './EducationDegree.module.scss';
 
 type EducationDegreeProps = {

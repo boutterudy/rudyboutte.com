@@ -1,13 +1,14 @@
 import { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
-import ContactMeBlock from '../common/components/ContactMeBlock/ContactMeBlock';
-import Footer from '../common/components/Footer/Footer';
-import Icon from '../common/components/Icon/Icon';
-import Navbar from '../common/components/Navbar/Navbar';
-import PageContent from '../common/components/PageContent/PageContent';
-import ProjectsList from '../common/components/ProjectsList/ProjectsList';
-import TextHeader from '../common/components/TextHeader/TextHeader';
+import ContactMeBlock from '../common/components/elements/ContactMeBlock/ContactMeBlock';
+import Footer from '../common/components/elements/Footer/Footer';
+import Icon from '../common/components/elements/Icon/Icon';
+import Navbar from '../common/components/elements/Navbar/Navbar';
+import PageContent from '../common/components/elements/PageContent/PageContent';
+import ProjectsList from '../common/components/elements/ProjectsList/ProjectsList';
+import TextHeader from '../common/components/elements/TextHeader/TextHeader';
+import PageLayout from '../common/components/layouts/PageLayout/PageLayout';
 import { ProjectType } from '../common/types/ProjectType';
 import ProjectPreviewCountriesAPI from '../public/images/projects/REST-Countries-API.png';
 
@@ -88,26 +89,18 @@ const MesProjets: NextPage = () => {
   ];
 
   return (
-    <div>
+    <PageLayout>
       <Head>
         <title>Rudy Boutte</title>
         <meta
           name='description'
-          content='Découvrez quelques-uns de mes récents projets avec ReactJS.'
+          content='Découvrez en un peu plus à mon propos.'
         />
-        <link rel='icon' href='/favicon.ico' />
       </Head>
-
-      <Navbar />
-
-      <PageContent>
-        <TextHeader title={headerTitle} />
-        <ProjectsList projects={projects} />
-        <ContactMeBlock />
-      </PageContent>
-
-      <Footer />
-    </div>
+      <TextHeader title={headerTitle} />
+      <ProjectsList projects={projects} />
+      <ContactMeBlock />
+    </PageLayout>
   );
 };
 
