@@ -1,10 +1,9 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { cloneElement, ReactElement } from 'react';
-import { ProjectType } from '../../types/ProjectType';
+import { ProjectType } from '../../../types/ProjectType';
 import Badge from '../Badge/Badge';
 import Button from '../Button/Button';
-import Icon from '../Icon/Icon';
 import styles from './ProjectsList.module.scss';
 
 type ProjectsListProps = {
