@@ -1,24 +1,23 @@
-import { NextPage } from 'next';
-import Head from 'next/head';
-import ContactMeBlock from '../common/components/elements/ContactMeBlock/ContactMeBlock';
-import Education from '../common/components/elements/Education/Education';
-import TextHeader from '../common/components/elements/TextHeader/TextHeader';
-import WorkExperiences from '../common/components/elements/WorkExperiences/WorkExperiences';
-import PageLayout from '../common/components/layouts/PageLayout/PageLayout';
-import { DegreeType } from '../common/types/DegreeType';
-import { WorkExperiencesNumberPerYearType } from '../common/types/WorkExperiencesNumberPerYearType';
-import { WorkExperienceType } from '../common/types/WorkExperienceType';
-import { unique } from '../common/utils/ArrayUtil';
-import styles from '../styles/pages/MyJourney.module.scss';
+import { NextPage } from 'next'
+import Head from 'next/head'
+import ContactMeBlock from '../common/components/elements/ContactMeBlock/ContactMeBlock'
+import Education from '../common/components/elements/Education/Education'
+import TextHeader from '../common/components/elements/TextHeader/TextHeader'
+import WorkExperiences from '../common/components/elements/WorkExperiences/WorkExperiences'
+import PageLayout from '../common/components/layouts/PageLayout/PageLayout'
+import { DegreeType } from '../common/types/DegreeType'
+import { WorkExperiencesNumberPerYearType } from '../common/types/WorkExperiencesNumberPerYearType'
+import { WorkExperienceType } from '../common/types/WorkExperienceType'
+import styles from '../styles/pages/MyJourney.module.scss'
 
 const MyJourney: NextPage = () => {
   const headerTitle = (
     <h1>
       Découvrez en un peu plus sur mon parcours :{' '}
-      <span className='bold'>mes formations</span>, et{' '}
-      <span className='bold'>mes expériences professionnelles</span>.
+      <span className="bold">mes formations</span>, et{' '}
+      <span className="bold">mes expériences professionnelles</span>.
     </h1>
-  );
+  )
 
   // Define all of my work experiences
   const workExperiences: WorkExperienceType[] = [
@@ -239,33 +238,11 @@ const MyJourney: NextPage = () => {
         },
       ],
     },
-  ].sort((a, b) => b.end.getTime() - a.end.getTime());
-
-  workExperiences.forEach((a) => {
-    console.log(
-      a.company +
-        ' (' +
-        a.begin.getFullYear() +
-        ' - ' +
-        a.end.getFullYear() +
-        ')' +
-        a.end.getTime()
-    );
-  });
+  ].sort((a, b) => b.end.getTime() - a.end.getTime())
 
   // Get number of work experiences per year
-  let workExperiencesNumberPerYear: WorkExperiencesNumberPerYearType[] = [];
+  const workExperiencesNumberPerYear: WorkExperiencesNumberPerYearType[] = []
 
-  /**
-   * Function to check if a year is already in the workExperiencesNumberPerYear array
-   *
-   * @param year number
-   * @returns boolean
-   */
-  const isYearInArray = (year: number) =>
-    workExperiencesNumberPerYear.some(
-      (workExperiencesNumber) => workExperiencesNumber.year === year
-    );
   /**
    * Function which is returning the workExperiencesNumber of one year (from workExperiencesNumberPerYear array)
    *
@@ -275,7 +252,7 @@ const MyJourney: NextPage = () => {
   const findYearInArray = (year: number) =>
     workExperiencesNumberPerYear.find(
       (workExperiencesNumber) => workExperiencesNumber.year === year
-    );
+    )
 
   /**
    * Function which is adding a year into workExperiencesNumberPerYear array
@@ -286,17 +263,18 @@ const MyJourney: NextPage = () => {
     workExperiencesNumberPerYear.push({
       year: year,
       count: 1,
-    });
+    })
 
   // Counting for each year
   workExperiences.forEach((workExperience) => {
-    let endYear = workExperience.end.getFullYear();
+    const endYear = workExperience.end.getFullYear()
 
     // If end year is already in the array, increment the count, else add it into it
-    isYearInArray(endYear)
-      ? (findYearInArray(endYear)!.count += 1)
-      : addYearInArray(endYear);
-  });
+    const yearInArray = findYearInArray(endYear)
+    yearInArray !== undefined
+      ? (yearInArray.count += 1)
+      : addYearInArray(endYear)
+  })
 
   // Define all of my degrees
   const degrees: DegreeType[] = [
@@ -336,15 +314,15 @@ const MyJourney: NextPage = () => {
       begin: new Date(2015, 9),
       end: new Date(2018, 6),
     },
-  ];
+  ]
 
   return (
     <PageLayout>
       <Head>
         <title>Rudy Boutte</title>
         <meta
-          name='description'
-          content='Découvrez en un peu plus à mon propos.'
+          name="description"
+          content="Découvrez en un peu plus à mon propos."
         />
       </Head>
       <TextHeader title={headerTitle} />
@@ -360,7 +338,7 @@ const MyJourney: NextPage = () => {
       </div>
       <ContactMeBlock />
     </PageLayout>
-  );
-};
+  )
+}
 
-export default MyJourney;
+export default MyJourney

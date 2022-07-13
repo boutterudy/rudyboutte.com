@@ -1,25 +1,22 @@
-import { NextPage } from 'next';
-import Head from 'next/head';
-import Image from 'next/image';
-import ContactMeBlock from '../common/components/elements/ContactMeBlock/ContactMeBlock';
-import Footer from '../common/components/elements/Footer/Footer';
-import Icon from '../common/components/elements/Icon/Icon';
-import Navbar from '../common/components/elements/Navbar/Navbar';
-import PageContent from '../common/components/elements/PageContent/PageContent';
-import ProjectsList from '../common/components/elements/ProjectsList/ProjectsList';
-import TextHeader from '../common/components/elements/TextHeader/TextHeader';
-import PageLayout from '../common/components/layouts/PageLayout/PageLayout';
-import { ProjectType } from '../common/types/ProjectType';
-import ProjectPreviewCountriesAPI from '../public/images/projects/REST-Countries-API.png';
+import { NextPage } from 'next'
+import Head from 'next/head'
+import Image from 'next/image'
+import ContactMeBlock from '../common/components/elements/ContactMeBlock/ContactMeBlock'
+import Icon from '../common/components/elements/Icon/Icon'
+import ProjectsList from '../common/components/elements/ProjectsList/ProjectsList'
+import TextHeader from '../common/components/elements/TextHeader/TextHeader'
+import PageLayout from '../common/components/layouts/PageLayout/PageLayout'
+import { ProjectType } from '../common/types/ProjectType'
+import ProjectPreviewCountriesAPI from '../public/images/projects/REST-Countries-API.png'
 
 const MesProjets: NextPage = () => {
   const headerTitle = (
     <h1>
       Découvrez quelques-uns de mes{' '}
-      <span className='bold'>récents projets</span> avec{' '}
-      <span className='bold'>ReactJS</span>.
+      <span className="bold">récents projets</span> avec{' '}
+      <span className="bold">ReactJS</span>.
     </h1>
-  );
+  )
 
   const projects: ProjectType[] = [
     {
@@ -32,11 +29,11 @@ const MesProjets: NextPage = () => {
       preview: (
         <Image
           src={ProjectPreviewCountriesAPI}
-          alt='REST Countries API with color theme switcher screenshot'
+          alt="REST Countries API with color theme switcher screenshot"
         />
       ),
       date: new Date(),
-      icon: <Icon lib='remix-icon' icon='globe-line' />,
+      icon: <Icon lib="remix-icon" icon="globe-line" />,
     },
     {
       title: 'REST Countries API with color theme switcher',
@@ -48,11 +45,11 @@ const MesProjets: NextPage = () => {
       preview: (
         <Image
           src={ProjectPreviewCountriesAPI}
-          alt='REST Countries API with color theme switcher screenshot'
+          alt="REST Countries API with color theme switcher screenshot"
         />
       ),
       date: new Date(),
-      icon: <Icon lib='remix-icon' icon='globe-line' />,
+      icon: <Icon lib="remix-icon" icon="globe-line" />,
     },
     {
       title: 'REST Countries API with color theme switcher',
@@ -64,11 +61,11 @@ const MesProjets: NextPage = () => {
       preview: (
         <Image
           src={ProjectPreviewCountriesAPI}
-          alt='REST Countries API with color theme switcher screenshot'
+          alt="REST Countries API with color theme switcher screenshot"
         />
       ),
       date: new Date(),
-      icon: <Icon lib='remix-icon' icon='globe-line' />,
+      icon: <Icon lib="remix-icon" icon="globe-line" />,
     },
     {
       title: 'REST Countries API with color theme switcher',
@@ -80,28 +77,28 @@ const MesProjets: NextPage = () => {
       preview: (
         <Image
           src={ProjectPreviewCountriesAPI}
-          alt='REST Countries API with color theme switcher screenshot'
+          alt="REST Countries API with color theme switcher screenshot"
         />
       ),
       date: new Date(),
-      icon: <Icon lib='remix-icon' icon='globe-line' />,
+      icon: <Icon lib="remix-icon" icon="globe-line" />,
     },
-  ];
+  ]
 
   return (
     <PageLayout>
       <Head>
         <title>Rudy Boutte</title>
         <meta
-          name='description'
-          content='Découvrez en un peu plus à mon propos.'
+          name="description"
+          content="Découvrez en un peu plus à mon propos."
         />
       </Head>
       <TextHeader title={headerTitle} />
       <ProjectsList projects={projects} />
       <ContactMeBlock />
     </PageLayout>
-  );
-};
+  )
+}
 
-export default MesProjets;
+export default MesProjets

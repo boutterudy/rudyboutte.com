@@ -12,8 +12,8 @@ const NoiseCanvas = () => {
     let windowWidth: number;
     let windowHeight: number;
 
-    let noiseData: ImageData[] = [];
-    let frame: number = 0;
+    const noiseData: ImageData[] = [];
+    const frame = 0;
 
     let loopTimeout: number;
 

@@ -5,18 +5,18 @@
  * @returns Array without duplicated elements
  */
 const unique = (a: Array<any>) => {
-  var seen: any = {};
-  var out = [];
-  var len = a.length;
-  var j = 0;
-  for (var i = 0; i < len; i++) {
-    var item = a[i];
+  const seen: any = {}
+  const out = []
+  const len = a.length
+  let j = 0
+  for (let i = 0; i < len; i++) {
+    const item = a[i]
     if (seen[item] !== 1) {
-      seen[item] = 1;
-      out[j++] = item;
+      seen[item] = 1
+      out[j++] = item
     }
   }
-  return out;
-};
+  return out
+}
 
-export { unique };
+export { unique }

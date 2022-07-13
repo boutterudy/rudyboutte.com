@@ -1,18 +1,16 @@
-import type { NextPage } from 'next';
-import Head from 'next/head';
-import Image from 'next/image';
-import { useRouter } from 'next/router';
-import ContactMeBlock from '../common/components/elements/ContactMeBlock/ContactMeBlock';
-import Footer from '../common/components/elements/Footer/Footer';
-import Header from '../common/components/elements/Header/Header';
-import Icon from '../common/components/elements/Icon/Icon';
-import Presentation from '../common/components/elements/Presentation/Presentation';
-import ProjectsList from '../common/components/elements/ProjectsList/ProjectsList';
-import PageLayout from '../common/components/layouts/PageLayout/PageLayout';
-import { ProjectType } from '../common/types/ProjectType';
-import HomepagePicture from '../public/images/me.jpg';
-import ProjectPreviewCountriesAPI from '../public/images/projects/REST-Countries-API.png';
-import styles from '../styles/pages/Home.module.scss';
+import type { NextPage } from 'next'
+import Head from 'next/head'
+import Image from 'next/image'
+import ContactMeBlock from '../common/components/elements/ContactMeBlock/ContactMeBlock'
+import Header from '../common/components/elements/Header/Header'
+import Icon from '../common/components/elements/Icon/Icon'
+import Presentation from '../common/components/elements/Presentation/Presentation'
+import ProjectsList from '../common/components/elements/ProjectsList/ProjectsList'
+import PageLayout from '../common/components/layouts/PageLayout/PageLayout'
+import { ProjectType } from '../common/types/ProjectType'
+import HomepagePicture from '../public/images/me.jpg'
+import ProjectPreviewCountriesAPI from '../public/images/projects/REST-Countries-API.png'
+import styles from '../styles/pages/Home.module.scss'
 
 const Home: NextPage = () => {
   const projects: ProjectType[] = [
@@ -26,11 +24,11 @@ const Home: NextPage = () => {
       preview: (
         <Image
           src={ProjectPreviewCountriesAPI}
-          alt='REST Countries API with color theme switcher screenshot'
+          alt="REST Countries API with color theme switcher screenshot"
         />
       ),
       date: new Date(),
-      icon: <Icon lib='remix-icon' icon='globe-line' />,
+      icon: <Icon lib="remix-icon" icon="globe-line" />,
     },
     {
       title: 'REST Countries API with color theme switcher',
@@ -42,11 +40,11 @@ const Home: NextPage = () => {
       preview: (
         <Image
           src={ProjectPreviewCountriesAPI}
-          alt='REST Countries API with color theme switcher screenshot'
+          alt="REST Countries API with color theme switcher screenshot"
         />
       ),
       date: new Date(),
-      icon: <Icon lib='remix-icon' icon='globe-line' />,
+      icon: <Icon lib="remix-icon" icon="globe-line" />,
     },
     {
       title: 'REST Countries API with color theme switcher',
@@ -58,11 +56,11 @@ const Home: NextPage = () => {
       preview: (
         <Image
           src={ProjectPreviewCountriesAPI}
-          alt='REST Countries API with color theme switcher screenshot'
+          alt="REST Countries API with color theme switcher screenshot"
         />
       ),
       date: new Date(),
-      icon: <Icon lib='remix-icon' icon='globe-line' />,
+      icon: <Icon lib="remix-icon" icon="globe-line" />,
     },
     {
       title: 'REST Countries API with color theme switcher',
@@ -74,21 +72,21 @@ const Home: NextPage = () => {
       preview: (
         <Image
           src={ProjectPreviewCountriesAPI}
-          alt='REST Countries API with color theme switcher screenshot'
+          alt="REST Countries API with color theme switcher screenshot"
         />
       ),
       date: new Date(),
-      icon: <Icon lib='remix-icon' icon='globe-line' />,
+      icon: <Icon lib="remix-icon" icon="globe-line" />,
     },
-  ];
+  ]
 
   return (
     <PageLayout>
       <Head>
         <title>Rudy Boutte</title>
         <meta
-          name='description'
-          content='Découvrez en un peu plus à mon propos.'
+          name="description"
+          content="Découvrez en un peu plus à mon propos."
         />
       </Head>
       <Header>
@@ -97,14 +95,14 @@ const Home: NextPage = () => {
           src={HomepagePicture}
           width={412}
           height={550}
-          alt='Rudy Boutte in front of yellow flowers'
+          alt="Rudy Boutte in front of yellow flowers"
         />
       </Header>
       <Presentation />
       <ProjectsList projects={projects} />
       <ContactMeBlock />
     </PageLayout>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home
