@@ -1,16 +1,16 @@
-import Image from 'next/image';
-import { DegreeType } from '../../../types/DegreeType';
-import { getMonthName } from '../../../utils/DateUtil';
-import { capitalizeFirstLetter } from '../../../utils/StringUtil';
-import styles from './EducationDegree.module.scss';
+import Image from 'next/image'
+import { DegreeType } from '../../../types/DegreeType'
+import { getMonthName } from '../../../utils/DateUtil'
+import { capitalizeFirstLetter } from '../../../utils/StringUtil'
+import styles from './EducationDegree.module.scss'
 
 type EducationDegreeProps = {
-  degree: DegreeType;
-};
+  degree: DegreeType
+}
 
 const EducationDegree = ({ degree }: EducationDegreeProps) => {
-  const begin = degree.begin;
-  const end = degree.end;
+  const begin = degree.begin
+  const end = degree.end
   return (
     <div className={styles.educationDegree}>
       <div className={styles.introduction}>
@@ -19,9 +19,9 @@ const EducationDegree = ({ degree }: EducationDegreeProps) => {
             className={styles.logo}
             src={degree.logo}
             alt={degree.school + ' logo'}
-            width='100%'
-            height='100%'
-            objectFit='contain'
+            width="100%"
+            height="100%"
+            objectFit="contain"
           />
         </div>
         <div className={styles.informations}>
@@ -46,8 +46,25 @@ const EducationDegree = ({ degree }: EducationDegreeProps) => {
           </div>
         </div>
       </div>
+      <div className={styles.tasksContainer}>
+        <p className={styles.title}>Missions réalisées :</p>
+        <ul className={styles.tasks}>
+          {degree.curriculum.map((subject, index) => {
+            const skills =
+              subject.skills.length > 0
+                ? '(' + subject.skills.join(' / ') + ')'
+                : ''
+            return (
+              <li key={index}>
+                {subject.description}{' '}
+                <span className={styles.skills}>{skills}</span>
+              </li>
+            )
+          })}
+        </ul>
+      </div>
     </div>
-  );
-};
+  )
+}
 
-export default EducationDegree;
+export default EducationDegree

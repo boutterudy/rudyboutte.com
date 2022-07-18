@@ -1,14 +1,12 @@
-import { Fragment } from 'react';
-import { DegreeType } from '../../../types/DegreeType';
-import { WorkExperiencesNumberPerYearType } from '../../../types/WorkExperiencesNumberPerYearType';
-import { WorkExperienceType } from '../../../types/WorkExperienceType';
-import EducationDegree from '../EducationDegree/EducationDegree';
-import styles from './Education.module.scss';
+import { DegreeType } from '../../../types/DegreeType'
+import { WorkExperiencesNumberPerYearType } from '../../../types/WorkExperiencesNumberPerYearType'
+import EducationDegree from '../EducationDegree/EducationDegree'
+import styles from './Education.module.scss'
 
 type EducationProps = {
-  degrees: DegreeType[];
-  workExperiencesNumberPerYear: WorkExperiencesNumberPerYearType[];
-};
+  degrees: DegreeType[]
+  workExperiencesNumberPerYear: WorkExperiencesNumberPerYearType[]
+}
 
 const Education = ({
   degrees,
@@ -25,17 +23,17 @@ const Education = ({
   ).length;*/
 
   const getTotalYearsCount = (begin: Date, end: Date) => {
-    const beginYear = begin.getFullYear();
-    const endYear = end.getFullYear();
-    let count = 0;
+    const beginYear = begin.getFullYear()
+    const endYear = end.getFullYear()
+    let count = 0
     for (let i = beginYear; i <= endYear; i++) {
       const numberPearYear = workExperiencesNumberPerYear.find(
         (numberPerYear) => numberPerYear.year === i
-      );
-      numberPearYear !== undefined ? (count += numberPearYear.count) : null;
+      )
+      numberPearYear !== undefined ? (count += numberPearYear.count) : null
     }
-    return count;
-  };
+    return count
+  }
 
   return (
     <section className={styles.education}>
@@ -57,7 +55,7 @@ const Education = ({
         ))}
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Education;
+export default Education

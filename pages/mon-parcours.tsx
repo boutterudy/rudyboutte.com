@@ -32,7 +32,12 @@ const MyJourney: NextPage = () => {
       tasks: [
         {
           description: "Développement d'un espace en ligne",
-          skills: ['TypeScript', 'ReactJS', 'Next.js', 'NestJS'],
+          skills: ['TypeScript', 'ReactJS', 'Next.js', 'NextAuth.js', 'Sass'],
+        },
+        {
+          description:
+            "Développement d'une API complète avec système d'authentification",
+          skills: ['TypeScript', 'NestJS', 'Passport'],
         },
       ],
     },
@@ -289,6 +294,25 @@ const MyJourney: NextPage = () => {
       link: '',
       begin: new Date(2021, 9),
       end: new Date(2022, 6),
+      curriculum: [
+        {
+          description: 'Algorithmique',
+          skills: [],
+        },
+        {
+          description: 'Programmation procédurale',
+          skills: ['Java'],
+        },
+        {
+          description: 'Développement Web côté front-end',
+          skills: ['HTML', 'CSS'],
+        },
+
+        {
+          description: 'Le langage de requête SQL avec SQL Server',
+          skills: ['SQL', 'SQL Server'],
+        },
+      ],
     },
     {
       logo: '/images/schools/ESUPEC-logo.png',
@@ -301,6 +325,12 @@ const MyJourney: NextPage = () => {
       link: '',
       begin: new Date(2018, 9),
       end: new Date(2020, 7),
+      curriculum: [
+        {
+          description: '',
+          skills: [],
+        },
+      ],
     },
     {
       logo: '/images/schools/jean-monnet-logo.png',
@@ -313,6 +343,12 @@ const MyJourney: NextPage = () => {
       link: '',
       begin: new Date(2015, 9),
       end: new Date(2018, 6),
+      curriculum: [
+        {
+          description: '',
+          skills: [],
+        },
+      ],
     },
   ]
 

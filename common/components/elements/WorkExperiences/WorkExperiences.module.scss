@@ -9,6 +9,9 @@
 }
 
 .yearGroup {
+  display: flex;
+  flex-flow: column;
+
   .line {
     width: 4px;
     height: 156px;
