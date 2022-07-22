@@ -300,17 +300,36 @@ const MyJourney: NextPage = () => {
           skills: [],
         },
         {
-          description: 'Programmation procédurale',
+          description: 'Développement Web côté front-end',
+          skills: ['HTML', 'CSS', 'JavaScript', 'Angular'],
+        },
+        {
+          description: 'Développement Web côté back-end',
+          skills: ['PHP', 'Symfony'],
+        },
+        {
+          description: 'Gestion de projet',
+          skills: ['Méthode Agile', 'Gestion des ressources', 'Gantt'],
+        },
+        {
+          description: 'Langage de requête SQL',
+          skills: ['SQL', 'SQL Server'],
+        },
+        {
+          description: 'Programmation Orientée Objet',
           skills: ['Java'],
         },
         {
-          description: 'Développement Web côté front-end',
-          skills: ['HTML', 'CSS'],
+          description: 'Développement en couches',
+          skills: ['Java SE'],
         },
-
         {
-          description: 'Le langage de requête SQL avec SQL Server',
-          skills: ['SQL', 'SQL Server'],
+          description: "Administration d'un serveur",
+          skills: ['Apache', 'Linux'],
+        },
+        {
+          description: 'Technologies Cross-Platform',
+          skills: ['Xamarin', 'Ionic'],
         },
       ],
     },
@@ -327,8 +346,28 @@ const MyJourney: NextPage = () => {
       end: new Date(2020, 7),
       curriculum: [
         {
-          description: '',
-          skills: [],
+          description: 'Développement Web full stack',
+          skills: ['HTML', 'CSS', 'PHP', 'Symfony', 'MVC', 'JavaScript'],
+        },
+        {
+          description: 'Langage de requête SQL',
+          skills: ['SQL', 'MySQL', 'SQL Server'],
+        },
+        {
+          description: 'Gestion de projet et conception',
+          skills: ['Merise', 'UML', 'Agile'],
+        },
+        {
+          description: 'Configuration de systèmes',
+          skills: ['Commutateurs', 'Matériel Wifi', 'Routeurs'],
+        },
+        {
+          description: 'Installation et administration de serveurs',
+          skills: ['Debian', 'Windows 10', 'Windows Server 2016 & 2019'],
+        },
+        {
+          description: 'Virtualisation de serveurs',
+          skills: ['VMWare'],
         },
       ],
     },
@@ -345,7 +384,24 @@ const MyJourney: NextPage = () => {
       end: new Date(2018, 6),
       curriculum: [
         {
-          description: '',
+          description: 'Préparation des matériels',
+          skills: [],
+        },
+        {
+          description:
+            'Installation, configuration et mise en route des systèmes',
+          skills: [],
+        },
+        {
+          description: 'Maintenance des systèmes',
+          skills: [],
+        },
+        {
+          description: 'Test et vérification de la conformité',
+          skills: [],
+        },
+        {
+          description: 'Organisation de son activité',
           skills: [],
         },
       ],

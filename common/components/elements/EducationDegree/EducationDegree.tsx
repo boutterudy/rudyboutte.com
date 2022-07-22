@@ -47,7 +47,7 @@ const EducationDegree = ({ degree }: EducationDegreeProps) => {
         </div>
       </div>
       <div className={styles.tasksContainer}>
-        <p className={styles.title}>Missions réalisées :</p>
+        <p className={styles.title}>Sujets étudiés :</p>
         <ul className={styles.tasks}>
           {degree.curriculum.map((subject, index) => {
             const skills =
