@@ -4,6 +4,7 @@ import ContactMeBlock from '../common/components/elements/ContactMeBlock/Contact
 import PageLayout from '../common/components/layouts/PageLayout/PageLayout'
 import TextHeader from '../common/components/elements/TextHeader/TextHeader'
 import Article from '../common/components/elements/Article/Article'
+import Link from 'next/link'
 
 const AboutMe: NextPage = () => {
   const headerTitle = (
@@ -19,13 +20,9 @@ const AboutMe: NextPage = () => {
         Arrivant à terme du Bac +4 Concepteur Développeur d’Applications au sein
         de <span className="bold">l’ENI</span>, je suis désormais en recherche
         d’une alternance pour débuter un{' '}
-        <a
-          href="https://www.eni-ecole.fr/formations/developpement/niveau-7-bac5-manager-de-solutions-digitales-et-data/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Bac +5 Manager de Solutions Digitales et Data
-        </a>
+        <Link href="https://www.eni-ecole.fr/formations/developpement/niveau-7-bac5-manager-de-solutions-digitales-et-data/">
+          <a target="_blank">Bac +5 Manager de Solutions Digitales et Data</a>
+        </Link>
         , dans cette même école, au rythme d&apos;
         <span className="bold">
           1 semaine de cours pour 3 semaines en entreprise
@@ -87,25 +84,17 @@ const AboutMe: NextPage = () => {
             <li>
               <span className="bold">
                 API de{' '}
-                <a
-                  href="https://github.com/boutterudy/Perfimaas"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Perfimaas
-                </a>
+                <Link href="https://github.com/boutterudy/Perfimaas">
+                  <a target="_blank">Perfimaas</a>
+                </Link>
               </span>{' '}
               : assistant de gestion des finances personnelles
             </li>
             <li>
               <span className="bold">
-                <a
-                  href="https://github.com/boutterudy/nestjs-todo-app"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Todo App
-                </a>
+                <Link href="https://github.com/boutterudy/nestjs-todo-app">
+                  <a target="_blank">Todo App</a>
+                </Link>
               </span>{' '}
               : API permettant de{' '}
               <span className="bold">gérer une liste de tâches</span>
@@ -125,25 +114,17 @@ const AboutMe: NextPage = () => {
           <ol>
             <li>
               <span className="bold">
-                <a
-                  href="https://github.com/boutterudy/strongPasswordGenerator"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Strong Password Generator
-                </a>
+                <Link href="https://github.com/boutterudy/strongPasswordGenerator">
+                  <a target="_blank">Strong Password Generator</a>
+                </Link>
               </span>{' '}
               : générateur de mots de passe sécurisés
             </li>
             <li>
               <span className="bold">
-                <a
-                  href="https://github.com/boutterudy/mytoolbox"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  My Toolbox
-                </a>
+                <Link href="https://github.com/boutterudy/mytoolbox">
+                  <a target="_blank">My Toolbox</a>
+                </Link>
               </span>{' '}
               : regroupement d’outils simples avec des fonctionnalités limitées,
               dont le générateur de mot de passe en version améliorée, tout en
@@ -156,34 +137,22 @@ const AboutMe: NextPage = () => {
             Next.js, pour en <span className="bold">février 2022</span> me
             lancer simultanément dans le défi “
             <span className="bold">
-              <a
-                href="https://github.com/boutterudy/30-Days-Of-React/tree/exercice-solutions"
-                target="_blank"
-                rel="noreferrer"
-              >
-                30 jours de React
-              </a>
+              <Link href="https://github.com/boutterudy/30-Days-Of-React/tree/exercice-solutions">
+                <a target="_blank">30 jours de React</a>
+              </Link>
             </span>
             ”, permettant d’acquérir les{' '}
             <span className="bold">fondamentaux de React</span>, et le
             développement de{' '}
             <span className="bold">
-              <a
-                href="https://github.com/boutterudy/REST-Countries-API"
-                target="_blank"
-                rel="noreferrer"
-              >
-                ma propre solution
-              </a>
+              <Link href="https://github.com/boutterudy/REST-Countries-API">
+                <a target="_blank">ma propre solution</a>
+              </Link>
             </span>{' '}
             au challenge “
-            <a
-              href="https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca"
-              target="_blank"
-              rel="noreferrer"
-            >
-              API REST des pays avec sélecteur de thème
-            </a>
+            <Link href="https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca">
+              <a target="_blank">API REST des pays avec sélecteur de thème</a>
+            </Link>
             ”, visant à créer une application Web listant tous les pays avec en
             plus une gestion des thèmes clair (light) et sombre (dark), me
             permettant ainsi de{' '}
@@ -261,45 +230,25 @@ const AboutMe: NextPage = () => {
                 l’amélioration de mon portfolio, le développement de mes
                 compétences avec <span className="bold">React</span> en
                 explorant chaque partie de la feuille de route “
-                <a
-                  href="https://roadmap.sh/react"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Développeur React
-                </a>
+                <Link href="https://roadmap.sh/react">
+                  <a target="_blank">Développeur React</a>
+                </Link>
                 ”, ma contribution à des projets open-source (par exemple{' '}
-                <a
-                  href="https://github.com/carbon-app/carbon"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Carbon
-                </a>
+                <Link href="https://github.com/carbon-app/carbon">
+                  <a target="_blank">Carbon</a>
+                </Link>
                 et{' '}
-                <a
-                  href="https://github.com/nextauthjs/next-auth"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Next-Auth
-                </a>
+                <Link href="https://github.com/nextauthjs/next-auth">
+                  <a target="_blank">Next-Auth</a>
+                </Link>
                 ) et la reprise du développement de mes autres projets :
-                <a
-                  href="https://github.com/boutterudy/Perfimaas"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Perfimaas
-                </a>{' '}
+                <Link href="https://github.com/boutterudy/Perfimaas">
+                  <a target="_blank">Perfimaas</a>
+                </Link>{' '}
                 (assistant de gestion des finances personnelles) et
-                <a
-                  href="https://github.com/boutterudy/bonAlim"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  BonAlim’
-                </a>{' '}
+                <Link href="https://github.com/boutterudy/bonAlim">
+                  <a target="_blank">BonAlim&apos;</a>
+                </Link>{' '}
                 (conseiller alimentaire personnel).
               </p>
             </div>

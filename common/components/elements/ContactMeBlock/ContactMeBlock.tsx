@@ -16,7 +16,7 @@ const ContactMeBlock = () => {
   const actions = (
     <>
       <Button>
-        <Link href="https://www.linkedin.com/messaging/thread/new/">
+        <Link href="https://www.linkedin.com/in/rudyboutte/">
           <a target="_blank">Par LinkedIn</a>
         </Link>
       </Button>

@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import styles from './Footer.module.scss';
+import Link from 'next/link'
+import styles from './Footer.module.scss'
 
 const Footer = () => {
   const links = [
@@ -27,7 +27,7 @@ const Footer = () => {
       href: 'mailto:btte.rudy@gmail.com',
       title: 'Email',
     },
-  ];
+  ]
 
   return (
     <footer className={styles.footer}>
@@ -44,12 +44,12 @@ const Footer = () => {
       </ul>
       <p className={styles.copyright}>
         © 2021-{new Date().getFullYear()} Tous droits réservés, made with &#60;3{' '}
-        <Link href='https://github.com/boutterudy'>
-          <a target='_blank'>by Rudy</a>
+        <Link href="https://github.com/boutterudy">
+          <a target="_blank">by Rudy</a>
         </Link>
       </p>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer
