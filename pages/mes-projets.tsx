@@ -8,6 +8,10 @@ import TextHeader from '../common/components/elements/TextHeader/TextHeader'
 import PageLayout from '../common/components/layouts/PageLayout/PageLayout'
 import { ProjectType } from '../common/types/ProjectType'
 import ProjectPreviewCountriesAPI from '../public/images/projects/REST-Countries-API.png'
+import ProjectPreview30DaysOfReact from '../public/images/projects/30-Days-Of-React-Baby-Twitter.png'
+import ProjectPreviewPerfimaas from '../public/images/projects/Perfimaas.png'
+import ProjectPreviewMyToolbox from '../public/images/projects/My-Toolbox.png'
+import ProjectPreviewPortfolio from '../public/images/projects/Portfolio.png'
 
 const MesProjets: NextPage = () => {
   const headerTitle = (
@@ -20,68 +24,80 @@ const MesProjets: NextPage = () => {
 
   const projects: ProjectType[] = [
     {
-      title: 'REST Countries API with color theme switcher',
+      title: 'Portfolio',
       description:
-        'Real, organic and arabica. A brand that communicates coffee value.',
-      demo: 'https://rest-countries-api-lac.vercel.app/',
-      github: 'https://github.com/boutterudy/REST-Countries-API',
-      tags: ['React', 'Next.js'],
+        "Site mettant en avant mes compétences et permettant d'accéder aux informations utiles me concernant, notamment dans le cadre de ma recherche d'alternance.",
+      demo: 'https://rudyboutte.com/',
+      github: 'https://github.com/boutterudy/rudyboutte.com',
+      tags: ['TypeScript', 'React', 'Next.js', 'SCSS', 'Adobe XD'],
       preview: (
-        <Image
-          src={ProjectPreviewCountriesAPI}
-          alt="REST Countries API with color theme switcher screenshot"
-        />
+        <Image src={ProjectPreviewPortfolio} alt="Screenshot of my portfolio" />
       ),
       date: new Date(),
       icon: <Icon lib="remix-icon" icon="globe-line" />,
     },
     {
-      title: 'REST Countries API with color theme switcher',
+      title: 'Explorateur de pays avec sélecteur de thème',
       description:
-        'Real, organic and arabica. A brand that communicates coffee value.',
+        "Application Web permettant d'accéder à la liste de tous les pays et de découvrir plus de détails sur chacun d'eux (population, capitale, langues, etc...).",
       demo: 'https://rest-countries-api-lac.vercel.app/',
       github: 'https://github.com/boutterudy/REST-Countries-API',
-      tags: ['React', 'Next.js'],
+      tags: ['TypeScript', 'React', 'Next.js', 'SCSS'],
       preview: (
         <Image
           src={ProjectPreviewCountriesAPI}
           alt="REST Countries API with color theme switcher screenshot"
         />
       ),
-      date: new Date(),
+      date: new Date(2022, 1),
       icon: <Icon lib="remix-icon" icon="globe-line" />,
     },
     {
-      title: 'REST Countries API with color theme switcher',
+      title: 'Bébé Twitter',
       description:
-        'Real, organic and arabica. A brand that communicates coffee value.',
+        'Reproduction simplifiée du célèbre réseau social Twitter, avec du contenu généré à partir de plusieurs APIs publiques, développé dans le cadre du défi "30 jours de React".',
       demo: 'https://rest-countries-api-lac.vercel.app/',
-      github: 'https://github.com/boutterudy/REST-Countries-API',
-      tags: ['React', 'Next.js'],
+      github:
+        'https://github.com/boutterudy/30-Days-Of-React/tree/exercice-solutions',
+      tags: ['JavaScript', 'React'],
       preview: (
         <Image
-          src={ProjectPreviewCountriesAPI}
-          alt="REST Countries API with color theme switcher screenshot"
+          src={ProjectPreview30DaysOfReact}
+          alt="Baby Twitter screenshot"
         />
       ),
-      date: new Date(),
-      icon: <Icon lib="remix-icon" icon="globe-line" />,
+      date: new Date(2022, 1),
+      icon: <Icon lib="remix-icon" icon="twitter-fill" />,
     },
     {
-      title: 'REST Countries API with color theme switcher',
+      title: 'My Toolbox',
       description:
-        'Real, organic and arabica. A brand that communicates coffee value.',
-      demo: 'https://rest-countries-api-lac.vercel.app/',
-      github: 'https://github.com/boutterudy/REST-Countries-API',
-      tags: ['React', 'Next.js'],
+        "Boîte à outils en ligne, permettant pour l'instant d'utiliser un générateur de mot de passe et de mettre en avant mes autres projets personnels",
+      demo: 'http://rudy.cloud/',
+      github: 'https://github.com/boutterudy/mytoolbox',
+      tags: ['TypeScript', 'React', 'Next.js', 'CSS', 'Adobe XD'],
+      preview: (
+        <Image src={ProjectPreviewMyToolbox} alt="My Toolbox screenshot" />
+      ),
+      date: new Date(2021, 0),
+      icon: <Icon lib="remix-icon" icon="tools-fill" />,
+    },
+    {
+      title: 'API de Perfimaas',
+      description:
+        "API de Perfimaas, l'assistant de gestion des finances personnelles ayant pour but d'accompagner les citoyens du monde à gérer plus sainement leurs finances.",
+      github: 'https://github.com/boutterudy/Perfimaas',
+      tags: ['TypeScript', 'NestJS'],
       preview: (
         <Image
-          src={ProjectPreviewCountriesAPI}
-          alt="REST Countries API with color theme switcher screenshot"
+          src={ProjectPreviewPerfimaas}
+          alt="Perfimaas registration page mock-up"
+          layout="fill"
+          objectFit="contain"
         />
       ),
-      date: new Date(),
-      icon: <Icon lib="remix-icon" icon="globe-line" />,
+      date: new Date(2020, 7),
+      icon: <Icon lib="remix-icon" icon="money-dollar-circle-fill" />,
     },
   ]
 

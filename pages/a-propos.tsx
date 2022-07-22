@@ -171,7 +171,7 @@ const AboutMe: NextPage = () => {
             <span className="bold">Next.js</span> avec{' '}
             <span className="bold">React</span> pour le développement de
             l’interface en <span className="bold">TypeScript</span>, avec{' '}
-            <span className="bold">Sass</span> pour la partie style. L’objectif
+            <span className="bold">SCSS</span> pour la partie style. L’objectif
             de ce stage était de{' '}
             <span className="bold">développer un espace en ligne</span>{' '}
             sécurisé, dédié à des professionnels.
@@ -184,7 +184,7 @@ const AboutMe: NextPage = () => {
             librairie <span className="bold">NextAuth.js</span>. J’ai également
             développé l’interface de l’application, avec notamment des
             composants <span className="bold">React</span> et le style en{' '}
-            <span className="bold">Sass</span>.
+            <span className="bold">SCSS</span>.
           </p>
           <p>
             C’est jusque là le projet sur lequel j’ai le plus aimé travailler
@@ -193,7 +193,7 @@ const AboutMe: NextPage = () => {
             <span className="bold">React</span> et{' '}
             <span className="bold">Next.js</span>, que j’affectionne
             particulièrement, et découvrir davantage{' '}
-            <span className="bold">Sass</span> pour toutes les feuilles de
+            <span className="bold">SCSS</span> pour toutes les feuilles de
             style, tout en{' '}
             <span className="bold">
               consolidant mes connaissances et compétences
@@ -298,7 +298,7 @@ const AboutMe: NextPage = () => {
             Souhaitant acquérir encore davantage de compétences côté front-end,
             mes langages de prédilections sont actuellement{' '}
             <span className="bold">TypeScript</span> et{' '}
-            <span className="bold">Sass</span>, avec la librairie{' '}
+            <span className="bold">SCSS</span>, avec la librairie{' '}
             <span className="bold">React</span> et le framework{' '}
             <span className="bold">Next.js</span>.
           </p>
@@ -310,7 +310,7 @@ const AboutMe: NextPage = () => {
           <p>
             J’ai d’ailleurs travaillé avec{' '}
             <span className="bold">TypeScript</span>,{' '}
-            <span className="bold">Sass</span>,{' '}
+            <span className="bold">SCSS</span>,{' '}
             <span className="bold">React</span>,{' '}
             <span className="bold">Next.js</span> et{' '}
             <span className="bold">NestJS</span> lors du développement d’un

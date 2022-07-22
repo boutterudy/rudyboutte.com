@@ -1,17 +1,17 @@
-import Link from 'next/link';
-import { useRouter } from 'next/router';
-import { cloneElement, ReactElement } from 'react';
-import { ProjectType } from '../../../types/ProjectType';
-import Badge from '../Badge/Badge';
-import Button from '../Button/Button';
-import styles from './ProjectsList.module.scss';
+import Link from 'next/link'
+import { useRouter } from 'next/router'
+import { cloneElement, ReactElement } from 'react'
+import { ProjectType } from '../../../types/ProjectType'
+import Badge from '../Badge/Badge'
+import Button from '../Button/Button'
+import styles from './ProjectsList.module.scss'
 
 type ProjectsListProps = {
-  projects: ProjectType[];
-};
+  projects: ProjectType[]
+}
 
 const ProjectsList = ({ projects }: ProjectsListProps) => {
-  const router = useRouter();
+  const router = useRouter()
 
   return (
     <section className={styles.projectsList}>
@@ -20,10 +20,12 @@ const ProjectsList = ({ projects }: ProjectsListProps) => {
           <Link
             href={project.demo !== undefined ? project.demo : project.github!}
           >
-            <a target='_blank'>
+            <a target="_blank">
               <div className={styles.previewWrapper}>
                 {cloneElement(project.preview as ReactElement, {
                   className: styles.preview,
+                  layout: 'fill',
+                  objectFit: 'cover',
                 })}
               </div>
             </a>
@@ -44,8 +46,8 @@ const ProjectsList = ({ projects }: ProjectsListProps) => {
                 <div className={styles.links}>
                   {project.demo !== undefined && (
                     <Link href={project.demo}>
-                      <a target='_blank'>
-                        <Button className={styles.demoButton} theme='small'>
+                      <a target="_blank">
+                        <Button className={styles.demoButton} theme="small">
                           Démo en ligne
                         </Button>
                       </a>
@@ -53,8 +55,8 @@ const ProjectsList = ({ projects }: ProjectsListProps) => {
                   )}
                   {project.github !== undefined && (
                     <Link href={project.github}>
-                      <a target='_blank'>
-                        <Button className={styles.githubButton} theme='small'>
+                      <a target="_blank">
+                        <Button className={styles.githubButton} theme="small">
                           GitHub
                         </Button>
                       </a>
@@ -72,7 +74,7 @@ const ProjectsList = ({ projects }: ProjectsListProps) => {
         </div>
       ))}
     </section>
-  );
-};
+  )
+}
 
-export default ProjectsList;
+export default ProjectsList
