@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import ContactMeBlock from '../common/components/elements/ContactMeBlock/ContactMeBlock'
 import Header from '../common/components/elements/Header/Header'
 import Icon from '../common/components/elements/Icon/Icon'
@@ -90,13 +91,17 @@ const Home: NextPage = () => {
         />
       </Head>
       <Header>
-        <Image
-          className={styles.pictureOfMe}
-          src={HomepagePicture}
-          width={412}
-          height={550}
-          alt="Rudy Boutte in front of yellow flowers"
-        />
+        <Link href="/a-propos">
+          <a>
+            <Image
+              className={styles.pictureOfMe}
+              src={HomepagePicture}
+              width={412}
+              height={550}
+              alt="Rudy Boutte in front of yellow flowers"
+            />
+          </a>
+        </Link>
       </Header>
       <Presentation />
       <ProjectsList projects={projects} />
