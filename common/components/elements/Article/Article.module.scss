@@ -73,6 +73,10 @@
           margin-bottom: 0;
         }
       }
+
+      .chapterContent + .chapterSubcontent {
+        margin-top: 40px;
+      }
     }
   }
 }

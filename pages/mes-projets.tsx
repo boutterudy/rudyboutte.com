@@ -13,7 +13,7 @@ import ProjectPreviewPerfimaas from '../public/images/projects/Perfimaas.png'
 import ProjectPreviewMyToolbox from '../public/images/projects/My-Toolbox.png'
 import ProjectPreviewPortfolio from '../public/images/projects/Portfolio.png'
 
-const MesProjets: NextPage = () => {
+const MyProjects: NextPage = () => {
   const headerTitle = (
     <h1>
       Découvrez quelques-uns de mes{' '}
@@ -117,4 +117,4 @@ const MesProjets: NextPage = () => {
   )
 }
 
-export default MesProjets
+export default MyProjects
