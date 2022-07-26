@@ -273,21 +273,31 @@ const AboutMe: NextPage = () => {
     {
       title: 'Pourquoi le Bac +5 Manager de Solutions Digitales et Data ?',
       content: (
-        <p>
-          Titulaire du titre{' '}
-          <span className="bold">
-            Concepteur Développeur d’Applications (Bac +4)
-          </span>{' '}
-          et ayant travaillé pendant plus d’1 an en entreprise, il est pour moi
-          important d’acquérir des compétences en{' '}
-          <span className="bold">gestion de projet</span>, que ce soit pour
-          structurer et gérer un projet informatique dans son ensemble, ou pour{' '}
-          <span className="bold">gérer une équipe</span> avec la conduite de
-          réunion, le recrutement et le <span className="bold">management</span>
-          , tout en m’intégrant au sein d’une entreprise, via{' '}
-          <span className="bold">l’alternance</span>, pour y évoluer sur le long
-          terme.
-        </p>
+        <div>
+          <p>
+            Arrivant à terme du{' '}
+            <span className="bold">
+              Bac +4 Concepteur Développeur d’Applications
+            </span>{' '}
+            et ayant travaillé pendant plus d’1 an en entreprise, il est pour
+            moi important d’acquérir des compétences en{' '}
+            <span className="bold">gestion de projet</span>, que ce soit pour
+            structurer et gérer un projet informatique dans son ensemble, ou
+            pour <span className="bold">gérer une équipe</span> avec la conduite
+            de réunion, le recrutement et le{' '}
+            <span className="bold">management</span>, tout en m’intégrant au
+            sein d’une entreprise, via{' '}
+            <span className="bold">l’alternance</span>, pour y évoluer sur le
+            long terme.
+          </p>
+          <p>
+            Pour plus d&apos;informations sur l&apos;alternance, se référer à{' '}
+            <Link href="/alternance">
+              <a>cette page</a>
+            </Link>
+            .
+          </p>
+        </div>
       ),
     },
     {
@@ -351,6 +361,18 @@ const AboutMe: NextPage = () => {
           21 ans, je possède le{' '}
           <span className="bold">permis B et une voiture</span>, je suis donc
           pleinement libre de mes déplacements.
+        </p>
+      ),
+    },
+    {
+      title: "Informations sur l'alternance",
+      content: (
+        <p>
+          Pour plus d&apos;informations sur l&apos;alternance, se référer à{' '}
+          <Link href="/alternance">
+            <a>cette page</a>
+          </Link>
+          .
         </p>
       ),
     },
