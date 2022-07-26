@@ -7,6 +7,10 @@
   row-gap: 104px;
 
   .project {
+    padding-bottom: 30px;
+    border-bottom: solid 1px var(--color-border);
+    padding-right: 5px;
+
     .previewWrapper {
       border: 2px solid black !important;
       border-radius: 12px;
