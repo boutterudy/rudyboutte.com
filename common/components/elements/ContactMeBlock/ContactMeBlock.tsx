@@ -7,7 +7,9 @@ import TextBlock from '../TextBlock/TextBlock'
 
 const ContactMeBlock = () => {
   /* States */
-  const [displayEmailPopover, setDisplayEmailPopover] = useState<boolean>(false)
+  const [displayEmailPopover, setDisplayEmailPopover] = useState<
+    boolean | undefined
+  >(undefined)
 
   const title = (
     <h1>
@@ -30,6 +32,7 @@ const ContactMeBlock = () => {
         message="Adresse mail copiée dans le presse-papiers"
         display={displayEmailPopover}
         position="bottom"
+        leftIcon={<Icon lib="remix-icon" icon="checkbox-circle-fill" />}
       >
         <Button
           onClick={() => {

@@ -1,14 +1,23 @@
-import { ReactElement } from 'react'
+import { cloneElement, ReactElement, useEffect, useState } from 'react'
 import styles from './Popover.module.scss'
 
 type PopoverProps = {
   children: ReactElement
-  display: boolean
+  display: boolean | undefined
   message: string
   position: 'top' | 'bottom' | 'left' | 'right'
+  leftIcon?: ReactElement
+  rightIcon?: ReactElement
 }
 
-const Popover = ({ children, display, message, position }: PopoverProps) => {
+const Popover = ({
+  children,
+  display,
+  message,
+  position,
+  leftIcon,
+  rightIcon,
+}: PopoverProps) => {
   const positionClassname = {
     top: styles.top,
     bottom: styles.bottom,
@@ -19,7 +28,6 @@ const Popover = ({ children, display, message, position }: PopoverProps) => {
   return (
     <div className={styles.popoverWrapper}>
       {children}
-
       <div
         className={
           styles.popover +
@@ -29,8 +37,17 @@ const Popover = ({ children, display, message, position }: PopoverProps) => {
           (display === true ? 'animate__fadeIn' : 'animate__fadeOut') +
           ' animate__animated animate__faster'
         }
+        style={display === undefined ? { display: 'none' } : {}}
       >
+        {leftIcon !== undefined &&
+          cloneElement(leftIcon, {
+            className: styles.leftIcon + ' ' + leftIcon.props.className,
+          })}
         {message}
+        {rightIcon !== undefined &&
+          cloneElement(rightIcon, {
+            className: styles.rightIcon + ' ' + rightIcon.props.className,
+          })}
       </div>
     </div>
   )

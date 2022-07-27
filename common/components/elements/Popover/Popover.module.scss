@@ -79,5 +79,17 @@
         transform: translate(calc(-100% + 10px), -50%) rotate(45deg);
       }
     }
+
+    .leftIcon {
+      color: var(--color-bg);
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+
+    .rightIcon {
+      color: var(--color-bg);
+      margin-left: 10px;
+      vertical-align: middle;
+    }
   }
 }
