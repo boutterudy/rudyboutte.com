@@ -133,9 +133,13 @@ const Internship: NextPage = () => {
           content: (
             <div>
               <p>
-                Le tarif de la formation étant à{' '}
-                <span className="bold">20€/h</span>, le coût total de la
-                formation est de <span className="bold">9 800€</span>.
+                Le coût de la formation{' '}
+                <span className="bold">
+                  peut varier en fonction des modalités
+                </span>
+                , à titre indicatif le tarif est généralement de{' '}
+                <span className="bold">20€/h</span>, soit un coût total de{' '}
+                <span className="bold">9 800€</span> pour la formation.
               </p>
               <p>
                 Pour tout contrat d&apos;alternance signé avant janvier 2023, le

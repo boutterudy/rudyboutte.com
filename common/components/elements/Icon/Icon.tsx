@@ -1,8 +1,8 @@
 type IconProps = {
-  lib: 'remix-icon';
-  icon: string;
-  className?: string;
-};
+  lib: 'remix-icon'
+  icon: string
+  className?: string
+}
 
 const Icon = ({ lib, icon, className }: IconProps) => {
   return (
@@ -12,7 +12,7 @@ const Icon = ({ lib, icon, className }: IconProps) => {
         (className !== undefined ? ' ' + className : '')
       }
     ></i>
-  );
-};
+  )
+}
 
-export default Icon;
+export default Icon
