@@ -1,13 +1,40 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
+import { useEffect, useState } from 'react'
+import Icon from '../Icon/Icon'
 import LanguageSwitcher from '../LanguageSwitcher/LanguageSwitcher'
 import styles from './Navbar.module.scss'
 
 const Navbar = () => {
+  /* States */
+  const [isScrolled, setIsScrolled] = useState<boolean>(false)
+
   const router = useRouter()
 
+  // Make the navbar's background appear
+  const listenScrollEvent = () => {
+    window.scrollY > 10 ? setIsScrolled(true) : setIsScrolled(false)
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', listenScrollEvent)
+    return () => {
+      window.removeEventListener('scroll', listenScrollEvent)
+    }
+  }, [])
+
   return (
-    <nav className={styles.navbar}>
+    <nav
+      className={styles.navbar}
+      style={
+        isScrolled === false
+          ? {
+              backgroundColor: 'transparent',
+              boxShadow: 'none',
+            }
+          : {}
+      }
+    >
       <LanguageSwitcher className={styles.languageSwitcher} />
       <div className={styles.logo}>
         <Link href="/">
@@ -27,22 +54,50 @@ const Navbar = () => {
       <ul className={styles.links}>
         <li>
           <Link href="/mes-projets">
-            <a>Mes projets</a>
+            <a>
+              <Icon
+                lib="remix-icon"
+                icon="code-s-slash-fill"
+                className={styles.icon}
+              />
+              Mes projets
+            </a>
           </Link>
         </li>
         <li>
           <Link href="/mon-parcours">
-            <a>Mon parcours</a>
+            <a>
+              <Icon
+                lib="remix-icon"
+                icon="route-fill"
+                className={styles.icon}
+              />
+              Mon parcours
+            </a>
           </Link>
         </li>
         <li>
           <Link href="/a-propos">
-            <a>A propos</a>
+            <a>
+              <Icon
+                lib="remix-icon"
+                icon="user-shared-2-line"
+                className={styles.icon}
+              />
+              A propos
+            </a>
           </Link>
         </li>
         <li>
           <Link href="/contact">
-            <a>Contact</a>
+            <a>
+              <Icon
+                lib="remix-icon"
+                icon="discuss-line"
+                className={styles.icon}
+              />
+              Contact
+            </a>
           </Link>
         </li>
       </ul>
