@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
 import Icon from '../Icon/Icon'
 import LanguageSwitcher from '../LanguageSwitcher/LanguageSwitcher'
@@ -8,8 +7,6 @@ import styles from './Navbar.module.scss'
 const Navbar = () => {
   /* States */
   const [isScrolled, setIsScrolled] = useState<boolean>(false)
-
-  const router = useRouter()
 
   // Make the navbar's background appear
   const listenScrollEvent = () => {
@@ -31,6 +28,7 @@ const Navbar = () => {
           ? {
               backgroundColor: 'transparent',
               boxShadow: 'none',
+              backdropFilter: 'none',
             }
           : {}
       }
