@@ -8,14 +8,20 @@
     justify-content: center;
     align-items: center;
 
-    li {
+    .link {
       list-style: none;
       font-size: 1.6rem;
       text-transform: uppercase;
       margin-right: 50px;
+      cursor: pointer;
 
       &:last-of-type {
         margin-right: 0;
+      }
+
+      .icon {
+        vertical-align: middle;
+        margin-right: 10px;
       }
     }
   }

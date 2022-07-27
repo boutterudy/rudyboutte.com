@@ -4,6 +4,7 @@ import { cloneElement, ReactElement } from 'react'
 import { ProjectType } from '../../../types/ProjectType'
 import Badge from '../Badge/Badge'
 import Button from '../Button/Button'
+import Icon from '../Icon/Icon'
 import styles from './ProjectsList.module.scss'
 
 type ProjectsListProps = {
@@ -47,8 +48,14 @@ const ProjectsList = ({ projects }: ProjectsListProps) => {
                   {project.demo !== undefined && (
                     <Link href={project.demo}>
                       <a target="_blank">
-                        <Button className={styles.demoButton} theme="small">
-                          Démo en ligne
+                        <Button
+                          className={styles.demoButton}
+                          theme="small"
+                          leftIcon={
+                            <Icon lib="remix-icon" icon="window-fill" />
+                          }
+                        >
+                          Démo
                         </Button>
                       </a>
                     </Link>
@@ -56,7 +63,13 @@ const ProjectsList = ({ projects }: ProjectsListProps) => {
                   {project.github !== undefined && (
                     <Link href={project.github}>
                       <a target="_blank">
-                        <Button className={styles.githubButton} theme="small">
+                        <Button
+                          className={styles.githubButton}
+                          theme="small"
+                          leftIcon={
+                            <Icon lib="remix-icon" icon="github-fill" />
+                          }
+                        >
                           GitHub
                         </Button>
                       </a>

@@ -1,4 +1,4 @@
-import { cloneElement, ReactElement, useEffect, useState } from 'react'
+import { cloneElement, ReactElement } from 'react'
 import styles from './Popover.module.scss'
 
 type PopoverProps = {
@@ -8,6 +8,7 @@ type PopoverProps = {
   position: 'top' | 'bottom' | 'left' | 'right'
   leftIcon?: ReactElement
   rightIcon?: ReactElement
+  className?: string
 }
 
 const Popover = ({
@@ -17,6 +18,7 @@ const Popover = ({
   position,
   leftIcon,
   rightIcon,
+  className,
 }: PopoverProps) => {
   const positionClassname = {
     top: styles.top,
@@ -35,7 +37,8 @@ const Popover = ({
           positionClassname[position] +
           ' ' +
           (display === true ? 'animate__fadeIn' : 'animate__fadeOut') +
-          ' animate__animated animate__faster'
+          ' animate__animated animate__faster' +
+          (className !== undefined ? ' ' + className : '')
         }
         style={display === undefined ? { display: 'none' } : {}}
       >

@@ -1,13 +1,14 @@
-import { cloneElement, ReactElement, ReactNode } from 'react';
-import styles from './TextBlock.module.scss';
+import { cloneElement, ReactElement, ReactNode } from 'react'
+import styles from './TextBlock.module.scss'
 
 type TextBlockProps = {
-  subtitle?: string;
-  title?: ReactElement;
-  description?: string;
-  actions?: ReactNode | ReactNode[];
-  className?: string;
-};
+  subtitle?: string
+  title?: ReactElement
+  description?: string
+  actions?: ReactNode | ReactNode[]
+  className?: string
+  noPadding?: boolean
+}
 
 const TextBlock = ({
   subtitle,
@@ -15,12 +16,14 @@ const TextBlock = ({
   description,
   actions,
   className,
+  noPadding,
 }: TextBlockProps) => {
   return (
     <section
       className={
         styles.textBlock + (className !== undefined ? ' ' + className : '')
       }
+      style={noPadding === true ? { padding: 0 } : {}}
     >
       {subtitle !== undefined && <p className={styles.subtitle}>{subtitle}</p>}
       {title !== undefined &&
@@ -32,7 +35,7 @@ const TextBlock = ({
       )}
       {actions !== undefined && <div className={styles.actions}>{actions}</div>}
     </section>
-  );
-};
+  )
+}
 
-export default TextBlock;
+export default TextBlock

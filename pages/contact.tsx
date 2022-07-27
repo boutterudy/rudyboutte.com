@@ -5,7 +5,7 @@ import TextHeader from '../common/components/elements/TextHeader/TextHeader'
 import PageLayout from '../common/components/layouts/PageLayout/PageLayout'
 
 const Contact: NextPage = () => {
-  const headerTitle = <ContactMeBlock />
+  const headerTitle = <ContactMeBlock noPadding={true} />
 
   return (
     <PageLayout>

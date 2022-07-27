@@ -5,7 +5,11 @@ import Icon from '../Icon/Icon'
 import Popover from '../Popover/Popover'
 import TextBlock from '../TextBlock/TextBlock'
 
-const ContactMeBlock = () => {
+type ContactMeBlockProps = {
+  noPadding?: boolean
+}
+
+const ContactMeBlock = ({ noPadding }: ContactMeBlockProps) => {
   /* States */
   const [displayEmailPopover, setDisplayEmailPopover] = useState<
     boolean | undefined
@@ -23,7 +27,7 @@ const ContactMeBlock = () => {
 
   const actions = (
     <>
-      <Button>
+      <Button leftIcon={<Icon lib="remix-icon" icon="linkedin-box-fill" />}>
         <Link href="https://www.linkedin.com/in/rudyboutte/">
           <a target="_blank">Par LinkedIn</a>
         </Link>
@@ -52,7 +56,14 @@ const ContactMeBlock = () => {
     </>
   )
 
-  return <TextBlock subtitle="N'hésitez plus" title={title} actions={actions} />
+  return (
+    <TextBlock
+      subtitle="N'hésitez plus"
+      title={title}
+      actions={actions}
+      noPadding={noPadding}
+    />
+  )
 }
 
 export default ContactMeBlock
