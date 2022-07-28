@@ -67,144 +67,171 @@ const AboutMe: NextPage = () => {
             le développement de projets fronts et backs utilisant presque tous
             des <span className="bold">langages différents</span> (PHP, Bash,
             Lua, JavaScript, Java, Shell…), j’ai finalement eu un coup de cœur
-            pour <span className="bold">JavaScript</span>.
-          </p>
-          <p>
-            <span className="bold">Août 2020</span>, je découvre{' '}
-            <span className="bold">NestJS</span> : framework back-end utilisant{' '}
-            <span className="bold">TypeScript</span> et possédant une structure
-            stricte, similaire à celle d’Angular, permettant de développer des
-            APIs performantes et faciles à documenter. Séduit par son approche
-            modulaire, son système d’injection de dépendances, ses règles
-            strictes, ses performances et sa documentation fournie, je décide me
-            lancer dans son apprentissage avec le{' '}
-            <span className="bold">développement de deux API</span> :
-          </p>
-          <ol>
-            <li>
-              <span className="bold">
-                API de{' '}
-                <Link href="https://github.com/boutterudy/Perfimaas">
-                  <a target="_blank">Perfimaas</a>
-                </Link>
-              </span>{' '}
-              : assistant de gestion des finances personnelles
-            </li>
-            <li>
-              <span className="bold">
-                <Link href="https://github.com/boutterudy/nestjs-todo-app">
-                  <a target="_blank">Todo App</a>
-                </Link>
-              </span>{' '}
-              : API permettant de{' '}
-              <span className="bold">gérer une liste de tâches</span>
-            </li>
-          </ol>
-
-          <p>
-            Côté front-end, entendant parler de la librairie{' '}
-            <span className="bold">React</span> depuis plusieurs années, c’est
-            en <span className="bold">janvier 2021</span> que je commence à m’y
-            intéresser. Je découvre par la même occasion le framework{' '}
-            <span className="bold">Next.js</span>, et après plus d’un mois à me
-            renseigner, je décide de développer{' '}
-            <span className="bold">mes deux premiers projets</span> avec ces
-            derniers :
-          </p>
-          <ol>
-            <li>
-              <span className="bold">
-                <Link href="https://github.com/boutterudy/strongPasswordGenerator">
-                  <a target="_blank">Strong Password Generator</a>
-                </Link>
-              </span>{' '}
-              : générateur de mots de passe sécurisés
-            </li>
-            <li>
-              <span className="bold">
-                <Link href="https://github.com/boutterudy/mytoolbox">
-                  <a target="_blank">My Toolbox</a>
-                </Link>
-              </span>{' '}
-              : regroupement d’outils simples avec des fonctionnalités limitées,
-              dont le générateur de mot de passe en version améliorée, tout en
-              mettant en avant mes autres projets personnels
-            </li>
-          </ol>
-
-          <p>
-            En parallèle de mes études, j’ai continué de me former sur React et
-            Next.js, pour en <span className="bold">février 2022</span> me
-            lancer simultanément dans le défi “
-            <span className="bold">
-              <Link href="https://github.com/boutterudy/30-Days-Of-React/tree/exercice-solutions">
-                <a target="_blank">30 jours de React</a>
-              </Link>
-            </span>
-            ”, permettant d’acquérir les{' '}
-            <span className="bold">fondamentaux de React</span>, et le
-            développement de{' '}
-            <span className="bold">
-              <Link href="https://github.com/boutterudy/REST-Countries-API">
-                <a target="_blank">ma propre solution</a>
-              </Link>
-            </span>{' '}
-            au challenge “
-            <Link href="https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca">
-              <a target="_blank">API REST des pays avec sélecteur de thème</a>
-            </Link>
-            ”, visant à créer une application Web listant tous les pays avec en
-            plus une gestion des thèmes clair (light) et sombre (dark), me
-            permettant ainsi de{' '}
-            <span className="bold">développer mes compétences</span>.
-          </p>
-          <p>
-            Durant mon <span className="bold">stage de Bac +4 (2 mois)</span>{' '}
-            réalisé au sein de l’entreprise{' '}
-            <span className="bold">Sowlver</span>, il n’y avait pas d’autre
-            développeur, j’étais donc responsable de l’ensemble des aspects
-            techniques, de l’analyse des besoins au développement, en passant
-            par les choix techniques et la conception de la base de données.
-            Ainsi, j’ai décidé d’utiliser <span className="bold">NestJS</span>{' '}
-            pour le développement de l’API en{' '}
-            <span className="bold">TypeScript</span> et{' '}
-            <span className="bold">Next.js</span> avec{' '}
-            <span className="bold">React</span> pour le développement de
-            l’interface en <span className="bold">TypeScript</span>, avec{' '}
-            <span className="bold">SCSS</span> pour la partie style. L’objectif
-            de ce stage était de{' '}
-            <span className="bold">développer un espace en ligne</span>{' '}
-            sécurisé, dédié à des professionnels.
-          </p>
-          <p>
-            J’ai développé une <span className="bold">API</span> complète, avec
-            un <span className="bold">système d’authentification</span>{' '}
-            sécurisé, tant côté back-end, avec la librairie{' '}
-            <span className="bold">Passport</span>, que front-end, avec la
-            librairie <span className="bold">NextAuth.js</span>. J’ai également
-            développé l’interface de l’application, avec notamment des
-            composants <span className="bold">React</span> et le style en{' '}
-            <span className="bold">SCSS</span>.
-          </p>
-          <p>
-            C’est jusque là le projet sur lequel j’ai le plus aimé travailler
-            car j’ai pu développer en <span className="bold">TypeScript</span>{' '}
-            avec <span className="bold">NestJS</span>,{' '}
-            <span className="bold">React</span> et{' '}
-            <span className="bold">Next.js</span>, que j’affectionne
-            particulièrement, et découvrir davantage{' '}
-            <span className="bold">SCSS</span> pour toutes les feuilles de
-            style, tout en{' '}
-            <span className="bold">
-              consolidant mes connaissances et compétences
-            </span>{' '}
-            précédemment acquises. C’était également la première fois que je
-            développais un système d’authentification avec{' '}
-            <span className="bold">NestJS (Passport)</span> et{' '}
-            <span className="bold">Next.js (NextAuth.js)</span>.
+            pour le <span className="bold">JavaScript</span>.
           </p>
         </div>
       ),
+      subcontent: [
+        {
+          title: 'Back-end',
+          content: (
+            <div>
+              <p>
+                <span className="bold">Août 2020</span>, je découvre{' '}
+                <span className="bold">NestJS</span> : framework back-end
+                utilisant <span className="bold">TypeScript</span> et possédant
+                une structure stricte, similaire à celle d’Angular, permettant
+                de développer des APIs performantes et faciles à documenter.
+                Séduit par son approche modulaire, son système d’injection de
+                dépendances, ses règles strictes, ses performances et sa
+                documentation fournie, je décide me lancer dans son
+                apprentissage avec le{' '}
+                <span className="bold">développement de deux API</span> :
+              </p>
+              <ol>
+                <li>
+                  <span className="bold">
+                    API de{' '}
+                    <Link href="https://github.com/boutterudy/Perfimaas">
+                      <a target="_blank">Perfimaas</a>
+                    </Link>
+                  </span>{' '}
+                  : assistant de gestion des finances personnelles
+                </li>
+                <li>
+                  <span className="bold">
+                    <Link href="https://github.com/boutterudy/nestjs-todo-app">
+                      <a target="_blank">Todo App</a>
+                    </Link>
+                  </span>{' '}
+                  : API permettant de{' '}
+                  <span className="bold">gérer une liste de tâches</span>
+                </li>
+              </ol>
+            </div>
+          ),
+        },
+        {
+          title: 'Front-end',
+          content: (
+            <div>
+              <p>
+                Entendant parler de la librairie{' '}
+                <span className="bold">React</span> depuis plusieurs années,
+                c’est en <span className="bold">janvier 2021</span> que je
+                commence à m’y intéresser. Je découvre par la même occasion le
+                framework <span className="bold">Next.js</span>, et après plus
+                d’un mois à me renseigner, je décide de développer{' '}
+                <span className="bold">mes deux premiers projets</span> avec ces
+                derniers :
+              </p>
+              <ol>
+                <li>
+                  <span className="bold">
+                    <Link href="https://github.com/boutterudy/strongPasswordGenerator">
+                      <a target="_blank">Strong Password Generator</a>
+                    </Link>
+                  </span>{' '}
+                  : générateur de mots de passe sécurisés
+                </li>
+                <li>
+                  <span className="bold">
+                    <Link href="https://github.com/boutterudy/mytoolbox">
+                      <a target="_blank">My Toolbox</a>
+                    </Link>
+                  </span>{' '}
+                  : regroupement d’outils simples avec des fonctionnalités
+                  limitées, dont le générateur de mot de passe en version
+                  améliorée, tout en mettant en avant mes autres projets
+                  personnels
+                </li>
+              </ol>
+
+              <p>
+                En parallèle de mes études, j’ai continué de me former sur React
+                et Next.js, pour en <span className="bold">février 2022</span>{' '}
+                me lancer simultanément dans le défi “
+                <span className="bold">
+                  <Link href="https://github.com/boutterudy/30-Days-Of-React/tree/exercice-solutions">
+                    <a target="_blank">30 jours de React</a>
+                  </Link>
+                </span>
+                ”, permettant d’acquérir les{' '}
+                <span className="bold">fondamentaux de React</span>, et le
+                développement de{' '}
+                <span className="bold">
+                  <Link href="https://github.com/boutterudy/REST-Countries-API">
+                    <a target="_blank">ma propre solution</a>
+                  </Link>
+                </span>{' '}
+                au challenge “
+                <Link href="https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca">
+                  <a target="_blank">
+                    API REST des pays avec sélecteur de thème
+                  </a>
+                </Link>
+                ”, visant à créer une application Web listant tous les pays avec
+                en plus une gestion des thèmes clair (light) et sombre (dark),
+                me permettant ainsi de{' '}
+                <span className="bold">développer mes compétences</span>.
+              </p>
+            </div>
+          ),
+        },
+        {
+          title: 'Stage de Bac +4',
+          content: (
+            <div>
+              <p>
+                Durant mon{' '}
+                <span className="bold">stage de Bac +4 (2 mois)</span> réalisé
+                au sein de l’entreprise <span className="bold">Sowlver</span>,
+                il n’y avait pas d’autre développeur, j’étais donc responsable
+                de l’ensemble des aspects techniques, de l’analyse des besoins
+                au développement, en passant par les choix techniques et la
+                conception de la base de données. Ainsi, j’ai décidé d’utiliser{' '}
+                <span className="bold">NestJS</span> pour le développement de
+                l’API en <span className="bold">TypeScript</span> et{' '}
+                <span className="bold">Next.js</span> avec{' '}
+                <span className="bold">React</span> pour le développement de
+                l’interface en <span className="bold">TypeScript</span>, avec{' '}
+                <span className="bold">SCSS</span> pour la partie style.
+                L’objectif de ce stage était de{' '}
+                <span className="bold">développer un espace en ligne</span>{' '}
+                sécurisé, dédié à des professionnels.
+              </p>
+              <p>
+                J’ai développé une <span className="bold">API</span> complète,
+                avec un <span className="bold">système d’authentification</span>{' '}
+                sécurisé, tant côté back-end, avec la librairie{' '}
+                <span className="bold">Passport</span>, que front-end, avec la
+                librairie <span className="bold">NextAuth.js</span>. J’ai
+                également développé l’interface de l’application, avec notamment
+                des composants <span className="bold">React</span> et le style
+                en <span className="bold">SCSS</span>.
+              </p>
+              <p>
+                C’est jusque là le projet sur lequel j’ai le plus aimé
+                travailler car j’ai pu développer en{' '}
+                <span className="bold">TypeScript</span> avec{' '}
+                <span className="bold">NestJS</span>,{' '}
+                <span className="bold">React</span> et{' '}
+                <span className="bold">Next.js</span>, que j’affectionne
+                particulièrement, et découvrir davantage{' '}
+                <span className="bold">SCSS</span> pour toutes les feuilles de
+                style, tout en{' '}
+                <span className="bold">
+                  consolidant mes connaissances et compétences
+                </span>{' '}
+                précédemment acquises. C’était également la première fois que je
+                développais un système d’authentification avec{' '}
+                <span className="bold">NestJS (Passport)</span> et{' '}
+                <span className="bold">Next.js (NextAuth.js)</span>.
+              </p>
+            </div>
+          ),
+        },
+      ],
     },
     {
       title: 'Mon avenir',
