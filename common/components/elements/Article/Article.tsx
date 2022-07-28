@@ -1,5 +1,6 @@
 import { cloneElement, Fragment, ReactElement } from 'react'
 import { ArticleContentType } from '../../../types/ArticleContentType'
+import { ArticleSummaryElementType } from '../../../types/ArticleSummaryElementType'
 import { stringToId } from '../../../utils/StringUtil'
 import TableOfContents from '../TableOfContents/TableOfContents'
 import styles from './Article.module.scss'
@@ -10,6 +11,17 @@ type ArticleProps = {
 }
 
 const Article = ({ introduction, content }: ArticleProps) => {
+  const loadSummary = (summary: ArticleSummaryElementType[]) => (
+    <div className={styles.chapterSummary}>
+      {summary.map((element, index) => (
+        <div key={index} className={styles.summaryElement}>
+          {element.illustration}
+          <p className={styles.title}>{element.title}</p>
+        </div>
+      ))}
+    </div>
+  )
+
   return (
     <article className={styles.article}>
       <TableOfContents className={styles.tableOfContents} />
@@ -24,14 +36,22 @@ const Article = ({ introduction, content }: ArticleProps) => {
               cloneElement(chapter.content, {
                 className: styles.chapterContent,
               })}
-            <div key={index} className={styles.chapterSubcontent}>
-              {chapter.subcontent?.map((subchapter, index) => (
-                <Fragment key={index}>
-                  <h3 id={stringToId(subchapter.title)}>{subchapter.title}</h3>
-                  {subchapter.content}
-                </Fragment>
-              ))}
-            </div>
+            {chapter.subcontent !== undefined && (
+              <div key={index} className={styles.chapterSubcontent}>
+                {chapter.subcontent.map((subchapter, index) => (
+                  <Fragment key={index}>
+                    <h3 id={stringToId(subchapter.title)}>
+                      {subchapter.title}
+                    </h3>
+                    {subchapter.content}
+                    {subchapter.summary !== undefined &&
+                      loadSummary(subchapter.summary)}
+                  </Fragment>
+                ))}
+              </div>
+            )}
+
+            {chapter.summary !== undefined && loadSummary(chapter.summary)}
           </section>
         ))}
       </div>

@@ -5,6 +5,9 @@ import PageLayout from '../common/components/layouts/PageLayout/PageLayout'
 import TextHeader from '../common/components/elements/TextHeader/TextHeader'
 import Article from '../common/components/elements/Article/Article'
 import Link from 'next/link'
+import Image from 'next/image'
+import Icon from '../common/components/elements/Icon/Icon'
+import { CSSProperties } from 'react'
 
 const AboutMe: NextPage = () => {
   const headerTitle = (
@@ -38,6 +41,16 @@ const AboutMe: NextPage = () => {
     </div>
   )
 
+  const chaptersSummaryIconsStyle: CSSProperties = {
+    fontSize: '64px',
+    minHeight: '64px',
+    maxHeight: '64px',
+    maxWidth: '64px',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+  }
+
   const articleChapters = [
     {
       title: 'Pourquoi avoir commencé le développement ?',
@@ -56,6 +69,45 @@ const AboutMe: NextPage = () => {
           <span className="bold">le développement web (full stack)</span>.
         </p>
       ),
+      summary: [
+        {
+          title: "Garry's Mod",
+          illustration: (
+            <Image
+              height={64}
+              width={64}
+              src="/images/articles/garry-s-mod-logo.png"
+              alt="Garry's mod logo"
+              quality={100}
+            />
+          ),
+        },
+        {
+          title: 'Lua',
+          illustration: (
+            <Image
+              height={64}
+              width={64}
+              src="/images/articles/lua-logo.png"
+              alt="Lua logo"
+              quality={100}
+            />
+          ),
+        },
+        {
+          title: 'Développement web (full stack)',
+          illustration: (
+            <Icon
+              lib="remix-icon"
+              icon="stack-fill"
+              style={{
+                color: '#CD6C4A',
+                ...chaptersSummaryIconsStyle,
+              }}
+            />
+          ),
+        },
+      ],
     },
     {
       title: 'Mes précédentes expériences',
@@ -110,6 +162,32 @@ const AboutMe: NextPage = () => {
               </ol>
             </div>
           ),
+          summary: [
+            {
+              title: 'TypeScript',
+              illustration: (
+                <Image
+                  height={64}
+                  width={64}
+                  src="/images/articles/typescript-logo.png"
+                  alt="TypeScript logo"
+                  quality={100}
+                />
+              ),
+            },
+            {
+              title: 'NestJS',
+              illustration: (
+                <Image
+                  height={62}
+                  width={64}
+                  src="/images/articles/nestjs-logo.png"
+                  alt="NestJS logo"
+                  quality={100}
+                />
+              ),
+            },
+          ],
         },
         {
           title: 'Front-end',
@@ -177,6 +255,44 @@ const AboutMe: NextPage = () => {
               </p>
             </div>
           ),
+          summary: [
+            {
+              title: 'TypeScript',
+              illustration: (
+                <Image
+                  height={64}
+                  width={64}
+                  src="/images/articles/typescript-logo.png"
+                  alt="TypeScript logo"
+                  quality={100}
+                />
+              ),
+            },
+            {
+              title: 'React',
+              illustration: (
+                <Image
+                  height={56}
+                  width={64}
+                  src="/images/articles/react-logo.png"
+                  alt="React logo"
+                  quality={100}
+                />
+              ),
+            },
+            {
+              title: 'Next.js',
+              illustration: (
+                <Image
+                  height={64}
+                  width={64}
+                  src="/images/articles/next-js-logo.png"
+                  alt="Next.js logo"
+                  quality={100}
+                />
+              ),
+            },
+          ],
         },
         {
           title: 'Stage de Bac +4',
@@ -230,6 +346,92 @@ const AboutMe: NextPage = () => {
               </p>
             </div>
           ),
+          summary: [
+            {
+              title: 'TypeScript',
+              illustration: (
+                <Image
+                  height={64}
+                  width={64}
+                  src="/images/articles/typescript-logo.png"
+                  alt="TypeScript logo"
+                  quality={100}
+                />
+              ),
+            },
+            {
+              title: 'NestJS',
+              illustration: (
+                <Image
+                  height={62}
+                  width={64}
+                  src="/images/articles/nestjs-logo.png"
+                  alt="NestJS logo"
+                  quality={100}
+                />
+              ),
+            },
+            {
+              title: 'React',
+              illustration: (
+                <Image
+                  height={56}
+                  width={64}
+                  src="/images/articles/react-logo.png"
+                  alt="React logo"
+                  quality={100}
+                />
+              ),
+            },
+            {
+              title: 'Next.js',
+              illustration: (
+                <Image
+                  height={64}
+                  width={64}
+                  src="/images/articles/next-js-logo.png"
+                  alt="Next.js logo"
+                  quality={100}
+                />
+              ),
+            },
+            {
+              title: 'SCSS',
+              illustration: (
+                <Image
+                  height={48}
+                  width={64}
+                  src="/images/articles/sass-logo.png"
+                  alt="Sass logo"
+                  quality={100}
+                />
+              ),
+            },
+            {
+              title: 'Passport',
+              illustration: (
+                <Image
+                  height={64}
+                  width={51}
+                  src="/images/articles/passport-logo.png"
+                  alt="Passport library logo"
+                  quality={100}
+                />
+              ),
+            },
+            {
+              title: 'NextAuth.js',
+              illustration: (
+                <Image
+                  height={64}
+                  width={58}
+                  src="/images/articles/nextauth-js-logo.png"
+                  alt="NextAuth.js logo"
+                  quality={100}
+                />
+              ),
+            },
+          ],
         },
       ],
     },
@@ -280,6 +482,72 @@ const AboutMe: NextPage = () => {
               </p>
             </div>
           ),
+          summary: [
+            {
+              title: 'Bac +5 Manager de Solutions Digitales et Data',
+              illustration: (
+                <Icon
+                  lib="remix-icon"
+                  icon="award-fill"
+                  style={{
+                    color: '#75575D',
+                    ...chaptersSummaryIconsStyle,
+                  }}
+                />
+              ),
+            },
+            {
+              title: 'Alternance',
+              illustration: (
+                <Icon
+                  lib="remix-icon"
+                  icon="briefcase-5-line"
+                  style={{
+                    color: '#75575D',
+                    ...chaptersSummaryIconsStyle,
+                  }}
+                />
+              ),
+            },
+            {
+              title: 'Développement avec React',
+              illustration: (
+                <Image
+                  height={56}
+                  width={64}
+                  src="/images/articles/react-logo.png"
+                  alt="React logo"
+                  quality={100}
+                />
+              ),
+            },
+            {
+              title: 'Projets personnels',
+              illustration: (
+                <Icon
+                  lib="remix-icon"
+                  icon="code-s-slash-line"
+                  style={{
+                    color: '#75575D',
+                    ...chaptersSummaryIconsStyle,
+                  }}
+                />
+              ),
+            },
+            {
+              title: 'Contribution à des projets',
+              illustration: (
+                <Icon
+                  lib="remix-icon"
+                  icon="github-fill"
+                  style={{
+                    color: '#75575D',
+                    ...chaptersSummaryIconsStyle,
+                  }}
+                />
+              ),
+            },
+          ],
         },
         {
           title: 'Long terme',
@@ -294,6 +562,47 @@ const AboutMe: NextPage = () => {
               développement.
             </p>
           ),
+          summary: [
+            {
+              title: "Évoluer dans l'entreprise",
+              illustration: (
+                <Icon
+                  lib="remix-icon"
+                  icon="service-fill"
+                  style={{
+                    color: '#75575D',
+                    ...chaptersSummaryIconsStyle,
+                  }}
+                />
+              ),
+            },
+            {
+              title: 'Consolider et développer mes compétences',
+              illustration: (
+                <Icon
+                  lib="remix-icon"
+                  icon="braces-line"
+                  style={{
+                    color: '#75575D',
+                    ...chaptersSummaryIconsStyle,
+                  }}
+                />
+              ),
+            },
+            {
+              title: 'Devenir chef de projet',
+              illustration: (
+                <Icon
+                  lib="remix-icon"
+                  icon="team-fill"
+                  style={{
+                    color: '#75575D',
+                    ...chaptersSummaryIconsStyle,
+                  }}
+                />
+              ),
+            },
+          ],
         },
       ],
     },
@@ -326,6 +635,47 @@ const AboutMe: NextPage = () => {
           </p>
         </div>
       ),
+      summary: [
+        {
+          title: 'Gestion de projet',
+          illustration: (
+            <Icon
+              lib="remix-icon"
+              icon="team-fill"
+              style={{
+                color: '#75575D',
+                ...chaptersSummaryIconsStyle,
+              }}
+            />
+          ),
+        },
+        {
+          title: "Gestion d'équipe / management",
+          illustration: (
+            <Icon
+              lib="remix-icon"
+              icon="group-2-fill"
+              style={{
+                color: '#75575D',
+                ...chaptersSummaryIconsStyle,
+              }}
+            />
+          ),
+        },
+        {
+          title: 'Projet(s) en entreprise',
+          illustration: (
+            <Icon
+              lib="remix-icon"
+              icon="code-box-fill"
+              style={{
+                color: '#75575D',
+                ...chaptersSummaryIconsStyle,
+              }}
+            />
+          ),
+        },
+      ],
     },
     {
       title: 'Mes préférences : langages et frameworks',
@@ -359,6 +709,68 @@ const AboutMe: NextPage = () => {
           </p>
         </div>
       ),
+      summary: [
+        {
+          title: 'TypeScript',
+          illustration: (
+            <Image
+              height={64}
+              width={64}
+              src="/images/articles/typescript-logo.png"
+              alt="TypeScript logo"
+              quality={100}
+            />
+          ),
+        },
+        {
+          title: 'SCSS',
+          illustration: (
+            <Image
+              height={48}
+              width={64}
+              src="/images/articles/sass-logo.png"
+              alt="Sass logo"
+              quality={100}
+            />
+          ),
+        },
+        {
+          title: 'React',
+          illustration: (
+            <Image
+              height={56}
+              width={64}
+              src="/images/articles/react-logo.png"
+              alt="React logo"
+              quality={100}
+            />
+          ),
+        },
+        {
+          title: 'Next.js',
+          illustration: (
+            <Image
+              height={64}
+              width={64}
+              src="/images/articles/next-js-logo.png"
+              alt="Next.js logo"
+              quality={100}
+            />
+          ),
+        },
+        {
+          title: 'NestJS',
+          illustration: (
+            <Image
+              height={62}
+              width={64}
+              src="/images/articles/nestjs-logo.png"
+              alt="NestJS logo"
+              quality={100}
+            />
+          ),
+        },
+      ],
     },
     {
       title: 'Mes centres d’intérêt',
@@ -377,6 +789,137 @@ const AboutMe: NextPage = () => {
           l’opportunité.
         </p>
       ),
+      summary: [
+        {
+          title: 'Sport',
+          illustration: (
+            <Icon
+              lib="remix-icon"
+              icon="flashlight-fill"
+              style={{
+                color: '#75575D',
+                ...chaptersSummaryIconsStyle,
+              }}
+            />
+          ),
+        },
+        {
+          title: 'Échecs',
+          illustration: (
+            <Image
+              height={64}
+              width={64}
+              src="/images/articles/chess-com-logo.png"
+              alt="Next.js logo"
+              quality={100}
+            />
+          ),
+        },
+        {
+          title: 'Photographie',
+          illustration: (
+            <Icon
+              lib="remix-icon"
+              icon="image-2-fill"
+              style={{
+                color: '#75575D',
+                ...chaptersSummaryIconsStyle,
+              }}
+            />
+          ),
+        },
+        {
+          title: 'Lecture (français/anglais)',
+          illustration: (
+            <Icon
+              lib="remix-icon"
+              icon="book-fill"
+              style={{
+                color: '#75575D',
+                ...chaptersSummaryIconsStyle,
+              }}
+            />
+          ),
+        },
+        {
+          title: 'Théâtre',
+          illustration: (
+            <Icon
+              lib="remix-icon"
+              icon="emotion-laugh-line"
+              style={{
+                color: '#75575D',
+                ...chaptersSummaryIconsStyle,
+              }}
+            />
+          ),
+        },
+        {
+          title: 'Cinéma',
+          illustration: (
+            <Icon
+              lib="remix-icon"
+              icon="film-line"
+              style={{
+                color: '#75575D',
+                ...chaptersSummaryIconsStyle,
+              }}
+            />
+          ),
+        },
+        {
+          title: 'Documentaires',
+          illustration: (
+            <Icon
+              lib="remix-icon"
+              icon="movie-line"
+              style={{
+                color: '#75575D',
+                ...chaptersSummaryIconsStyle,
+              }}
+            />
+          ),
+        },
+        {
+          title: 'Bénévolat',
+          illustration: (
+            <Icon
+              lib="remix-icon"
+              icon="hand-heart-line"
+              style={{
+                color: '#75575D',
+                ...chaptersSummaryIconsStyle,
+              }}
+            />
+          ),
+        },
+        {
+          title: 'Projets personnels',
+          illustration: (
+            <Icon
+              lib="remix-icon"
+              icon="code-s-slash-line"
+              style={{
+                color: '#75575D',
+                ...chaptersSummaryIconsStyle,
+              }}
+            />
+          ),
+        },
+        {
+          title: 'Voyager',
+          illustration: (
+            <Icon
+              lib="remix-icon"
+              icon="earth-line"
+              style={{
+                color: '#75575D',
+                ...chaptersSummaryIconsStyle,
+              }}
+            />
+          ),
+        },
+      ],
     },
     {
       title: 'Situation personnelle',
@@ -390,6 +933,47 @@ const AboutMe: NextPage = () => {
           pleinement libre de mes déplacements.
         </p>
       ),
+      summary: [
+        {
+          title: 'Habite en Vendée, bientôt à Nantes',
+          illustration: (
+            <Icon
+              lib="remix-icon"
+              icon="map-pin-line"
+              style={{
+                color: '#75575D',
+                ...chaptersSummaryIconsStyle,
+              }}
+            />
+          ),
+        },
+        {
+          title: 'Permis B',
+          illustration: (
+            <Icon
+              lib="remix-icon"
+              icon="steering-fill"
+              style={{
+                color: '#75575D',
+                ...chaptersSummaryIconsStyle,
+              }}
+            />
+          ),
+        },
+        {
+          title: 'Voiture',
+          illustration: (
+            <Icon
+              lib="remix-icon"
+              icon="roadster-line"
+              style={{
+                color: '#75575D',
+                ...chaptersSummaryIconsStyle,
+              }}
+            />
+          ),
+        },
+      ],
     },
     {
       title: "Informations sur l'alternance",

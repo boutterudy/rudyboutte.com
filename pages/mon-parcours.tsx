@@ -32,7 +32,7 @@ const MyJourney: NextPage = () => {
       tasks: [
         {
           description: "Développement d'un espace en ligne",
-          skills: ['TypeScript', 'ReactJS', 'Next.js', 'NextAuth.js', 'SCSS'],
+          skills: ['TypeScript', 'React', 'Next.js', 'NextAuth.js', 'SCSS'],
         },
         {
           description:

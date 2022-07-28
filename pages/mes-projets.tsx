@@ -18,7 +18,7 @@ const MyProjects: NextPage = () => {
     <h1>
       Découvrez quelques-uns de mes{' '}
       <span className="bold">récents projets</span> avec{' '}
-      <span className="bold">ReactJS</span>.
+      <span className="bold">React</span>.
     </h1>
   )
 
