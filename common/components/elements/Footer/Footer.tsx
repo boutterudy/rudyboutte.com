@@ -59,7 +59,10 @@ const Footer = () => {
         {links.map((link, index) => (
           <li className={styles.link} key={index}>
             <Link href={link.href}>
-              <a target={link.target !== undefined ? link.target : ''}>
+              <a
+                target={link.target !== undefined ? link.target : ''}
+                className="underline"
+              >
                 {link.icon}
                 {link.title}
               </a>
@@ -81,20 +84,24 @@ const Footer = () => {
           <Popover
             message="Adresse mail copiée dans le presse-papiers"
             display={displayEmailPopover}
+            className={styles.popover}
             position="top"
             leftIcon={<Icon lib="remix-icon" icon="checkbox-circle-fill" />}
           >
-            <Fragment>
+            <a className="underline">
               <Icon lib="remix-icon" icon="mail-line" className={styles.icon} />
               Mail
-            </Fragment>
+            </a>
           </Popover>
         </li>
       </ul>
       <p className={styles.copyright}>
-        © 2021-{new Date().getFullYear()} Tous droits réservés, made with &#60;3{' '}
+        © 2021-{new Date().getFullYear()} Tous droits réservés, made with &#60;3
+        by{' '}
         <Link href="https://github.com/boutterudy">
-          <a target="_blank">by Rudy</a>
+          <a target="_blank" className="underline">
+            Rudy
+          </a>
         </Link>
       </p>
     </footer>

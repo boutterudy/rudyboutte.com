@@ -47,7 +47,7 @@ const ProjectsList = ({ projects }: ProjectsListProps) => {
                 <div className={styles.links}>
                   {project.demo !== undefined && (
                     <Link href={project.demo}>
-                      <a target="_blank">
+                      <a target="_blank" className="noAnimation">
                         <Button
                           className={styles.demoButton}
                           theme="small"
@@ -62,7 +62,7 @@ const ProjectsList = ({ projects }: ProjectsListProps) => {
                   )}
                   {project.github !== undefined && (
                     <Link href={project.github}>
-                      <a target="_blank">
+                      <a target="_blank" className="noAnimation">
                         <Button
                           className={styles.githubButton}
                           theme="small"

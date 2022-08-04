@@ -27,11 +27,13 @@ const ContactMeBlock = ({ noPadding }: ContactMeBlockProps) => {
 
   const actions = (
     <>
-      <Button leftIcon={<Icon lib="remix-icon" icon="linkedin-box-fill" />}>
-        <Link href="https://www.linkedin.com/in/rudyboutte/">
-          <a target="_blank">Par LinkedIn</a>
-        </Link>
-      </Button>
+      <Link href="https://www.linkedin.com/in/rudyboutte/">
+        <a target="_blank" className="noAnimation">
+          <Button leftIcon={<Icon lib="remix-icon" icon="linkedin-box-fill" />}>
+            Par LinkedIn
+          </Button>
+        </a>
+      </Link>
       <Popover
         message="Adresse mail copiée dans le presse-papiers"
         display={displayEmailPopover}

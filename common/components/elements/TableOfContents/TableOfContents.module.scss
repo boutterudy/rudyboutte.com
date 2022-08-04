@@ -37,13 +37,15 @@
         flex-direction: row;
         align-items: center;
         width: fit-content;
+        border-bottom: solid 2px transparent;
+        transition: all 0s;
 
         &::before {
           content: '';
           display: block;
           min-height: 8px;
           min-width: 8px;
-          background-color: var(--color-accent);
+          background-color: var(--accent-color);
           border-radius: 100%;
           margin-right: 6px;
         }

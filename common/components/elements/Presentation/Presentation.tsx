@@ -7,7 +7,7 @@ const Presentation = () => {
   const actions = (
     <>
       <Link href="/a-propos">
-        <a>
+        <a className="noAnimation">
           <Button
             leftIcon={<Icon lib="remix-icon" icon="user-shared-2-line" />}
           >
@@ -16,7 +16,7 @@ const Presentation = () => {
         </a>
       </Link>
       <Link href="/mes-projets">
-        <a>
+        <a className="noAnimation">
           <Button leftIcon={<Icon lib="remix-icon" icon="code-s-slash-fill" />}>
             Découvrir mes projets
           </Button>

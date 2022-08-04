@@ -35,6 +35,7 @@ const Headings = ({
               behavior: 'smooth',
             })
           }}
+          className="underline"
         >
           {heading.title}
         </a>
@@ -56,6 +57,7 @@ const Headings = ({
                       behavior: 'smooth',
                     })
                   }}
+                  className="underline"
                 >
                   {child.title}
                 </a>

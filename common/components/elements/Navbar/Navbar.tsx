@@ -44,7 +44,7 @@ const Navbar = () => {
             <a>
               disponible dès{' '}
               <span className={styles.important}>
-                Juillet 2022 en alternance
+                aujourd'hui en alternance
               </span>
             </a>
           </Link>
@@ -53,7 +53,7 @@ const Navbar = () => {
       <ul className={styles.links}>
         <li>
           <Link href="/mes-projets">
-            <a>
+            <a className="underline">
               <Icon
                 lib="remix-icon"
                 icon="code-s-slash-fill"
@@ -65,7 +65,7 @@ const Navbar = () => {
         </li>
         <li>
           <Link href="/mon-parcours">
-            <a>
+            <a className="underline">
               <Icon
                 lib="remix-icon"
                 icon="route-fill"
@@ -77,7 +77,7 @@ const Navbar = () => {
         </li>
         <li>
           <Link href="/a-propos">
-            <a>
+            <a className="underline">
               <Icon
                 lib="remix-icon"
                 icon="user-shared-2-line"
@@ -89,7 +89,7 @@ const Navbar = () => {
         </li>
         <li>
           <Link href="/contact">
-            <a>
+            <a className="underline">
               <Icon
                 lib="remix-icon"
                 icon="discuss-line"
