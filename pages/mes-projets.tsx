@@ -12,6 +12,7 @@ import ProjectPreview30DaysOfReact from '../public/images/projects/30-Days-Of-Re
 import ProjectPreviewPerfimaas from '../public/images/projects/Perfimaas.png'
 import ProjectPreviewMyToolbox from '../public/images/projects/My-Toolbox.png'
 import ProjectPreviewPortfolio from '../public/images/projects/Portfolio.png'
+import { Colors } from '../common/constants/colors'
 
 const MyProjects: NextPage = () => {
   const headerTitle = (
@@ -29,7 +30,13 @@ const MyProjects: NextPage = () => {
         "Site mettant en avant mes compétences et permettant d'accéder aux informations utiles me concernant, notamment dans le cadre de ma recherche d'alternance.",
       demo: 'https://rudyboutte.com/',
       github: 'https://github.com/boutterudy/rudyboutte.com',
-      tags: ['TypeScript', 'React', 'Next.js', 'SCSS', 'Adobe XD'],
+      tags: [
+        { title: 'TypeScript', color: Colors.TYPESCRIPT },
+        { title: 'React', color: Colors.REACT },
+        { title: 'Next.js', color: Colors.NEXTJS },
+        { title: 'SCSS', color: Colors.SCSS },
+        { title: 'Adobe XD', color: Colors.ADOBEXD },
+      ],
       preview: (
         <Image src={ProjectPreviewPortfolio} alt="Screenshot of my portfolio" />
       ),
@@ -42,7 +49,12 @@ const MyProjects: NextPage = () => {
         "Application Web permettant d'accéder à la liste de tous les pays et de découvrir plus de détails sur chacun d'eux (population, capitale, langues, etc...).",
       demo: 'https://rest-countries-api-lac.vercel.app/',
       github: 'https://github.com/boutterudy/REST-Countries-API',
-      tags: ['TypeScript', 'React', 'Next.js', 'SCSS'],
+      tags: [
+        { title: 'TypeScript', color: Colors.TYPESCRIPT },
+        { title: 'React', color: Colors.REACT },
+        { title: 'Next.js', color: Colors.NEXTJS },
+        { title: 'SCSS', color: Colors.SCSS },
+      ],
       preview: (
         <Image
           src={ProjectPreviewCountriesAPI}
@@ -59,7 +71,11 @@ const MyProjects: NextPage = () => {
       demo: 'https://rest-countries-api-lac.vercel.app/',
       github:
         'https://github.com/boutterudy/30-Days-Of-React/tree/exercice-solutions',
-      tags: ['JavaScript', 'React'],
+      tags: [
+        { title: 'JavaScript', color: Colors.JAVASCRIPT },
+        { title: 'React', color: Colors.REACT },
+        { title: 'SCSS', color: Colors.SCSS },
+      ],
       preview: (
         <Image
           src={ProjectPreview30DaysOfReact}
@@ -75,7 +91,13 @@ const MyProjects: NextPage = () => {
         "Boîte à outils en ligne, permettant pour l'instant d'utiliser un générateur de mot de passe et de mettre en avant mes autres projets personnels",
       demo: 'http://rudy.cloud/',
       github: 'https://github.com/boutterudy/mytoolbox',
-      tags: ['TypeScript', 'React', 'Next.js', 'CSS', 'Adobe XD'],
+      tags: [
+        { title: 'TypeScript', color: Colors.TYPESCRIPT },
+        { title: 'React', color: Colors.REACT },
+        { title: 'Next.js', color: Colors.NEXTJS },
+        { title: 'CSS', color: Colors.CSS },
+        { title: 'Adobe XD', color: Colors.ADOBEXD },
+      ],
       preview: (
         <Image src={ProjectPreviewMyToolbox} alt="My Toolbox screenshot" />
       ),
@@ -87,7 +109,10 @@ const MyProjects: NextPage = () => {
       description:
         "API de Perfimaas, l'assistant de gestion des finances personnelles ayant pour but d'accompagner les citoyens du monde à gérer plus sainement leurs finances.",
       github: 'https://github.com/boutterudy/Perfimaas',
-      tags: ['TypeScript', 'NestJS'],
+      tags: [
+        { title: 'TypeScript', color: Colors.TYPESCRIPT },
+        { title: 'NestJS', color: Colors.NESTJS },
+      ],
       preview: (
         <Image
           src={ProjectPreviewPerfimaas}

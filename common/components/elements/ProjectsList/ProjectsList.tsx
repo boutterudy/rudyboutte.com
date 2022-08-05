@@ -78,7 +78,9 @@ const ProjectsList = ({ projects }: ProjectsListProps) => {
                 </div>
                 <div className={styles.tags}>
                   {project.tags.map((tag, index) => (
-                    <Badge key={index}>{tag}</Badge>
+                    <Badge key={index} color={tag.color}>
+                      {tag.title}
+                    </Badge>
                   ))}
                 </div>
               </div>

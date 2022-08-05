@@ -2,6 +2,7 @@
   --color-bg: #ebebe8;
   --color-bg-transparent: rgba(235, 235, 232, 0.9);
   --color-text: #191919;
+  --color-text-light: #f6f6f4;
   --color-border: rgba(25, 25, 25, 0.4);
   --color-info: #3366ff;
   --color-success: #57bc98;
@@ -9,7 +10,12 @@
   --color-error: #d14343;
 
   --primary-color: #ebebe8;
+  --primary-color-transparent: rgba(235, 235, 232, 0.9);
   --secondary-color: #191919;
   --accent-color: #f8cd5f;
   --light-accent-color: #fad77e;
+
+  /* Badge colors */
+  --color-react: #61dbfb;
+  --color-next-js: #111111;
 }
