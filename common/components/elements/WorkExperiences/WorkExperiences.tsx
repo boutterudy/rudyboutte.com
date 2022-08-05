@@ -1,13 +1,13 @@
-import { Fragment } from 'react';
-import { WorkExperiencesNumberPerYearType } from '../../../types/WorkExperiencesNumberPerYearType';
-import { WorkExperienceType } from '../../../types/WorkExperienceType';
-import WorkExperience from '../WorkExperience/WorkExperience';
-import styles from './WorkExperiences.module.scss';
+import { Fragment } from 'react'
+import { WorkExperiencesNumberPerYearType } from '../../../types/WorkExperiencesNumberPerYearType'
+import { WorkExperienceType } from '../../../types/WorkExperienceType'
+import WorkExperience from '../WorkExperience/WorkExperience'
+import styles from './WorkExperiences.module.scss'
 
 type WorkExperiencesProps = {
-  workExperiences: WorkExperienceType[];
-  workExperiencesNumberPerYear: WorkExperiencesNumberPerYearType[];
-};
+  workExperiences: WorkExperienceType[]
+  workExperiencesNumberPerYear: WorkExperiencesNumberPerYearType[]
+}
 
 const WorkExperiences = ({
   workExperiences,
@@ -23,7 +23,7 @@ const WorkExperiences = ({
           style={{
             flex: workExperiencesNumberPerYear.find(
               (countPerYear) => countPerYear.year === numberPerYear.year
-            )!.count,
+            )?.count,
           }}
         >
           {workExperiences
@@ -43,7 +43,7 @@ const WorkExperiences = ({
         </div>
       ))}
     </section>
-  );
-};
+  )
+}
 
-export default WorkExperiences;
+export default WorkExperiences
