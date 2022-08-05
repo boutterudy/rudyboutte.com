@@ -44,7 +44,7 @@ const Navbar = () => {
             <a>
               disponible dès{' '}
               <span className={styles.important}>
-                aujourd'hui en alternance
+                aujourd&apos;hui en alternance
               </span>
             </a>
           </Link>
@@ -83,7 +83,7 @@ const Navbar = () => {
                 icon="user-shared-2-line"
                 className={styles.icon}
               />
-              A propos
+              À propos
             </a>
           </Link>
         </li>

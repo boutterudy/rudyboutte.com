@@ -113,7 +113,7 @@ const Home: NextPage = () => {
       </Head>
       <Header>
         <Link href="/a-propos">
-          <a>
+          <a className="noAnimation" title="À propos">
             <Image
               className={styles.pictureOfMe}
               src={HomepagePicture}

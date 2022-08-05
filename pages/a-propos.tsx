@@ -79,6 +79,7 @@ const AboutMe: NextPage = () => {
               src="/images/articles/garry-s-mod-logo.png"
               alt="Garry's mod logo"
               quality={100}
+              className="desatured"
             />
           ),
         },
@@ -91,6 +92,7 @@ const AboutMe: NextPage = () => {
               src="/images/articles/lua-logo.png"
               alt="Lua logo"
               quality={100}
+              className="desatured"
             />
           ),
         },
@@ -101,9 +103,10 @@ const AboutMe: NextPage = () => {
               lib="remix-icon"
               icon="stack-fill"
               style={{
-                color: '#CD6C4A',
+                color: 'var(--accent-color-3)',
                 ...chaptersSummaryIconsStyle,
               }}
+              className="desatured"
             />
           ),
         },
@@ -172,6 +175,7 @@ const AboutMe: NextPage = () => {
                   src="/images/articles/typescript-logo.png"
                   alt="TypeScript logo"
                   quality={100}
+                  className="desatured"
                 />
               ),
             },
@@ -184,6 +188,7 @@ const AboutMe: NextPage = () => {
                   src="/images/articles/nestjs-logo.png"
                   alt="NestJS logo"
                   quality={100}
+                  className="desatured"
                 />
               ),
             },
@@ -265,6 +270,7 @@ const AboutMe: NextPage = () => {
                   src="/images/articles/typescript-logo.png"
                   alt="TypeScript logo"
                   quality={100}
+                  className="desatured"
                 />
               ),
             },
@@ -277,6 +283,7 @@ const AboutMe: NextPage = () => {
                   src="/images/articles/react-logo.png"
                   alt="React logo"
                   quality={100}
+                  className="desatured"
                 />
               ),
             },
@@ -289,6 +296,7 @@ const AboutMe: NextPage = () => {
                   src="/images/articles/next-js-logo.png"
                   alt="Next.js logo"
                   quality={100}
+                  className="desatured"
                 />
               ),
             },
@@ -356,6 +364,7 @@ const AboutMe: NextPage = () => {
                   src="/images/articles/typescript-logo.png"
                   alt="TypeScript logo"
                   quality={100}
+                  className="desatured"
                 />
               ),
             },
@@ -368,6 +377,7 @@ const AboutMe: NextPage = () => {
                   src="/images/articles/nestjs-logo.png"
                   alt="NestJS logo"
                   quality={100}
+                  className="desatured"
                 />
               ),
             },
@@ -380,6 +390,7 @@ const AboutMe: NextPage = () => {
                   src="/images/articles/react-logo.png"
                   alt="React logo"
                   quality={100}
+                  className="desatured"
                 />
               ),
             },
@@ -392,6 +403,7 @@ const AboutMe: NextPage = () => {
                   src="/images/articles/next-js-logo.png"
                   alt="Next.js logo"
                   quality={100}
+                  className="desatured"
                 />
               ),
             },
@@ -404,6 +416,7 @@ const AboutMe: NextPage = () => {
                   src="/images/articles/sass-logo.png"
                   alt="Sass logo"
                   quality={100}
+                  className="desatured"
                 />
               ),
             },
@@ -416,6 +429,7 @@ const AboutMe: NextPage = () => {
                   src="/images/articles/passport-logo.png"
                   alt="Passport library logo"
                   quality={100}
+                  className="desatured"
                 />
               ),
             },
@@ -428,6 +442,7 @@ const AboutMe: NextPage = () => {
                   src="/images/articles/nextauth-js-logo.png"
                   alt="NextAuth.js logo"
                   quality={100}
+                  className="desatured"
                 />
               ),
             },
@@ -490,9 +505,10 @@ const AboutMe: NextPage = () => {
                   lib="remix-icon"
                   icon="award-fill"
                   style={{
-                    color: '#75575D',
+                    color: 'var(--accent-color-4)',
                     ...chaptersSummaryIconsStyle,
                   }}
+                  className="desatured"
                 />
               ),
             },
@@ -503,9 +519,10 @@ const AboutMe: NextPage = () => {
                   lib="remix-icon"
                   icon="briefcase-5-line"
                   style={{
-                    color: '#75575D',
+                    color: 'var(--accent-color-3)',
                     ...chaptersSummaryIconsStyle,
                   }}
+                  className="desatured"
                 />
               ),
             },
@@ -518,6 +535,7 @@ const AboutMe: NextPage = () => {
                   src="/images/articles/react-logo.png"
                   alt="React logo"
                   quality={100}
+                  className="desatured"
                 />
               ),
             },
@@ -528,9 +546,10 @@ const AboutMe: NextPage = () => {
                   lib="remix-icon"
                   icon="code-s-slash-line"
                   style={{
-                    color: '#75575D',
+                    color: 'var(--accent-color-1)',
                     ...chaptersSummaryIconsStyle,
                   }}
+                  className="desatured"
                 />
               ),
             },
@@ -541,9 +560,10 @@ const AboutMe: NextPage = () => {
                   lib="remix-icon"
                   icon="github-fill"
                   style={{
-                    color: '#75575D',
+                    color: 'var(--accent-color-4)',
                     ...chaptersSummaryIconsStyle,
                   }}
+                  className="desatured"
                 />
               ),
             },
@@ -570,9 +590,10 @@ const AboutMe: NextPage = () => {
                   lib="remix-icon"
                   icon="service-fill"
                   style={{
-                    color: '#75575D',
+                    color: 'var(--accent-color-3)',
                     ...chaptersSummaryIconsStyle,
                   }}
+                  className="desatured"
                 />
               ),
             },
@@ -583,9 +604,10 @@ const AboutMe: NextPage = () => {
                   lib="remix-icon"
                   icon="braces-line"
                   style={{
-                    color: '#75575D',
+                    color: 'var(--accent-color-4)',
                     ...chaptersSummaryIconsStyle,
                   }}
+                  className="desatured"
                 />
               ),
             },
@@ -596,9 +618,10 @@ const AboutMe: NextPage = () => {
                   lib="remix-icon"
                   icon="team-fill"
                   style={{
-                    color: '#75575D',
+                    color: 'var(--accent-color-2)',
                     ...chaptersSummaryIconsStyle,
                   }}
+                  className="desatured"
                 />
               ),
             },
@@ -643,9 +666,10 @@ const AboutMe: NextPage = () => {
               lib="remix-icon"
               icon="team-fill"
               style={{
-                color: '#75575D',
+                color: 'var(--accent-color-2)',
                 ...chaptersSummaryIconsStyle,
               }}
+              className="desatured"
             />
           ),
         },
@@ -656,9 +680,10 @@ const AboutMe: NextPage = () => {
               lib="remix-icon"
               icon="group-2-fill"
               style={{
-                color: '#75575D',
+                color: 'var(--accent-color-4)',
                 ...chaptersSummaryIconsStyle,
               }}
+              className="desatured"
             />
           ),
         },
@@ -669,9 +694,10 @@ const AboutMe: NextPage = () => {
               lib="remix-icon"
               icon="code-box-fill"
               style={{
-                color: '#75575D',
+                color: 'var(--accent-color-1)',
                 ...chaptersSummaryIconsStyle,
               }}
+              className="desatured"
             />
           ),
         },
@@ -719,6 +745,7 @@ const AboutMe: NextPage = () => {
               src="/images/articles/typescript-logo.png"
               alt="TypeScript logo"
               quality={100}
+              className="desatured"
             />
           ),
         },
@@ -731,6 +758,7 @@ const AboutMe: NextPage = () => {
               src="/images/articles/sass-logo.png"
               alt="Sass logo"
               quality={100}
+              className="desatured"
             />
           ),
         },
@@ -743,6 +771,7 @@ const AboutMe: NextPage = () => {
               src="/images/articles/react-logo.png"
               alt="React logo"
               quality={100}
+              className="desatured"
             />
           ),
         },
@@ -755,6 +784,7 @@ const AboutMe: NextPage = () => {
               src="/images/articles/next-js-logo.png"
               alt="Next.js logo"
               quality={100}
+              className="desatured"
             />
           ),
         },
@@ -767,6 +797,7 @@ const AboutMe: NextPage = () => {
               src="/images/articles/nestjs-logo.png"
               alt="NestJS logo"
               quality={100}
+              className="desatured"
             />
           ),
         },
@@ -797,9 +828,10 @@ const AboutMe: NextPage = () => {
               lib="remix-icon"
               icon="flashlight-fill"
               style={{
-                color: '#75575D',
+                color: 'var(--accent-color-1)',
                 ...chaptersSummaryIconsStyle,
               }}
+              className="desatured"
             />
           ),
         },
@@ -812,6 +844,7 @@ const AboutMe: NextPage = () => {
               src="/images/articles/chess-com-logo.png"
               alt="Next.js logo"
               quality={100}
+              className="desatured"
             />
           ),
         },
@@ -822,9 +855,10 @@ const AboutMe: NextPage = () => {
               lib="remix-icon"
               icon="image-2-fill"
               style={{
-                color: '#75575D',
+                color: 'var(--accent-color-4)',
                 ...chaptersSummaryIconsStyle,
               }}
+              className="desatured"
             />
           ),
         },
@@ -835,48 +869,24 @@ const AboutMe: NextPage = () => {
               lib="remix-icon"
               icon="book-fill"
               style={{
-                color: '#75575D',
+                color: 'var(--accent-color-3)',
                 ...chaptersSummaryIconsStyle,
               }}
+              className="desatured"
             />
           ),
         },
         {
-          title: 'Théâtre',
-          illustration: (
-            <Icon
-              lib="remix-icon"
-              icon="emotion-laugh-line"
-              style={{
-                color: '#75575D',
-                ...chaptersSummaryIconsStyle,
-              }}
-            />
-          ),
-        },
-        {
-          title: 'Cinéma',
+          title: 'Théâtre & Cinéma',
           illustration: (
             <Icon
               lib="remix-icon"
               icon="film-line"
               style={{
-                color: '#75575D',
+                color: 'var(--accent-color-2)',
                 ...chaptersSummaryIconsStyle,
               }}
-            />
-          ),
-        },
-        {
-          title: 'Documentaires',
-          illustration: (
-            <Icon
-              lib="remix-icon"
-              icon="movie-line"
-              style={{
-                color: '#75575D',
-                ...chaptersSummaryIconsStyle,
-              }}
+              className="desatured"
             />
           ),
         },
@@ -887,9 +897,10 @@ const AboutMe: NextPage = () => {
               lib="remix-icon"
               icon="hand-heart-line"
               style={{
-                color: '#75575D',
+                color: 'var(--accent-color-3)',
                 ...chaptersSummaryIconsStyle,
               }}
+              className="desatured"
             />
           ),
         },
@@ -900,9 +911,10 @@ const AboutMe: NextPage = () => {
               lib="remix-icon"
               icon="code-s-slash-line"
               style={{
-                color: '#75575D',
+                color: 'var(--accent-color-4)',
                 ...chaptersSummaryIconsStyle,
               }}
+              className="desatured"
             />
           ),
         },
@@ -913,9 +925,10 @@ const AboutMe: NextPage = () => {
               lib="remix-icon"
               icon="earth-line"
               style={{
-                color: '#75575D',
+                color: 'var(--accent-color-1)',
                 ...chaptersSummaryIconsStyle,
               }}
+              className="desatured"
             />
           ),
         },
@@ -941,9 +954,10 @@ const AboutMe: NextPage = () => {
               lib="remix-icon"
               icon="map-pin-line"
               style={{
-                color: '#75575D',
+                color: 'var(--accent-color-1)',
                 ...chaptersSummaryIconsStyle,
               }}
+              className="desatured"
             />
           ),
         },
@@ -954,9 +968,10 @@ const AboutMe: NextPage = () => {
               lib="remix-icon"
               icon="steering-fill"
               style={{
-                color: '#75575D',
+                color: 'var(--accent-color-4)',
                 ...chaptersSummaryIconsStyle,
               }}
+              className="desatured"
             />
           ),
         },
@@ -967,9 +982,10 @@ const AboutMe: NextPage = () => {
               lib="remix-icon"
               icon="roadster-line"
               style={{
-                color: '#75575D',
+                color: 'var(--accent-color-2)',
                 ...chaptersSummaryIconsStyle,
               }}
+              className="desatured"
             />
           ),
         },
