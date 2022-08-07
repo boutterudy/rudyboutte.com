@@ -4,9 +4,10 @@ import styles from './Header.module.scss'
 
 type HeaderProps = {
   children: ReactNode | ReactNode[]
+  arrow?: boolean
 }
 
-const Header = ({ children }: HeaderProps) => {
+const Header = ({ children, arrow }: HeaderProps) => {
   return (
     <header className={styles.header}>
       <div className={styles.content}>{children}</div>
@@ -14,7 +15,11 @@ const Header = ({ children }: HeaderProps) => {
         {/*<p>
           <Icon lib='remix-icon' icon='sun-fill' /> Dark Mode
         </p>*/}
-        <Icon lib="remix-icon" icon="arrow-down-line" />
+        {arrow !== false ? (
+          <Icon lib="remix-icon" icon="arrow-down-line" />
+        ) : (
+          <div></div>
+        )}
         <p>©2022</p>
       </div>
     </header>

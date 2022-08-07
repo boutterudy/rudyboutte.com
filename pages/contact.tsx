@@ -16,7 +16,7 @@ const Contact: NextPage = () => {
           content="Découvrez en un peu plus à mon propos."
         />
       </Head>
-      <TextHeader title={headerTitle} />
+      <TextHeader title={headerTitle} arrow={false} />
     </PageLayout>
   )
 }

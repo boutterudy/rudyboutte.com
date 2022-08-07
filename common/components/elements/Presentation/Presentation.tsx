@@ -11,7 +11,7 @@ const Presentation = () => {
           <Button
             leftIcon={<Icon lib="remix-icon" icon="user-shared-2-line" />}
           >
-            A propos de moi
+            À propos de moi
           </Button>
         </a>
       </Link>
