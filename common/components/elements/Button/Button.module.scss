@@ -12,8 +12,24 @@
     padding: 4.5px 32px;
   }
 
+  &,
+  .leftIcon,
+  .rightIcon {
+    transition: all 0.4s;
+  }
+
   &:hover {
     cursor: pointer;
+    background-color: var(--color-text);
+    color: var(--color-bg);
+
+    .leftIcon {
+      color: var(--color-bg);
+    }
+
+    .rightIcon {
+      color: var(--color-bg);
+    }
   }
 
   .leftIcon {
