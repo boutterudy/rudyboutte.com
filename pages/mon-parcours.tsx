@@ -1,5 +1,6 @@
 import { NextPage } from 'next'
 import Head from 'next/head'
+import { useRef } from 'react'
 import ContactMeBlock from '../common/components/elements/ContactMeBlock/ContactMeBlock'
 import Education from '../common/components/elements/Education/Education'
 import TextHeader from '../common/components/elements/TextHeader/TextHeader'
@@ -38,6 +39,10 @@ const MyJourney: NextPage = () => {
           description:
             "Développement d'une API complète avec système d'authentification",
           skills: ['TypeScript', 'NestJS', 'Passport'],
+        },
+        {
+          description: "Maquettage d'un espace en ligne",
+          skills: ['Adobe XD'],
         },
       ],
     },

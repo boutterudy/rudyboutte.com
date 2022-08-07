@@ -480,16 +480,16 @@ const AboutMe: NextPage = () => {
                 ”, ma contribution à des projets open-source (par exemple{' '}
                 <Link href="https://github.com/carbon-app/carbon">
                   <a target="_blank">Carbon</a>
-                </Link>
+                </Link>{' '}
                 et{' '}
                 <Link href="https://github.com/nextauthjs/next-auth">
                   <a target="_blank">Next-Auth</a>
                 </Link>
-                ) et la reprise du développement de mes autres projets :
+                ) et la reprise du développement de mes autres projets :{' '}
                 <Link href="https://github.com/boutterudy/Perfimaas">
                   <a target="_blank">Perfimaas</a>
                 </Link>{' '}
-                (assistant de gestion des finances personnelles) et
+                (assistant de gestion des finances personnelles) et{' '}
                 <Link href="https://github.com/boutterudy/bonAlim">
                   <a target="_blank">BonAlim&apos;</a>
                 </Link>{' '}

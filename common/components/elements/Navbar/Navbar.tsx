@@ -34,7 +34,7 @@ const Navbar = () => {
           : {}
       }
     >
-      <LanguageSwitcher className={styles.languageSwitcher} />
+      {/*<LanguageSwitcher className={styles.languageSwitcher} />*/}
       <div className={styles.logo}>
         <Link href="/">
           <a>RUDY BOUTTE</a>
