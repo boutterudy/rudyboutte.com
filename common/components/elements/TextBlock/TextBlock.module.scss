@@ -1,3 +1,4 @@
+// Mobile
 .textBlock {
   display: flex;
   flex-direction: column;
@@ -31,13 +32,36 @@
 
   .actions {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
 
     > * {
-      margin-right: 30px;
+      margin-bottom: 30px;
 
       &:last-child {
-        margin-right: 0;
+        margin-bottom: 0;
+      }
+
+      button {
+        width: 100%;
+      }
+    }
+  }
+}
+
+// Laptop
+@media (min-width: 769px) {
+  .textBlock {
+    .actions {
+      flex-direction: row;
+
+      > * {
+        margin-bottom: 0;
+        margin-right: 30px;
+
+        &:last-child {
+          margin-right: 0;
+        }
       }
     }
   }
