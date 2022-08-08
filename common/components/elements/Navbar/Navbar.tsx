@@ -7,6 +7,7 @@ import styles from './Navbar.module.scss'
 const Navbar = () => {
   /* States */
   const [isScrolled, setIsScrolled] = useState<boolean>(false)
+  const [isNavExpanded, setIsNavExpanded] = useState<boolean>(false)
 
   // Make the navbar's background appear
   const listenScrollEvent = () => {
@@ -23,33 +24,37 @@ const Navbar = () => {
 
   return (
     <nav
-      className={styles.navbar}
-      style={
-        isScrolled === false
-          ? {
-              backgroundColor: 'transparent',
-              boxShadow: 'none',
-              backdropFilter: 'none',
-            }
-          : {}
+      className={
+        styles.navbar +
+        (isNavExpanded === true ? ' ' + styles.expanded : '') +
+        (isScrolled === true ? ' ' + styles.scrolled : '')
       }
     >
       {/*<LanguageSwitcher className={styles.languageSwitcher} />*/}
-      <div className={styles.logo}>
-        <Link href="/">
-          <a>RUDY BOUTTE</a>
-        </Link>
-        <span className={styles.info}>
-          <Link href="/alternance">
-            <a>
-              disponible dès{' '}
-              <span className={styles.important}>
-                aujourd&apos;hui en alternance
-              </span>
-            </a>
+      <div className={styles.logoContainer}>
+        <div className={styles.logo}>
+          <Link href="/">
+            <a>RUDY BOUTTE</a>
           </Link>
-        </span>
+          <span className={styles.info}>
+            <Link href="/alternance">
+              <a>
+                disponible dès{' '}
+                <span className={styles.important}>
+                  aujourd&apos;hui en alternance
+                </span>
+              </a>
+            </Link>
+          </span>
+        </div>
+        <Icon
+          className={styles.burger}
+          lib="remix-icon"
+          icon={isNavExpanded ? 'close-line' : 'menu-line'}
+          onClick={() => setIsNavExpanded(!isNavExpanded)}
+        />
       </div>
+
       <ul className={styles.links}>
         <li>
           <Link href="/mes-projets">
