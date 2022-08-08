@@ -37,8 +37,8 @@ const EducationDegree = ({ degree }: EducationDegreeProps) => {
               degree.level}
           </small>
           <div className={styles.title}>
-            <h2>{degree.title}</h2>
-            <p>
+            <h2 className={styles.degree}>{degree.title}</h2>
+            <p className={styles.dates}>
               {begin.getFullYear() === end.getFullYear()
                 ? begin.getFullYear()
                 : begin.getFullYear() + ' - ' + end.getFullYear()}

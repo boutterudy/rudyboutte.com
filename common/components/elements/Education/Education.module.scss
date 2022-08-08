@@ -1,4 +1,3 @@
-// Mobile
 .education {
   display: flex;
   flex-direction: column;
@@ -39,9 +38,8 @@
     margin-bottom: 47px;
     margin-top: 47px;
     min-height: 14.63rem;
+    word-wrap: break-word;
+    max-width: 100vw;
+    hyphens: auto;
   }
-}
-
-// Laptop
-@media (min-width: 769px) {
 }

@@ -15,7 +15,8 @@
 
   .introduction {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
     border-bottom: 1px solid var(--color-border);
     padding-bottom: 26px;
 
@@ -43,14 +44,18 @@
 
       .title {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-between;
 
-        h2,
-        p {
+        .degree,
+        .dates {
           font-size: 3.4rem;
           color: var(--color-text);
           font-weight: 400;
+        }
+
+        .dates {
+          margin-top: 12px;
         }
       }
 
@@ -80,6 +85,26 @@
 
         .skills {
           font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+// Laptop
+@media (min-width: 769px) {
+  .educationDegree {
+    .introduction {
+      flex-direction: row;
+      align-items: inherit;
+
+      .informations {
+        .title {
+          flex-direction: row;
+
+          .dates {
+            margin-top: 0;
+          }
         }
       }
     }

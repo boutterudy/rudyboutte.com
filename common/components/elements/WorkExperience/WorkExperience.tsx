@@ -1,19 +1,19 @@
-import Image from 'next/image';
-import { WorkExperienceType } from '../../../types/WorkExperienceType';
+import Image from 'next/image'
+import { WorkExperienceType } from '../../../types/WorkExperienceType'
 import {
   getDifferenceBetweenDates,
   getMonthName,
-} from '../../../utils/DateUtil';
-import { capitalizeFirstLetter } from '../../../utils/StringUtil';
-import styles from './WorkExperience.module.scss';
+} from '../../../utils/DateUtil'
+import { capitalizeFirstLetter } from '../../../utils/StringUtil'
+import styles from './WorkExperience.module.scss'
 
 type WorkExperienceProps = {
-  workExperience: WorkExperienceType;
-};
+  workExperience: WorkExperienceType
+}
 
 const WorkExperience = ({ workExperience }: WorkExperienceProps) => {
-  const begin = workExperience.begin;
-  const end = workExperience.end;
+  const begin = workExperience.begin
+  const end = workExperience.end
   return (
     <div className={styles.workExperience}>
       <div className={styles.introduction}>
@@ -22,9 +22,9 @@ const WorkExperience = ({ workExperience }: WorkExperienceProps) => {
             className={styles.logo}
             src={workExperience.logo}
             alt={workExperience.company + ' logo'}
-            width='100%'
-            height='100%'
-            objectFit='contain'
+            width="100%"
+            height="100%"
+            objectFit="contain"
           />
         </div>
         <div className={styles.informations}>
@@ -45,8 +45,8 @@ const WorkExperience = ({ workExperience }: WorkExperienceProps) => {
               workExperience.occupation}
           </small>
           <div className={styles.title}>
-            <h2>{workExperience.company}</h2>
-            <p>
+            <h2 className={styles.company}>{workExperience.company}</h2>
+            <p className={styles.dates}>
               {begin.getFullYear() === end.getFullYear()
                 ? begin.getFullYear()
                 : begin.getFullYear() + ' - ' + end.getFullYear()}
@@ -60,18 +60,18 @@ const WorkExperience = ({ workExperience }: WorkExperienceProps) => {
         <ul className={styles.tasks}>
           {workExperience.tasks.map((task, index) => {
             const skills =
-              task.skills.length > 0 ? '(' + task.skills.join(' / ') + ')' : '';
+              task.skills.length > 0 ? '(' + task.skills.join(' / ') + ')' : ''
             return (
               <li key={index}>
                 {task.description}{' '}
                 <span className={styles.skills}>{skills}</span>
               </li>
-            );
+            )
           })}
         </ul>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default WorkExperience;
+export default WorkExperience
