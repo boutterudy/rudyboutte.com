@@ -57,11 +57,16 @@
       flex-direction: row;
 
       > * {
+        width: inherit;
         margin-bottom: 0;
         margin-right: 30px;
 
         &:last-child {
           margin-right: 0;
+        }
+
+        button {
+          width: inherit;
         }
       }
     }
