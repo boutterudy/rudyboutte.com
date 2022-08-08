@@ -1,8 +1,12 @@
+// Mobile
+$navbarHeight: calc(1.6rem + 33px + 33px + 5px);
+
 .header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  margin-top: $navbarHeight;
   padding-top: 25px;
   padding-bottom: 37px;
 
@@ -13,9 +17,7 @@
     align-items: center;
     width: 100%;
     // Screen height - navbar height - bottom actions height
-    min-height: calc(
-      100vh - (1.6rem + 33px + 33px + 5px) - (37px + 1.5rem + 34px)
-    );
+    min-height: calc(100vh - $navbarHeight - (37px + 1.5rem + 34px));
     position: relative;
   }
 
@@ -41,5 +43,12 @@
         margin-top: 4px;
       }
     }
+  }
+}
+
+// Laptop
+@media (min-width: 769px) {
+  .header {
+    margin-top: 0;
   }
 }
