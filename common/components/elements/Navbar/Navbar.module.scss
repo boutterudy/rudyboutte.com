@@ -16,7 +16,8 @@
   box-shadow: 0 2px 2px -2px rgb(0 0 0 / 20%);
 
   &.expanded {
-    height: calc(100vh - 10px);
+    height: calc(100vh);
+
     .logoContainer {
       padding-bottom: 10px;
       box-shadow: 0 2px 2px -2px rgb(0 0 0 / 20%);
@@ -126,6 +127,24 @@
       background-color: var(--primary-color-transparent);
       backdrop-filter: blur(12px);
       box-shadow: 0 2px 2px -2px rgb(0 0 0 / 20%);
+    }
+
+    &.expanded {
+      height: auto;
+
+      .logoContainer {
+        padding-bottom: 0;
+        box-shadow: none;
+      }
+
+      .links {
+        display: flex;
+        overflow-y: inherit;
+
+        li {
+          margin-bottom: 0;
+        }
+      }
     }
 
     .logoContainer {
