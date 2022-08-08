@@ -1,3 +1,4 @@
+// Mobile
 .education {
   display: flex;
   flex-direction: column;
@@ -17,6 +18,7 @@
 
       .line {
         flex: 1 1 auto;
+        min-height: 156px;
         width: 0px;
         border-right: 4px solid var(--color-text);
         margin-left: 78px;
@@ -38,4 +40,8 @@
     margin-top: 47px;
     min-height: 14.63rem;
   }
+}
+
+// Laptop
+@media (min-width: 769px) {
 }

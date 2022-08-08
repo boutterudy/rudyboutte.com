@@ -1,14 +1,22 @@
+// Mobile
 .container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+}
 
-  & > section:first-of-type {
-    flex: 55;
-    margin-right: 14px;
-  }
+// Desktop
+@media (min-width: 1281px) {
+  .container {
+    flex-direction: row;
 
-  & > section:last-of-type {
-    flex: 45;
-    margin-left: 14px;
+    & > section:first-of-type {
+      flex: 55;
+      margin-right: 14px;
+    }
+
+    & > section:last-of-type {
+      flex: 45;
+      margin-left: 14px;
+    }
   }
 }
