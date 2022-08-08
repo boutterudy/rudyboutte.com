@@ -1,6 +1,5 @@
 import { NextPage } from 'next'
 import Head from 'next/head'
-import { useRef } from 'react'
 import ContactMeBlock from '../common/components/elements/ContactMeBlock/ContactMeBlock'
 import Education from '../common/components/elements/Education/Education'
 import TextHeader from '../common/components/elements/TextHeader/TextHeader'
