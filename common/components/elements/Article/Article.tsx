@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { cloneElement, Fragment, ReactElement } from 'react'
 import { ArticleContentType } from '../../../types/ArticleContentType'
 import { ArticleSummaryElementType } from '../../../types/ArticleSummaryElementType'
@@ -16,7 +17,17 @@ const Article = ({ introduction, content }: ArticleProps) => {
       {summary.map((element, index) => (
         <div key={index} className={styles.summaryElement}>
           {element.illustration}
-          <p className={styles.title}>{element.title}</p>
+          <p className={styles.title}>
+            {element.link !== undefined ? (
+              <Link href={element.link}>
+                <a target={element.link.startsWith('./') ? '_self' : '_blank'}>
+                  {element.title}
+                </a>
+              </Link>
+            ) : (
+              element.title
+            )}
+          </p>
         </div>
       ))}
     </div>

@@ -20,9 +20,17 @@ const AboutMe: NextPage = () => {
   const articleIntroduction = (
     <div>
       <p>
-        Arrivant à terme du Bac +4 Concepteur Développeur d’Applications au sein
-        de <span className="bold">l’ENI</span>, je suis désormais en recherche
-        d’une alternance pour débuter un{' '}
+        Arrivant à terme du{' '}
+        <Link href="https://www.eni-ecole.fr/formations/developpement/niveau-6-bac4-concepteur-developpeur-dapplications/">
+          <a target="_blank">Bac +4 Concepteur Développeur d’Applications</a>
+        </Link>{' '}
+        au sein de{' '}
+        <span className="bold">
+          <Link href="https://www.eni-ecole.fr/">
+            <a target="_blank">l&apos;ENI</a>
+          </Link>
+        </span>
+        , je suis désormais en recherche d’une alternance pour débuter un{' '}
         <Link href="https://www.eni-ecole.fr/formations/developpement/niveau-7-bac5-manager-de-solutions-digitales-et-data/">
           <a target="_blank">Bac +5 Manager de Solutions Digitales et Data</a>
         </Link>
@@ -308,12 +316,19 @@ const AboutMe: NextPage = () => {
             <div>
               <p>
                 Durant mon{' '}
-                <span className="bold">stage de Bac +4 (2 mois)</span> réalisé
-                au sein de l’entreprise <span className="bold">Sowlver</span>,
-                il n’y avait pas d’autre développeur, j’étais donc responsable
-                de l’ensemble des aspects techniques, de l’analyse des besoins
-                au développement, en passant par les choix techniques et la
-                conception de la base de données. Ainsi, j’ai décidé d’utiliser{' '}
+                <span className="bold">
+                  stage de{' '}
+                  <Link href="https://www.eni-ecole.fr/formations/developpement/niveau-6-bac4-concepteur-developpeur-dapplications/">
+                    <a target="_blank">Bac +4</a>
+                  </Link>{' '}
+                  (2 mois)
+                </span>{' '}
+                réalisé au sein de l’entreprise{' '}
+                <span className="bold">Sowlver</span>, il n’y avait pas d’autre
+                développeur, j’étais donc responsable de l’ensemble des aspects
+                techniques, de l’analyse des besoins au développement, en
+                passant par les choix techniques et la conception de la base de
+                données. Ainsi, j’ai décidé d’utiliser{' '}
                 <span className="bold">NestJS</span> pour le développement de
                 l’API en <span className="bold">TypeScript</span> et{' '}
                 <span className="bold">Next.js</span> avec{' '}
@@ -460,13 +475,21 @@ const AboutMe: NextPage = () => {
               <p>
                 J’ai actuellement pour projet d’intégrer le{' '}
                 <span className="bold">
-                  Bac +5 Manager de Solutions Digitales et Data
+                  <Link href="https://www.eni-ecole.fr/formations/developpement/niveau-7-bac5-manager-de-solutions-digitales-et-data/">
+                    <a target="_blank">
+                      Bac +5 Manager de Solutions Digitales et Data
+                    </a>
+                  </Link>
                 </span>{' '}
                 en alternance au sein de{' '}
-                <span className="bold">l&apos;ENI</span>. Ayant été accepté par
-                l&apos;école, je suis désormais en recherche active d’une
-                entreprise pour avant tout la durée de l&apos;alternance, puis à
-                terme collaborer et y{' '}
+                <span className="bold">
+                  <Link href="https://www.eni-ecole.fr/">
+                    <a target="_blank">l&apos;ENI</a>
+                  </Link>
+                </span>
+                . Ayant été accepté par l&apos;école, je suis désormais en
+                recherche active d’une entreprise pour avant tout la durée de
+                l&apos;alternance, puis, à terme, collaborer et y{' '}
                 <span className="bold">évoluer sur le long terme</span>.
               </p>
               <p>
@@ -511,6 +534,7 @@ const AboutMe: NextPage = () => {
                   className="desatured"
                 />
               ),
+              link: 'https://www.eni-ecole.fr/formations/developpement/niveau-7-bac5-manager-de-solutions-digitales-et-data/',
             },
             {
               title: 'Alternance',
@@ -525,6 +549,7 @@ const AboutMe: NextPage = () => {
                   className="desatured"
                 />
               ),
+              link: './alternance',
             },
             {
               title: 'Développement avec React',
@@ -573,8 +598,13 @@ const AboutMe: NextPage = () => {
           title: 'Long terme',
           content: (
             <p>
-              Après avoir obtenu mon Bac +5 Manager de Solutions Digitales et
-              Data, je souhaite{' '}
+              Après avoir obtenu mon{' '}
+              <Link href="https://www.eni-ecole.fr/formations/developpement/niveau-7-bac5-manager-de-solutions-digitales-et-data/">
+                <a target="_blank">
+                  Bac +5 Manager de Solutions Digitales et Data
+                </a>
+              </Link>
+              , je souhaite{' '}
               <span className="bold">rester au sein de la même entreprise</span>{' '}
               pour consolider et développer mes compétences, pour ensuite à plus
               long terme évoluer en tant que{' '}
@@ -636,7 +666,11 @@ const AboutMe: NextPage = () => {
           <p>
             Arrivant à terme du{' '}
             <span className="bold">
-              Bac +4 Concepteur Développeur d’Applications
+              <Link href="https://www.eni-ecole.fr/formations/developpement/niveau-6-bac4-concepteur-developpeur-dapplications/">
+                <a target="_blank">
+                  Bac +4 Concepteur Développeur d’Applications
+                </a>
+              </Link>
             </span>{' '}
             et ayant travaillé pendant plus d’1 an en entreprise, il est pour
             moi important d’acquérir des compétences en{' '}
@@ -729,9 +763,13 @@ const AboutMe: NextPage = () => {
             <span className="bold">NestJS</span> lors du développement d’un
             espace en ligne pour l’entreprise{' '}
             <span className="bold">Sowlver</span>, dans le cadre du stage
-            réalisé durant mon Bac +4, et durant lequel j’ai pu tester et
-            développer mes compétences avec ces langages et frameworks, tout en
-            m’initiant à la gestion de projet.
+            réalisé durant mon{' '}
+            <Link href="https://www.eni-ecole.fr/formations/developpement/niveau-6-bac4-concepteur-developpeur-dapplications/">
+              <a target="_blank">Bac +4</a>
+            </Link>
+            , et durant lequel j’ai pu tester et développer mes compétences avec
+            ces langages et frameworks, tout en m’initiant à la gestion de
+            projet.
           </p>
         </div>
       ),
