@@ -28,7 +28,7 @@ const MyJourney: NextPage = () => {
       end: new Date(2022, 5, 30),
       occupation: 'Développeur Fullstack',
       description:
-        'Développement variés (Front / Back / Full Stack) sous différents environnements (Windows / Linux).',
+        "Maquettage et développement d'une application web (Full Stack).",
       tasks: [
         {
           description: "Développement d'un espace en ligne",
@@ -52,7 +52,7 @@ const MyJourney: NextPage = () => {
       end: new Date(2021, 4, 31),
       occupation: 'Développeur',
       description:
-        'Développement variés (Front / Back / Fullstack) sous différents environnements (Windows / Linux).',
+        'Développements variés (Front / Back / Fullstack) sous différents environnements (Windows / Linux).',
       tasks: [
         {
           description:
@@ -103,8 +103,7 @@ const MyJourney: NextPage = () => {
       begin: new Date(2020, 6, 1),
       end: new Date(2020, 6, 31),
       occupation: 'Développeur',
-      description:
-        'Développement variés (Front / Back / Full Stack) sous différents environnements (Windows / Linux).',
+      description: "Développement d'une application AndroidTV (Front).",
       tasks: [
         {
           description: "Développement d'un launcher pour AndroidTV",
@@ -118,8 +117,7 @@ const MyJourney: NextPage = () => {
       begin: new Date(2020, 0),
       end: new Date(2020, 1),
       occupation: "Développeur d'applications mobiles",
-      description:
-        'Développement variés (Front / Back / Full Stack) sous différents environnements (Windows / Linux).',
+      description: "Développement d'une application multiplateforme (Front).",
       tasks: [
         {
           description: "Développement d'une application mobile de gestion",
@@ -140,8 +138,7 @@ const MyJourney: NextPage = () => {
       begin: new Date(2019, 6),
       end: new Date(2019, 7, 30),
       occupation: 'Développeur web',
-      description:
-        'Développement variés (Front / Back / Full Stack) sous différents environnements (Windows / Linux).',
+      description: "Développement d'une application web (Full Stack).",
       tasks: [
         {
           description: "Développement d'une interface web de gestion",
@@ -156,7 +153,7 @@ const MyJourney: NextPage = () => {
       end: new Date(2019, 5, 30),
       occupation: 'Développeur back-end',
       description:
-        'Développement variés (Front / Back / Full Stack) sous différents environnements (Windows / Linux).',
+        "Développement de scripts (Back) et configuration d'un serveur sous Linux.",
       tasks: [
         {
           description:
@@ -177,7 +174,7 @@ const MyJourney: NextPage = () => {
       end: new Date(2017, 10, 30),
       occupation: 'Technicien informatique',
       description:
-        'Développement variés (Front / Back / Full Stack) sous différents environnements (Windows / Linux).',
+        "Développement de scripts (Back) et gestion d'un réseau informatique.",
       tasks: [
         {
           description:
@@ -197,8 +194,7 @@ const MyJourney: NextPage = () => {
       begin: new Date(2017, 1),
       end: new Date(2017, 1, 28),
       occupation: 'Technicien informatique',
-      description:
-        'Développement variés (Front / Back / Full Stack) sous différents environnements (Windows / Linux).',
+      description: 'Développement de scripts (Back) sous Linux.',
       tasks: [
         {
           description:
@@ -213,8 +209,7 @@ const MyJourney: NextPage = () => {
       begin: new Date(2016, 5),
       end: new Date(2016, 5, 30),
       occupation: 'Technicien informatique',
-      description:
-        'Développement variés (Front / Back / Full Stack) sous différents environnements (Windows / Linux).',
+      description: 'Installations et maintenance informatique.',
       tasks: [
         {
           description: 'Installations de matériels et logiciels informatiques',
@@ -233,7 +228,7 @@ const MyJourney: NextPage = () => {
       end: new Date(2016, 0, 30),
       occupation: 'Technicien informatique',
       description:
-        'Développement variés (Front / Back / Full Stack) sous différents environnements (Windows / Linux).',
+        "Gestion d'un réseau informatique et mise en place d'un système de vidéo-surveillance.",
       tasks: [
         {
           description:
