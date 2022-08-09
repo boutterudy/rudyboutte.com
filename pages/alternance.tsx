@@ -29,7 +29,13 @@ const Internship: NextPage = () => {
               </Link>
             </span>{' '}
             en alternance au sein de{' '}
-            <span className="bold">l&apos;ENI, à Nantes</span>.
+            <span className="bold">
+              <Link href="https://www.eni-ecole.fr/">
+                <a target="_blank">l&apos;ENI</a>
+              </Link>
+              , à Nantes
+            </span>
+            .
           </p>
         </div>
       ),
