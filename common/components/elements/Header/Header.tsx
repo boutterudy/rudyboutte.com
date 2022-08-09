@@ -16,11 +16,15 @@ const Header = ({ children, arrow }: HeaderProps) => {
           <Icon lib='remix-icon' icon='sun-fill' /> Dark Mode
         </p>*/}
         {arrow !== false ? (
-          <Icon lib="remix-icon" icon="arrow-down-line" />
+          <Icon
+            lib="remix-icon"
+            icon="arrow-down-line"
+            className={styles.arrow}
+          />
         ) : (
           <div></div>
         )}
-        <p>©2022</p>
+        <p className={styles.copyright}>©2022</p>
       </div>
     </header>
   )
