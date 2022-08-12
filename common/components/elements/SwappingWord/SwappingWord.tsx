@@ -6,22 +6,24 @@ type SwappingWordProps = {
 }
 
 const SwappingWord = ({ words }: SwappingWordProps) => {
+  // Refs
   const swappingWordRef = useRef<HTMLSpanElement>(null)
   const wordsRef = useRef<HTMLSpanElement[]>([])
+
+  // States
   const [swappingWordWidth, setSwappingWordWidth] = useState<string>()
   const [wordsAnimated, setWordsAnimated] = useState<boolean>(false)
 
-  useEffect(() => {
-    const wordWiths = [...wordsRef.current.map((e) => e?.clientWidth)]
-    setSwappingWordWidth(
-      Math.max(...wordWiths.filter((e) => e !== undefined)) + 'px'
-    )
-  }, [])
-
+  // Constants
   const animationDuration = words.length * 2
 
   useEffect(() => {
-    const swappingAnimation = [
+    const wordWidths = [...wordsRef.current.map((e) => e?.clientWidth)].filter(
+      (e) => e !== undefined
+    )
+    setSwappingWordWidth(Math.max(...wordWidths) + 'px')
+
+    const swappingAnimation: Keyframe[] = [
       {
         offset: 0,
         opacity: 0,
@@ -49,6 +51,26 @@ const SwappingWord = ({ words }: SwappingWordProps) => {
       },
     ]
 
+    const widthChanging: Keyframe[] = []
+    for (let index = 0; index < words.length; index++) {
+      widthChanging.push(
+        {
+          offset: (index * 2) / animationDuration,
+          width: wordWidths[index] + 'px',
+        },
+        {
+          offset: (index * 2) / animationDuration + 0.18,
+          width: wordWidths[index] + 'px',
+        }
+      )
+    }
+    widthChanging.push({
+      offset: 1,
+      width: wordWidths[0] + 'px',
+    })
+
+    console.log(widthChanging)
+
     // Animating each word
     if (swappingWordRef && swappingWordRef.current && wordsAnimated === false) {
       const wordsElements = Array.from(swappingWordRef.current.children)
@@ -62,6 +84,12 @@ const SwappingWord = ({ words }: SwappingWordProps) => {
         })
       }
 
+      swappingWordRef.current.animate(widthChanging, {
+        duration: animationDuration * 1000,
+        iterations: Infinity,
+        easing: 'linear',
+      })
+
       // To prevent animation glitch
       setWordsAnimated(true)
     }
@@ -72,7 +100,6 @@ const SwappingWord = ({ words }: SwappingWordProps) => {
       className={styles.swappingWord}
       style={{
         animationDuration: animationDuration + 's',
-        width: swappingWordWidth !== undefined ? swappingWordWidth : 'inherit',
       }}
       ref={swappingWordRef}
     >
