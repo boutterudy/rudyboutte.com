@@ -51,13 +51,15 @@ const SwappingWord = ({ words }: SwappingWordProps) => {
 
     const widthChanging: Keyframe[] = []
     for (let index = 0; index < words.length; index++) {
+      let calcultedDuration = (index * 2) / animationDuration
+      calcultedDuration = Number(calcultedDuration.toFixed(2))
       widthChanging.push(
         {
-          offset: (index * 2) / animationDuration,
+          offset: calcultedDuration,
           width: wordWidths[index] + 'px',
         },
         {
-          offset: (index * 2) / animationDuration + 0.18,
+          offset: calcultedDuration + 1.8 / animationDuration,
           width: wordWidths[index] + 'px',
         }
       )
@@ -66,8 +68,6 @@ const SwappingWord = ({ words }: SwappingWordProps) => {
       offset: 1,
       width: wordWidths[0] + 'px',
     })
-
-    console.log(widthChanging)
 
     // Animating each word
     if (swappingWordRef && swappingWordRef.current && wordsAnimated === false) {

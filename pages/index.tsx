@@ -108,7 +108,7 @@ const Home: NextPage = () => {
         <title>Rudy Boutte</title>
         <meta
           name="description"
-          content="Découvrez en un peu plus à mon propos."
+          content="Je m'appelle Rudy Boutte. Développeur Web polyvalent qui aime TypeScript, React, Next.js, SCSS et NestJS."
         />
       </Head>
       <Header>
