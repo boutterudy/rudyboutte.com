@@ -1,0 +1,15 @@
+.swappingWord {
+  display: inline-block;
+  position: relative;
+  width: max-content;
+
+  .word {
+    position: absolute;
+    top: -1.06em;
+    left: 0;
+    opacity: 0;
+    overflow: hidden;
+    word-wrap: normal;
+    hyphens: none;
+  }
+}

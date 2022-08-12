@@ -1,0 +1,96 @@
+.popoverWrapper {
+  position: relative;
+  width: max-content;
+
+  .popover {
+    position: relative;
+    background-color: var(--color-text);
+    border-radius: 10px;
+    color: var(--primary-color);
+    display: none;
+    padding: 10px 15px;
+    position: absolute;
+    text-align: center;
+    z-index: 999;
+    width: max-content;
+    max-width: 50vw;
+    display: block;
+    text-transform: inherit;
+
+    &::before {
+      display: block;
+      position: relative;
+      background-color: var(--color-text);
+      content: ' ';
+      display: none;
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      z-index: -1;
+    }
+
+    &.top {
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, calc(-100% - 10px));
+
+      &::before {
+        display: block;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, calc(100% - 10px)) rotate(45deg);
+      }
+    }
+
+    &.bottom {
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, calc(100% + 10px));
+
+      &::before {
+        display: block;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, calc(-100% + 10px)) rotate(45deg);
+      }
+    }
+
+    &.left {
+      top: 50%;
+      left: 0;
+      transform: translate(calc(-100% - 10px), -50%);
+
+      &::before {
+        display: block;
+        top: 50%;
+        right: 0;
+        transform: translate(calc(100% - 10px), -50%) rotate(45deg);
+      }
+    }
+
+    &.right {
+      top: 50%;
+      right: 0;
+      transform: translate(calc(100% + 10px), -50%);
+
+      &::before {
+        display: block;
+        top: 50%;
+        left: 0;
+        transform: translate(calc(-100% + 10px), -50%) rotate(45deg);
+      }
+    }
+
+    .leftIcon {
+      color: var(--primary-color);
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+
+    .rightIcon {
+      color: var(--primary-color);
+      margin-left: 10px;
+      vertical-align: middle;
+    }
+  }
+}

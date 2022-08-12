@@ -1,0 +1,90 @@
+// Mobile
+.textBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 68vh;
+  padding: 167px 0 172px;
+
+  .subtitle {
+    text-transform: uppercase;
+    font-size: 1.072rem;
+    margin-bottom: 36px;
+  }
+
+  .title {
+    font-size: 3.685rem;
+    margin-bottom: 23px;
+    white-space: pre-line;
+    font-weight: 400;
+    word-wrap: break-word;
+    max-width: 100vw;
+    hyphens: auto;
+    overflow: hidden;
+
+    span {
+      font-size: inherit;
+    }
+  }
+
+  .description {
+    font-size: 1.876rem;
+    margin-bottom: 33px;
+  }
+
+  .actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    > * {
+      width: 100%;
+      margin-bottom: 30px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      button {
+        width: 100%;
+      }
+    }
+  }
+}
+
+// Laptop
+@media (min-width: 769px) {
+  .textBlock {
+    .subtitle {
+      font-size: 1.6rem;
+    }
+
+    .title {
+      font-size: 5.5rem;
+    }
+
+    .description {
+      font-size: 2.8rem;
+    }
+
+    .actions {
+      flex-direction: row;
+
+      > * {
+        width: inherit;
+        margin-bottom: 0;
+        margin-right: 30px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        button {
+          width: inherit;
+        }
+      }
+    }
+  }
+}

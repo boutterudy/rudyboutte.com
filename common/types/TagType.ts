@@ -1,1 +1,4 @@
-export type TagType = string;
+export type TagType = {
+  title: string
+  color: string
+}

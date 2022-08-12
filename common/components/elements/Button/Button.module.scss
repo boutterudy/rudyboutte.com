@@ -1,0 +1,42 @@
+.button {
+  text-transform: uppercase;
+  border: 1px solid black;
+  border-radius: 32px;
+  padding: 12px 32px 10px;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &.small {
+    padding: 4.5px 32px;
+  }
+
+  &,
+  .leftIcon,
+  .rightIcon {
+    transition: all 0.4s;
+  }
+
+  &:hover {
+    cursor: pointer;
+    background-color: var(--color-text);
+    color: var(--color-bg);
+
+    .leftIcon {
+      color: var(--color-bg);
+    }
+
+    .rightIcon {
+      color: var(--color-bg);
+    }
+  }
+
+  .leftIcon {
+    margin-right: 10px;
+  }
+
+  .rightIcon {
+    margin-left: 10px;
+  }
+}

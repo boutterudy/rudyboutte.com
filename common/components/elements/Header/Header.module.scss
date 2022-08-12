@@ -1,0 +1,70 @@
+// Mobile
+$navbarHeight: calc(1.6rem + 33px + 33px + 5px);
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: $navbarHeight;
+  padding-top: 25px;
+  padding-bottom: 10px;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    // Screen height - navbar height - bottom actions height
+    min-height: calc(100vh - $navbarHeight - (37px + 1.5rem + 34px));
+    position: relative;
+  }
+
+  .bottomActions {
+    position: sticky;
+    left: 0;
+    bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: -0.5rem;
+
+    .copyright,
+    .arrow {
+      background-color: var(--color-bg-transparent);
+      backdrop-filter: blur(12px);
+      border-radius: 1rem;
+      padding: 0.5rem;
+    }
+
+    .copyright {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      text-transform: uppercase;
+      margin-right: -0.5rem;
+    }
+
+    .arrow {
+      align-self: center;
+      font-size: 1.5rem;
+      margin-left: -0.5rem;
+    }
+  }
+}
+
+// Laptop
+@media (min-width: 769px) {
+  .header {
+    margin-top: 0;
+
+    .bottomActions {
+      bottom: 37px;
+      padding-bottom: 37px;
+    }
+  }
+}

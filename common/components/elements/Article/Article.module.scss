@@ -1,0 +1,135 @@
+// Mobile
+.article {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+
+  .tableOfContents {
+    display: none;
+  }
+
+  .content {
+    max-width: 1050px;
+    white-space: pre-line;
+
+    .introductionWrapper {
+      display: flex;
+
+      &::before {
+        content: '';
+        display: block;
+        min-width: 3px;
+        min-height: 100%;
+        background-color: var(--color-text);
+        margin-right: 30px;
+      }
+
+      p {
+        margin-bottom: 20px;
+
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    & > * {
+      margin-bottom: 90px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .chapter {
+      h2 {
+        font-size: 3.4rem;
+        font-weight: 700;
+        margin-bottom: 40px;
+      }
+
+      h3 {
+        font-size: 2.5rem;
+        font-weight: 400;
+        margin-bottom: 12px;
+
+        &:not(:first-of-type) {
+          margin-top: 40px;
+        }
+      }
+
+      ol,
+      ul {
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        & > li {
+          margin-left: 28px;
+        }
+      }
+
+      p {
+        margin-bottom: 20px;
+
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+
+      .chapterContent + .chapterSubcontent {
+        margin-top: 40px;
+      }
+
+      .chapterSummary {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: baseline;
+        margin-top: 30px;
+
+        .summaryElement {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin: 15px 20px;
+
+          .title {
+            margin-top: 10px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Laptop
+@media (min-width: 769px) {
+  .article {
+    .tableOfContents {
+      display: block;
+      height: calc(100vh - 120px);
+      position: sticky;
+      left: 44px;
+      top: 120px;
+      min-width: 300px;
+      max-width: 300px;
+      margin-right: 112px;
+    }
+
+    .content {
+      .chapter {
+        .chapterSummary {
+          margin-top: 5px;
+
+          .summaryElement {
+            margin: 25px 75px;
+          }
+        }
+      }
+    }
+  }
+}
