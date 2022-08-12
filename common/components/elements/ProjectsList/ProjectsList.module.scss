@@ -71,18 +71,14 @@
 
         .links {
           display: flex;
-          flex-direction: row;
-          align-items: center;
+          flex-direction: column;
+          align-items: flex-start;
           margin-top: 18px;
 
           & > * {
-            margin-right: 15px;
+            margin-right: 0;
             margin-bottom: 5px;
             margin-top: 5px;
-
-            &:last-of-type {
-              margin-right: 0;
-            }
           }
         }
 
@@ -99,6 +95,30 @@
             margin-right: 6px;
             margin-bottom: 3px;
             margin-top: 3px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Tablet
+@media (min-width: 426px) {
+  .projectsList {
+    .project {
+      .infos {
+        .actions {
+          .links {
+            flex-direction: row;
+            align-items: center;
+
+            & > * {
+              margin-right: 15px;
+
+              &:last-of-type {
+                margin-right: 0;
+              }
+            }
           }
         }
       }

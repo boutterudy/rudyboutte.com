@@ -10,12 +10,12 @@
 
   .subtitle {
     text-transform: uppercase;
-    font-size: 1.6rem;
+    font-size: 1.072rem;
     margin-bottom: 36px;
   }
 
   .title {
-    font-size: 5.5rem;
+    font-size: 3.685rem;
     margin-bottom: 23px;
     white-space: pre-line;
     font-weight: 400;
@@ -29,7 +29,7 @@
   }
 
   .description {
-    font-size: 2.8rem;
+    font-size: 1.876rem;
     margin-bottom: 33px;
   }
 
@@ -56,6 +56,18 @@
 // Laptop
 @media (min-width: 769px) {
   .textBlock {
+    .subtitle {
+      font-size: 1.6rem;
+    }
+
+    .title {
+      font-size: 5.5rem;
+    }
+
+    .description {
+      font-size: 2.8rem;
+    }
+
     .actions {
       flex-direction: row;
 
