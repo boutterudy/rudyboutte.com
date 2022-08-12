@@ -1046,10 +1046,10 @@ const AboutMe: NextPage = () => {
   return (
     <PageLayout>
       <Head>
-        <title>Rudy Boutte</title>
+        <title>Rudy Boutte – À propos</title>
         <meta
           name="description"
-          content="Découvrez en un peu plus à mon propos."
+          content="Découvrez en un peu plus à propos de moi."
         />
       </Head>
       <TextHeader title={headerTitle} />

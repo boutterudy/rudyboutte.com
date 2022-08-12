@@ -10,10 +10,10 @@ const Contact: NextPage = () => {
   return (
     <PageLayout>
       <Head>
-        <title>Rudy Boutte</title>
+        <title>Rudy Boutte – Contact</title>
         <meta
           name="description"
-          content="Découvrez en un peu plus à mon propos."
+          content="Contactez-moi, je serais très heureux de collaborer avec vous."
         />
       </Head>
       <TextHeader title={headerTitle} arrow={false} />

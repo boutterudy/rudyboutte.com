@@ -187,10 +187,10 @@ const Internship: NextPage = () => {
   return (
     <PageLayout>
       <Head>
-        <title>Rudy Boutte</title>
+        <title>Rudy Boutte – Alternance (Bac +5)</title>
         <meta
           name="description"
-          content="Découvrez en un peu plus à mon propos."
+          content="Retrouvez toutes les informations relatives à mon alternance au sein de l'ENI de Nantes, pour un Bac +5 Manager de Solutions Digitales et Data."
         />
       </Head>
       <TextHeader title={headerTitle} />

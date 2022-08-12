@@ -142,10 +142,10 @@ const MyProjects: NextPage = () => {
   return (
     <PageLayout>
       <Head>
-        <title>Rudy Boutte</title>
+        <title>Rudy Boutte – Mes projets</title>
         <meta
           name="description"
-          content="Découvrez en un peu plus à mon propos."
+          content="J'adore me lancer dans de nouveaux défis. Découvrez quelques-uns de mes récents projets."
         />
       </Head>
       <TextHeader title={headerTitle} />

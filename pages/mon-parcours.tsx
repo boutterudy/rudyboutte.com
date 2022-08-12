@@ -14,7 +14,7 @@ const MyJourney: NextPage = () => {
   const headerTitle = (
     <h1>
       Découvrez en un peu plus sur mon parcours :{' '}
-      <span className="bold">mes formations</span>, et{' '}
+      <span className="bold">mes formations</span> et{' '}
       <span className="bold">mes expériences professionnelles</span>.
     </h1>
   )
@@ -410,10 +410,10 @@ const MyJourney: NextPage = () => {
   return (
     <PageLayout>
       <Head>
-        <title>Rudy Boutte</title>
+        <title>Rudy Boutte – Mon parcours</title>
         <meta
           name="description"
-          content="Découvrez en un peu plus à mon propos."
+          content="Découvrez en un peu plus sur mon parcours : mes formations et mes expériences professionnelles."
         />
       </Head>
       <TextHeader title={headerTitle} />
