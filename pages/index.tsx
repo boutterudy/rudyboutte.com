@@ -63,7 +63,7 @@ const Home: NextPage = () => {
       title: 'Bébé Twitter',
       description:
         'Reproduction simplifiée du célèbre réseau social Twitter, avec du contenu généré à partir de plusieurs APIs publiques, développé dans le cadre du défi "30 jours de React".',
-      demo: 'https://rest-countries-api-lac.vercel.app/',
+      demo: 'https://30-days-of-react-two.vercel.app/solutions/day-28',
       github:
         'https://github.com/boutterudy/30-Days-Of-React/tree/exercice-solutions',
       tags: [

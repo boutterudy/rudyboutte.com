@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Button from '../Button/Button'
 import Icon from '../Icon/Icon'
+import SwappingWord from '../SwappingWord/SwappingWord'
 import TextBlock from '../TextBlock/TextBlock'
 
 const Presentation = () => {
@@ -31,7 +32,12 @@ const Presentation = () => {
       <br />
       <span className="bold">Développeur Web polyvalent,</span>
       <br />
-      qui aime <span className="bold">React</span>
+      qui aime{' '}
+      <span className="bold">
+        <SwappingWord
+          words={['TypeScript', 'React', 'Next.js', 'SCSS', 'NestJS']}
+        />
+      </span>
     </h1>
   )
 

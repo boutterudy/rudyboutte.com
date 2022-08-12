@@ -13,13 +13,26 @@ import ProjectPreviewPerfimaas from '../public/images/projects/Perfimaas.png'
 import ProjectPreviewMyToolbox from '../public/images/projects/My-Toolbox.png'
 import ProjectPreviewPortfolio from '../public/images/projects/Portfolio.png'
 import { Colors } from '../common/constants/colors'
+import SwappingWord from '../common/components/elements/SwappingWord/SwappingWord'
 
 const MyProjects: NextPage = () => {
   const headerTitle = (
     <h1>
       Découvrez quelques-uns de mes{' '}
       <span className="bold">récents projets</span> avec{' '}
-      <span className="bold">React</span>.
+      <span className="bold">
+        <SwappingWord
+          words={[
+            'TypeScript.',
+            'React.',
+            'Next.js.',
+            'SCSS.',
+            'NestJS.',
+            'JavaScript.',
+            'CSS.',
+          ]}
+        />
+      </span>
     </h1>
   )
 
