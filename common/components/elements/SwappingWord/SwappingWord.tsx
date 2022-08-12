@@ -11,7 +11,6 @@ const SwappingWord = ({ words }: SwappingWordProps) => {
   const wordsRef = useRef<HTMLSpanElement[]>([])
 
   // States
-  const [swappingWordWidth, setSwappingWordWidth] = useState<string>()
   const [wordsAnimated, setWordsAnimated] = useState<boolean>(false)
 
   // Constants
@@ -21,7 +20,6 @@ const SwappingWord = ({ words }: SwappingWordProps) => {
     const wordWidths = [...wordsRef.current.map((e) => e?.clientWidth)].filter(
       (e) => e !== undefined
     )
-    setSwappingWordWidth(Math.max(...wordWidths) + 'px')
 
     const swappingAnimation: Keyframe[] = [
       {
@@ -93,7 +91,7 @@ const SwappingWord = ({ words }: SwappingWordProps) => {
       // To prevent animation glitch
       setWordsAnimated(true)
     }
-  }, [animationDuration, wordsAnimated])
+  }, [animationDuration, words.length, wordsAnimated])
 
   return (
     <span
