@@ -38,7 +38,7 @@
       </ul>
     </li>
     <li>
-      <a href="#getting-started">👨‍💻 Getting Started</a>
+      <a href="#-getting-started">👨‍💻 Getting Started</a>
       <ul>
         <li><a href="#installation">Installation</a></li>
       </ul>
@@ -119,7 +119,7 @@ Feel free to contact me about any questions you may have:
 [license-url]: https://github.com/boutterudy/rudyboutte.com/blob/master/LICENSE.md
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/rudyboutte
-[product-screenshot]: public/images/projects/portfolio.png
+[product-screenshot]: ./public/images/projects/Portfolio.png
 [next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [next-version]: https://img.shields.io/badge/next.js-v12.1.6-blue?style=for-the-badge
 [next-url]: https://nextjs.org/
