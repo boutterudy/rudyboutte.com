@@ -35,7 +35,7 @@ const Home: NextPage = () => {
       preview: (
         <Image src={ProjectPreviewPortfolio} alt="Screenshot of my portfolio" />
       ),
-      date: new Date(),
+      date: new Date(2022, 6),
       icon: <Icon lib="remix-icon" icon="globe-line" />,
     },
     {
