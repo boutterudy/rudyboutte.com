@@ -16,7 +16,12 @@ const WorkExperience = ({ workExperience }: WorkExperienceProps) => {
   const end = workExperience.end
   return (
     <div className={styles.workExperience}>
-      <div className={styles.introduction}>
+      <div
+        className={
+          styles.introduction +
+          (!workExperience.tasks ? ' ' + styles.noTasks : '')
+        }
+      >
         <div className={styles.logoWrapper}>
           <Image
             className={styles.logo}
@@ -35,9 +40,11 @@ const WorkExperience = ({ workExperience }: WorkExperienceProps) => {
               (begin.getMonth() !== end.getMonth() ||
               begin.getFullYear() !== end.getFullYear()
                 ? ' à ' +
-                  capitalizeFirstLetter(getMonthName(end)) +
-                  ' ' +
-                  end.getFullYear()
+                  (new Date().toDateString() !== end.toDateString()
+                    ? capitalizeFirstLetter(
+                        getMonthName(end) + ' ' + end.getFullYear()
+                      )
+                    : "aujourd'hui")
                 : '') +
               ' (' +
               getDifferenceBetweenDates(begin, end) +
@@ -55,21 +62,25 @@ const WorkExperience = ({ workExperience }: WorkExperienceProps) => {
           <p className={styles.description}>{workExperience.description}</p>
         </div>
       </div>
-      <div className={styles.tasksContainer}>
-        <p className={styles.title}>Missions réalisées :</p>
-        <ul className={styles.tasks}>
-          {workExperience.tasks.map((task, index) => {
-            const skills =
-              task.skills.length > 0 ? '(' + task.skills.join(' / ') + ')' : ''
-            return (
-              <li key={index}>
-                {task.description}{' '}
-                <span className={styles.skills}>{skills}</span>
-              </li>
-            )
-          })}
-        </ul>
-      </div>
+      {workExperience.tasks && (
+        <div className={styles.tasksContainer}>
+          <p className={styles.title}>Missions réalisées :</p>
+          <ul className={styles.tasks}>
+            {workExperience.tasks.map((task, index) => {
+              const skills =
+                task.skills.length > 0
+                  ? '(' + task.skills.join(' / ') + ')'
+                  : ''
+              return (
+                <li key={index}>
+                  {task.description}{' '}
+                  <span className={styles.skills}>{skills}</span>
+                </li>
+              )
+            })}
+          </ul>
+        </div>
+      )}
     </div>
   )
 }

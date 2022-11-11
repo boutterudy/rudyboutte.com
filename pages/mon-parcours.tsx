@@ -22,6 +22,14 @@ const MyJourney: NextPage = () => {
   // Define all of my work experiences
   const workExperiences: WorkExperienceType[] = [
     {
+      logo: '/images/companies/gens-de-confiance-logo.png',
+      company: 'Gens de Confiance',
+      begin: new Date(2022, 10, 2),
+      end: new Date(),
+      occupation: 'Développeur front-end',
+      description: "Développement d'une application web (Front).",
+    },
+    {
       logo: '/images/companies/sowlver-logo.png',
       company: 'Sowlver',
       begin: new Date(2022, 4),

@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import Icon from '../Icon/Icon'
-import LanguageSwitcher from '../LanguageSwitcher/LanguageSwitcher'
 import styles from './Navbar.module.scss'
 
 const Navbar = () => {
@@ -37,12 +36,10 @@ const Navbar = () => {
             <a>RUDY BOUTTE</a>
           </Link>
           <span className={styles.info}>
-            <Link href="/alternance">
-              <a>
-                disponible dès{' '}
-                <span className={styles.important}>
-                  aujourd&apos;hui en alternance
-                </span>
+            Développeur Front chez{' '}
+            <Link href="https://gensdeconfiance.com/">
+              <a target="_blank">
+                <span className={styles.important}>Gens de Confiance</span>
               </a>
             </Link>
           </span>
