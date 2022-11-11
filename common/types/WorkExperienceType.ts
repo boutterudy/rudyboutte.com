@@ -1,10 +1,10 @@
-import { WorkExperienceTaskType } from './WorkExperienceTaskType';
+import { WorkExperienceTaskType } from './WorkExperienceTaskType'
 export type WorkExperienceType = {
-  logo: string;
-  company: string;
-  begin: Date;
-  end: Date;
-  occupation: string;
-  description: string;
-  tasks: WorkExperienceTaskType[];
-};
+  logo: string
+  company: string
+  begin: Date
+  end: Date
+  occupation: string
+  description: string
+  tasks?: WorkExperienceTaskType[]
+}
