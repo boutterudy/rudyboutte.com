@@ -8,6 +8,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import Icon from '../common/components/elements/Icon/Icon'
 import { CSSProperties } from 'react'
+import { getAgeFromBirthdate } from '../common/utils/DateUtil'
 
 const AboutMe: NextPage = () => {
   const headerTitle = (
@@ -20,7 +21,7 @@ const AboutMe: NextPage = () => {
   const articleIntroduction = (
     <div>
       <p>
-        Arrivant à terme du{' '}
+        Après un{' '}
         <Link href="https://www.eni-ecole.fr/formations/developpement/niveau-6-bac4-concepteur-developpeur-dapplications/">
           <a target="_blank">Bac +4 Concepteur Développeur d’Applications</a>
         </Link>{' '}
@@ -30,15 +31,19 @@ const AboutMe: NextPage = () => {
             <a target="_blank">l&apos;ENI</a>
           </Link>
         </span>
-        , je suis désormais en recherche d’une alternance pour débuter un{' '}
-        <Link href="https://www.eni-ecole.fr/formations/developpement/niveau-7-bac5-manager-de-solutions-digitales-et-data/">
-          <a target="_blank">Bac +5 Manager de Solutions Digitales et Data</a>
-        </Link>
-        , dans cette même école, au rythme d&apos;
+        , je suis désormais en alternance chez{' '}
         <span className="bold">
-          1 semaine de cours pour 3 semaines en entreprise
-        </span>
-        .
+          <Link href="https://gensdeconfiance.com/">
+            <a target="_blank">Gens de Confiance</a>
+          </Link>
+        </span>{' '}
+        et j&apos;étudie pour obtenir un{' '}
+        <span className="bold">
+          <Link href="https://www.eni-ecole.fr/formations/developpement/niveau-7-bac5-manager-de-solutions-digitales-et-data/">
+            <a target="_blank">Bac +5 Manager de Solutions Digitales et Data</a>
+          </Link>
+        </span>{' '}
+        dans cette même école.
       </p>
       <p>
         Curieux, persévérant et autonome, j&apos;aime notamment découvrir et
@@ -473,7 +478,7 @@ const AboutMe: NextPage = () => {
           content: (
             <div>
               <p>
-                J’ai actuellement pour projet d’intégrer le{' '}
+                J’ai actuellement pour projet d&apos;obtenir un{' '}
                 <span className="bold">
                   <Link href="https://www.eni-ecole.fr/formations/developpement/niveau-7-bac5-manager-de-solutions-digitales-et-data/">
                     <a target="_blank">
@@ -487,10 +492,9 @@ const AboutMe: NextPage = () => {
                     <a target="_blank">l&apos;ENI</a>
                   </Link>
                 </span>
-                . Ayant été accepté par l&apos;école, je suis désormais en
-                recherche active d’une entreprise pour avant tout la durée de
-                l&apos;alternance, puis, à terme, collaborer et y{' '}
-                <span className="bold">évoluer sur le long terme</span>.
+                . Ayant été accepté par l&apos;école et intégré à l&apos;équipe
+                de Gens de Confiance, je me focalise désormais sur ma
+                progression technique et l&apos;obtention de mon diplôme.
               </p>
               <p>
                 Concernant mes projets personnels, je travaille actuellement sur
@@ -535,21 +539,6 @@ const AboutMe: NextPage = () => {
                 />
               ),
               link: 'https://www.eni-ecole.fr/formations/developpement/niveau-7-bac5-manager-de-solutions-digitales-et-data/',
-            },
-            {
-              title: 'Alternance',
-              illustration: (
-                <Icon
-                  lib="remix-icon"
-                  icon="briefcase-5-line"
-                  style={{
-                    color: 'var(--accent-color-3)',
-                    ...chaptersSummaryIconsStyle,
-                  }}
-                  className="desatured"
-                />
-              ),
-              link: './alternance',
             },
             {
               title: 'Développement avec React',
@@ -682,13 +671,6 @@ const AboutMe: NextPage = () => {
             sein d’une entreprise, via{' '}
             <span className="bold">l’alternance</span>, pour y évoluer sur le
             long terme.
-          </p>
-          <p>
-            Pour plus d&apos;informations sur l&apos;alternance, se référer à{' '}
-            <Link href="/alternance">
-              <a>cette page</a>
-            </Link>
-            .
           </p>
         </div>
       ),
@@ -853,9 +835,12 @@ const AboutMe: NextPage = () => {
           anglais, faire du <span className="bold">théâtre</span>, développer
           mes connaissances autour du <span className="bold">cinéma</span>,
           regarder des <span className="bold">documentaires</span>, faire du{' '}
-          <span className="bold">bénévolat</span> (FASM), développer des projets
-          personnels et <span className="bold">voyager</span> lorsque j’en ai
-          l’opportunité.
+          <span className="bold">bénévolat</span> (
+          <Link href="https://www.fasm85.fr/">
+            <a target="_blank">FASM</a>
+          </Link>
+          ), développer des projets personnels et{' '}
+          <span className="bold">voyager</span> lorsque j’en ai l’opportunité.
         </p>
       ),
       summary: [
@@ -976,17 +961,17 @@ const AboutMe: NextPage = () => {
       title: 'Situation personnelle',
       content: (
         <p>
-          Habitant actuellement en <span className="bold">Vendée</span>, je
-          souhaite déménager à <span className="bold">Nantes</span> pour être au
-          plus proche de l’entreprise qui m&apos;accueillera en alternance. J’ai
-          21 ans, je possède le{' '}
+          Originaire de la <span className="bold">Vendée</span>, j&apos;ai
+          déménagé à <span className="bold">Nantes</span> pour être au plus
+          proche de l&apos;entreprise qui m&apos;accueille en alternance. J’ai{' '}
+          {getAgeFromBirthdate(new Date(2000, 9, 14))} ans, je possède le{' '}
           <span className="bold">permis B et une voiture</span>, je suis donc
           pleinement libre de mes déplacements.
         </p>
       ),
       summary: [
         {
-          title: 'Habite en Vendée, bientôt à Nantes',
+          title: 'Originaire de la Vendée, habite à Nantes',
           illustration: (
             <Icon
               lib="remix-icon"
@@ -1028,18 +1013,6 @@ const AboutMe: NextPage = () => {
           ),
         },
       ],
-    },
-    {
-      title: "Informations sur l'alternance",
-      content: (
-        <p>
-          Pour plus d&apos;informations sur l&apos;alternance, se référer à{' '}
-          <Link href="/alternance">
-            <a>cette page</a>
-          </Link>
-          .
-        </p>
-      ),
     },
   ]
 

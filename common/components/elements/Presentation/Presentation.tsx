@@ -45,7 +45,7 @@ const Presentation = () => {
     <TextBlock
       subtitle="Enchanté"
       title={title}
-      description="Déménage à Nantes pour mes études"
+      description="A rejoint Gens de Confiance en novembre 2022."
       actions={actions}
     />
   )

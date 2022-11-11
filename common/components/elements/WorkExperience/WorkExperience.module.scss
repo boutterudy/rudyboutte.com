@@ -21,6 +21,11 @@
     border-bottom: 1px solid var(--color-border);
     padding-bottom: 26px;
 
+    &.noTasks {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
     .logoWrapper {
       display: flex;
       align-items: center;
