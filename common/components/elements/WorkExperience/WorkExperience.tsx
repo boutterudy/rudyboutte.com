@@ -40,9 +40,11 @@ const WorkExperience = ({ workExperience }: WorkExperienceProps) => {
               (begin.getMonth() !== end.getMonth() ||
               begin.getFullYear() !== end.getFullYear()
                 ? ' à ' +
-                  capitalizeFirstLetter(getMonthName(end)) +
-                  ' ' +
-                  end.getFullYear()
+                  (new Date().toDateString() !== end.toDateString()
+                    ? capitalizeFirstLetter(
+                        getMonthName(end) + ' ' + end.getFullYear()
+                      )
+                    : "aujourd'hui")
                 : '') +
               ' (' +
               getDifferenceBetweenDates(begin, end) +

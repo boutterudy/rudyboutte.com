@@ -21,7 +21,7 @@ const getDifferenceBetweenDates = (d1: Date, d2: Date) => {
 
   // If in days
   if (diffInMs >= dayInMs) {
-    const diffInDays = diffInMs / dayInMs
+    const diffInDays = Math.round(diffInMs / dayInMs)
     return diffInDays + ' jour' + (diffInDays > 1 ? 's' : '')
   }
 
