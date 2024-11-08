@@ -20,7 +20,7 @@ const stringToId = (s: string) => {
       .replace(/^[^a-z]+|[^\w:.-]+/gi, '')
       .replace(/^-+|-+$/g, '')
       .toLowerCase()
-  )
+  );
 }
 
 export { capitalizeFirstLetter, removeAccents, stringToId }

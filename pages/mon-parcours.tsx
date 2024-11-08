@@ -10,6 +10,18 @@ import { WorkExperiencesNumberPerYearType } from '../common/types/WorkExperience
 import { WorkExperienceType } from '../common/types/WorkExperienceType'
 import styles from '../styles/pages/MyJourney.module.scss'
 
+const aterisLogo = {
+  src: '/images/companies/ateris-informatique-logo.png',
+  width: 100,
+  height: 63.55,
+}
+
+const apinetLogo = {
+  src: '/images/companies/apinet-logo.png',
+  width: 100,
+  height: 98.05,
+}
+
 const MyJourney: NextPage = () => {
   const headerTitle = (
     <h1>
@@ -22,7 +34,11 @@ const MyJourney: NextPage = () => {
   // Define all of my work experiences
   const workExperiences: WorkExperienceType[] = [
     {
-      logo: '/images/companies/gens-de-confiance-logo.png',
+      logo: {
+        src: '/images/companies/gens-de-confiance-logo.png',
+        width: 100,
+        height: 48.83,
+      },
       company: 'Gens de Confiance',
       begin: new Date(2022, 10, 2),
       end: new Date(),
@@ -30,7 +46,11 @@ const MyJourney: NextPage = () => {
       description: "Développement d'une application web (Front).",
     },
     {
-      logo: '/images/companies/sowlver-logo.png',
+      logo: {
+        src: '/images/companies/sowlver-logo.png',
+        width: 100,
+        height: 77.73,
+      },
       company: 'Sowlver',
       begin: new Date(2022, 4),
       end: new Date(2022, 5, 30),
@@ -54,7 +74,7 @@ const MyJourney: NextPage = () => {
       ],
     },
     {
-      logo: '/images/companies/ateris-informatique-logo.png',
+      logo: aterisLogo,
       company: 'Ateris Informatique',
       begin: new Date(2020, 7),
       end: new Date(2021, 4, 31),
@@ -106,7 +126,7 @@ const MyJourney: NextPage = () => {
       ],
     },
     {
-      logo: '/images/companies/apinet-logo.png',
+      logo: apinetLogo,
       company: 'Apinet',
       begin: new Date(2020, 6, 1),
       end: new Date(2020, 6, 31),
@@ -120,7 +140,7 @@ const MyJourney: NextPage = () => {
       ],
     },
     {
-      logo: '/images/companies/apinet-logo.png',
+      logo: apinetLogo,
       company: 'Apinet',
       begin: new Date(2020, 0),
       end: new Date(2020, 1),
@@ -141,7 +161,7 @@ const MyJourney: NextPage = () => {
       ],
     },
     {
-      logo: '/images/companies/apinet-logo.png',
+      logo: apinetLogo,
       company: 'Apinet',
       begin: new Date(2019, 6),
       end: new Date(2019, 7, 30),
@@ -155,7 +175,7 @@ const MyJourney: NextPage = () => {
       ],
     },
     {
-      logo: '/images/companies/ateris-informatique-logo.png',
+      logo: aterisLogo,
       company: 'Ateris Informatique',
       begin: new Date(2019, 4),
       end: new Date(2019, 5, 30),
@@ -176,7 +196,7 @@ const MyJourney: NextPage = () => {
       ],
     },
     {
-      logo: '/images/companies/ateris-informatique-logo.png',
+      logo: aterisLogo,
       company: 'Ateris Informatique',
       begin: new Date(2017, 9),
       end: new Date(2017, 10, 30),
@@ -197,7 +217,7 @@ const MyJourney: NextPage = () => {
       ],
     },
     {
-      logo: '/images/companies/ateris-informatique-logo.png',
+      logo: aterisLogo,
       company: 'Ateris Informatique',
       begin: new Date(2017, 1),
       end: new Date(2017, 1, 28),
@@ -212,7 +232,11 @@ const MyJourney: NextPage = () => {
       ],
     },
     {
-      logo: '/images/companies/altea-informatique-logo.png',
+      logo: {
+        src: '/images/companies/altea-informatique-logo.png',
+        width: 100,
+        height: 96.48,
+      },
       company: 'Altéa Informatique',
       begin: new Date(2016, 5),
       end: new Date(2016, 5, 30),
@@ -230,7 +254,11 @@ const MyJourney: NextPage = () => {
       ],
     },
     {
-      logo: '/images/companies/pc-pro-tech-logo.png',
+      logo: {
+        src: '/images/companies/pc-pro-tech-logo.png',
+        width: 100,
+        height: 45.31,
+      },
       company: 'PC PRO&TECH',
       begin: new Date(2016, 0),
       end: new Date(2016, 0, 30),
@@ -291,7 +319,11 @@ const MyJourney: NextPage = () => {
   // Define all of my degrees
   const degrees: DegreeType[] = [
     {
-      logo: '/images/schools/ENI-logo.png',
+      logo: {
+        src: '/images/schools/ENI-logo.png',
+        width: 100,
+        height: 100,
+      },
       level: 6,
       title: "Bac +4 Concepteur Développeur d'Applications",
       school: {
@@ -341,7 +373,11 @@ const MyJourney: NextPage = () => {
       ],
     },
     {
-      logo: '/images/schools/ESUPEC-logo.png',
+      logo: {
+        src: '/images/schools/ESUPEC-logo.png',
+        width: 100,
+        height: 70.18,
+      },
       level: 5,
       title: 'Bac +2 BTS SIO option SLAM',
       school: {
@@ -379,7 +415,11 @@ const MyJourney: NextPage = () => {
       ],
     },
     {
-      logo: '/images/schools/jean-monnet-logo.png',
+      logo: {
+        src: '/images/schools/jean-monnet-logo.png',
+        width: 100,
+        height: 28.52,
+      },
       level: 4,
       title: 'Bac. Pro. SEN - mention très bien',
       school: {

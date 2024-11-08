@@ -20,16 +20,14 @@ const ProjectsList = ({ projects }: ProjectsListProps) => {
         <div key={index} className={styles.project}>
           <Link
             href={project.demo !== undefined ? project.demo : project.github!}
+            target="_blank"
           >
-            <a target="_blank">
-              <div className={styles.previewWrapper}>
-                {cloneElement(project.preview as ReactElement, {
-                  className: styles.preview,
-                  layout: 'fill',
-                  objectFit: 'cover',
-                })}
-              </div>
-            </a>
+            <div className={styles.previewWrapper}>
+              {cloneElement(project.preview as ReactElement, {
+                className: styles.preview,
+                objectFit: 'cover',
+              })}
+            </div>
           </Link>
           <div className={styles.details}>
             {cloneElement(project.icon as ReactElement, {
@@ -46,33 +44,33 @@ const ProjectsList = ({ projects }: ProjectsListProps) => {
               <div className={styles.actions}>
                 <div className={styles.links}>
                   {project.demo !== undefined && (
-                    <Link href={project.demo}>
-                      <a target="_blank" className="noAnimation">
-                        <Button
-                          className={styles.demoButton}
-                          theme="small"
-                          leftIcon={
-                            <Icon lib="remix-icon" icon="window-fill" />
-                          }
-                        >
-                          Démo
-                        </Button>
-                      </a>
+                    <Link
+                      href={project.demo}
+                      target="_blank"
+                      className="noAnimation"
+                    >
+                      <Button
+                        className={styles.demoButton}
+                        theme="small"
+                        leftIcon={<Icon lib="remix-icon" icon="window-fill" />}
+                      >
+                        Démo
+                      </Button>
                     </Link>
                   )}
                   {project.github !== undefined && (
-                    <Link href={project.github}>
-                      <a target="_blank" className="noAnimation">
-                        <Button
-                          className={styles.githubButton}
-                          theme="small"
-                          leftIcon={
-                            <Icon lib="remix-icon" icon="github-fill" />
-                          }
-                        >
-                          GitHub
-                        </Button>
-                      </a>
+                    <Link
+                      href={project.github}
+                      target="_blank"
+                      className="noAnimation"
+                    >
+                      <Button
+                        className={styles.githubButton}
+                        theme="small"
+                        leftIcon={<Icon lib="remix-icon" icon="github-fill" />}
+                      >
+                        GitHub
+                      </Button>
                     </Link>
                   )}
                 </div>

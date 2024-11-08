@@ -54,18 +54,18 @@ const Footer = () => {
   ]
 
   return (
-    <footer className={styles.footer}>
+    (<footer className={styles.footer}>
       <ul className={styles.links}>
         {links.map((link, index) => (
           <li className={styles.link} key={index}>
-            <Link href={link.href}>
-              <a
-                target={link.target !== undefined ? link.target : ''}
-                className="underline"
-              >
-                {link.icon}
-                {link.title}
-              </a>
+            <Link
+              href={link.href}
+              target={link.target !== undefined ? link.target : ''}
+              className="underline">
+
+              {link.icon}
+              {link.title}
+
             </Link>
           </li>
         ))}
@@ -98,14 +98,17 @@ const Footer = () => {
       <p className={styles.copyright}>
         © 2021-{new Date().getFullYear()} Tous droits réservés, made with &#60;3
         by{' '}
-        <Link href="https://github.com/boutterudy">
-          <a target="_blank" className="underline">
+        <Link
+          href="https://github.com/boutterudy"
+          target="_blank"
+          className="underline">
+          
             Rudy
-          </a>
+          
         </Link>
       </p>
-    </footer>
-  )
+    </footer>)
+  );
 }
 
 export default Footer

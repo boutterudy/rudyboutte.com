@@ -19,10 +19,12 @@ const Article = ({ introduction, content }: ArticleProps) => {
           {element.illustration}
           <p className={styles.title}>
             {element.link !== undefined ? (
-              <Link href={element.link}>
-                <a target={element.link.startsWith('./') ? '_self' : '_blank'}>
-                  {element.title}
-                </a>
+              <Link
+                href={element.link}
+                target={element.link.startsWith('./') ? '_self' : '_blank'}>
+
+                {element.title}
+
               </Link>
             ) : (
               element.title

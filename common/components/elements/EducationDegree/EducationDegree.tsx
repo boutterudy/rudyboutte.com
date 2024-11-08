@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from 'next/legacy/image'
 import { DegreeType } from '../../../types/DegreeType'
 import { getMonthName } from '../../../utils/DateUtil'
 import { capitalizeFirstLetter } from '../../../utils/StringUtil'
@@ -17,11 +17,10 @@ const EducationDegree = ({ degree }: EducationDegreeProps) => {
         <div className={styles.logoWrapper}>
           <Image
             className={styles.logo}
-            src={degree.logo}
-            alt={degree.school + ' logo'}
-            width="100%"
-            height="100%"
-            objectFit="contain"
+            src={degree.logo.src}
+            alt={`${degree.school} logo`}
+            width={degree.logo.width}
+            height={degree.logo.height}
           />
         </div>
         <div className={styles.informations}>

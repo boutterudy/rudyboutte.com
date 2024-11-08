@@ -5,7 +5,7 @@ import PageLayout from '../common/components/layouts/PageLayout/PageLayout'
 import TextHeader from '../common/components/elements/TextHeader/TextHeader'
 import Article from '../common/components/elements/Article/Article'
 import Link from 'next/link'
-import Image from 'next/image'
+import Image from "next/legacy/image"
 import Icon from '../common/components/elements/Icon/Icon'
 import { CSSProperties } from 'react'
 import { getAgeFromBirthdate } from '../common/utils/DateUtil'
@@ -22,25 +22,29 @@ const AboutMe: NextPage = () => {
     <div>
       <p>
         Après un{' '}
-        <Link href="https://www.eni-ecole.fr/formations/developpement/niveau-6-bac4-concepteur-developpeur-dapplications/">
-          <a target="_blank">Bac +4 Concepteur Développeur d’Applications</a>
+        <Link
+          href="https://www.eni-ecole.fr/formations/developpement/niveau-6-bac4-concepteur-developpeur-dapplications/"
+          target="_blank">
+          Bac +4 Concepteur Développeur d’Applications
         </Link>{' '}
         au sein de{' '}
         <span className="bold">
-          <Link href="https://www.eni-ecole.fr/">
-            <a target="_blank">l&apos;ENI</a>
+          <Link href="https://www.eni-ecole.fr/" target="_blank">
+            l&apos;ENI
           </Link>
         </span>
         , je suis désormais en alternance chez{' '}
         <span className="bold">
-          <Link href="https://gensdeconfiance.com/">
-            <a target="_blank">Gens de Confiance</a>
+          <Link href="https://gensdeconfiance.com/" target="_blank">
+            Gens de Confiance
           </Link>
         </span>{' '}
         et j&apos;étudie pour obtenir un{' '}
         <span className="bold">
-          <Link href="https://www.eni-ecole.fr/formations/developpement/niveau-7-bac5-manager-de-solutions-digitales-et-data/">
-            <a target="_blank">Bac +5 Manager de Solutions Digitales et Data</a>
+          <Link
+            href="https://www.eni-ecole.fr/formations/developpement/niveau-7-bac5-manager-de-solutions-digitales-et-data/"
+            target="_blank">
+            Bac +5 Manager de Solutions Digitales et Data
           </Link>
         </span>{' '}
         dans cette même école.
@@ -93,7 +97,10 @@ const AboutMe: NextPage = () => {
               alt="Garry's mod logo"
               quality={100}
               className="desatured"
-            />
+              style={{
+                maxWidth: "100%",
+                height: "auto"
+              }} />
           ),
         },
         {
@@ -106,7 +113,10 @@ const AboutMe: NextPage = () => {
               alt="Lua logo"
               quality={100}
               className="desatured"
-            />
+              style={{
+                maxWidth: "100%",
+                height: "auto"
+              }} />
           ),
         },
         {
@@ -160,16 +170,16 @@ const AboutMe: NextPage = () => {
                 <li>
                   <span className="bold">
                     API de{' '}
-                    <Link href="https://github.com/boutterudy/Perfimaas">
-                      <a target="_blank">Perfimaas</a>
+                    <Link href="https://github.com/boutterudy/Perfimaas" target="_blank">
+                      Perfimaas
                     </Link>
                   </span>{' '}
                   : assistant de gestion des finances personnelles
                 </li>
                 <li>
                   <span className="bold">
-                    <Link href="https://github.com/boutterudy/nestjs-todo-app">
-                      <a target="_blank">Todo App</a>
+                    <Link href="https://github.com/boutterudy/nestjs-todo-app" target="_blank">
+                      Todo App
                     </Link>
                   </span>{' '}
                   : API permettant de{' '}
@@ -189,7 +199,10 @@ const AboutMe: NextPage = () => {
                   alt="TypeScript logo"
                   quality={100}
                   className="desatured"
-                />
+                  style={{
+                    maxWidth: "100%",
+                    height: "auto"
+                  }} />
               ),
             },
             {
@@ -202,7 +215,10 @@ const AboutMe: NextPage = () => {
                   alt="NestJS logo"
                   quality={100}
                   className="desatured"
-                />
+                  style={{
+                    maxWidth: "100%",
+                    height: "auto"
+                  }} />
               ),
             },
           ],
@@ -224,16 +240,18 @@ const AboutMe: NextPage = () => {
               <ol>
                 <li>
                   <span className="bold">
-                    <Link href="https://github.com/boutterudy/strongPasswordGenerator">
-                      <a target="_blank">Strong Password Generator</a>
+                    <Link
+                      href="https://github.com/boutterudy/strongPasswordGenerator"
+                      target="_blank">
+                      Strong Password Generator
                     </Link>
                   </span>{' '}
                   : générateur de mots de passe sécurisés
                 </li>
                 <li>
                   <span className="bold">
-                    <Link href="https://github.com/boutterudy/mytoolbox">
-                      <a target="_blank">My Toolbox</a>
+                    <Link href="https://github.com/boutterudy/mytoolbox" target="_blank">
+                      My Toolbox
                     </Link>
                   </span>{' '}
                   : regroupement d’outils simples avec des fonctionnalités
@@ -248,23 +266,27 @@ const AboutMe: NextPage = () => {
                 et Next.js, pour en <span className="bold">février 2022</span>{' '}
                 me lancer simultanément dans le défi “
                 <span className="bold">
-                  <Link href="https://github.com/boutterudy/30-Days-Of-React/tree/exercice-solutions">
-                    <a target="_blank">30 jours de React</a>
+                  <Link
+                    href="https://github.com/boutterudy/30-Days-Of-React/tree/exercice-solutions"
+                    target="_blank">
+                    30 jours de React
                   </Link>
                 </span>
                 ”, permettant d’acquérir les{' '}
                 <span className="bold">fondamentaux de React</span>, et le
                 développement de{' '}
                 <span className="bold">
-                  <Link href="https://github.com/boutterudy/REST-Countries-API">
-                    <a target="_blank">ma propre solution</a>
+                  <Link href="https://github.com/boutterudy/REST-Countries-API" target="_blank">
+                    ma propre solution
                   </Link>
                 </span>{' '}
                 au challenge “
-                <Link href="https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca">
-                  <a target="_blank">
+                <Link
+                  href="https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca"
+                  target="_blank">
+                  
                     API REST des pays avec sélecteur de thème
-                  </a>
+                  
                 </Link>
                 ”, visant à créer une application Web listant tous les pays avec
                 en plus une gestion des thèmes clair (light) et sombre (dark),
@@ -284,7 +306,10 @@ const AboutMe: NextPage = () => {
                   alt="TypeScript logo"
                   quality={100}
                   className="desatured"
-                />
+                  style={{
+                    maxWidth: "100%",
+                    height: "auto"
+                  }} />
               ),
             },
             {
@@ -297,7 +322,10 @@ const AboutMe: NextPage = () => {
                   alt="React logo"
                   quality={100}
                   className="desatured"
-                />
+                  style={{
+                    maxWidth: "100%",
+                    height: "auto"
+                  }} />
               ),
             },
             {
@@ -310,7 +338,10 @@ const AboutMe: NextPage = () => {
                   alt="Next.js logo"
                   quality={100}
                   className="desatured"
-                />
+                  style={{
+                    maxWidth: "100%",
+                    height: "auto"
+                  }} />
               ),
             },
           ],
@@ -323,8 +354,10 @@ const AboutMe: NextPage = () => {
                 Durant mon{' '}
                 <span className="bold">
                   stage de{' '}
-                  <Link href="https://www.eni-ecole.fr/formations/developpement/niveau-6-bac4-concepteur-developpeur-dapplications/">
-                    <a target="_blank">Bac +4</a>
+                  <Link
+                    href="https://www.eni-ecole.fr/formations/developpement/niveau-6-bac4-concepteur-developpeur-dapplications/"
+                    target="_blank">
+                    Bac +4
                   </Link>{' '}
                   (2 mois)
                 </span>{' '}
@@ -385,7 +418,10 @@ const AboutMe: NextPage = () => {
                   alt="TypeScript logo"
                   quality={100}
                   className="desatured"
-                />
+                  style={{
+                    maxWidth: "100%",
+                    height: "auto"
+                  }} />
               ),
             },
             {
@@ -398,7 +434,10 @@ const AboutMe: NextPage = () => {
                   alt="NestJS logo"
                   quality={100}
                   className="desatured"
-                />
+                  style={{
+                    maxWidth: "100%",
+                    height: "auto"
+                  }} />
               ),
             },
             {
@@ -411,7 +450,10 @@ const AboutMe: NextPage = () => {
                   alt="React logo"
                   quality={100}
                   className="desatured"
-                />
+                  style={{
+                    maxWidth: "100%",
+                    height: "auto"
+                  }} />
               ),
             },
             {
@@ -424,7 +466,10 @@ const AboutMe: NextPage = () => {
                   alt="Next.js logo"
                   quality={100}
                   className="desatured"
-                />
+                  style={{
+                    maxWidth: "100%",
+                    height: "auto"
+                  }} />
               ),
             },
             {
@@ -437,7 +482,10 @@ const AboutMe: NextPage = () => {
                   alt="Sass logo"
                   quality={100}
                   className="desatured"
-                />
+                  style={{
+                    maxWidth: "100%",
+                    height: "auto"
+                  }} />
               ),
             },
             {
@@ -450,7 +498,10 @@ const AboutMe: NextPage = () => {
                   alt="Passport library logo"
                   quality={100}
                   className="desatured"
-                />
+                  style={{
+                    maxWidth: "100%",
+                    height: "auto"
+                  }} />
               ),
             },
             {
@@ -463,7 +514,10 @@ const AboutMe: NextPage = () => {
                   alt="NextAuth.js logo"
                   quality={100}
                   className="desatured"
-                />
+                  style={{
+                    maxWidth: "100%",
+                    height: "auto"
+                  }} />
               ),
             },
           ],
@@ -480,16 +534,18 @@ const AboutMe: NextPage = () => {
               <p>
                 J’ai actuellement pour projet d&apos;obtenir un{' '}
                 <span className="bold">
-                  <Link href="https://www.eni-ecole.fr/formations/developpement/niveau-7-bac5-manager-de-solutions-digitales-et-data/">
-                    <a target="_blank">
+                  <Link
+                    href="https://www.eni-ecole.fr/formations/developpement/niveau-7-bac5-manager-de-solutions-digitales-et-data/"
+                    target="_blank">
+                    
                       Bac +5 Manager de Solutions Digitales et Data
-                    </a>
+                    
                   </Link>
                 </span>{' '}
                 en alternance au sein de{' '}
                 <span className="bold">
-                  <Link href="https://www.eni-ecole.fr/">
-                    <a target="_blank">l&apos;ENI</a>
+                  <Link href="https://www.eni-ecole.fr/" target="_blank">
+                    l&apos;ENI
                   </Link>
                 </span>
                 . Ayant été accepté par l&apos;école et intégré à l&apos;équipe
@@ -501,24 +557,24 @@ const AboutMe: NextPage = () => {
                 l’amélioration de mon portfolio, le développement de mes
                 compétences avec <span className="bold">React</span> en
                 explorant chaque partie de la feuille de route “
-                <Link href="https://roadmap.sh/react">
-                  <a target="_blank">Développeur React</a>
+                <Link href="https://roadmap.sh/react" target="_blank">
+                  Développeur React
                 </Link>
                 ”, ma contribution à des projets open-source (par exemple{' '}
-                <Link href="https://github.com/carbon-app/carbon">
-                  <a target="_blank">Carbon</a>
+                <Link href="https://github.com/carbon-app/carbon" target="_blank">
+                  Carbon
                 </Link>{' '}
                 et{' '}
-                <Link href="https://github.com/nextauthjs/next-auth">
-                  <a target="_blank">Next-Auth</a>
+                <Link href="https://github.com/nextauthjs/next-auth" target="_blank">
+                  Next-Auth
                 </Link>
                 ) et la reprise du développement de mes autres projets :{' '}
-                <Link href="https://github.com/boutterudy/Perfimaas">
-                  <a target="_blank">Perfimaas</a>
+                <Link href="https://github.com/boutterudy/Perfimaas" target="_blank">
+                  Perfimaas
                 </Link>{' '}
                 (assistant de gestion des finances personnelles) et{' '}
-                <Link href="https://github.com/boutterudy/bonAlim">
-                  <a target="_blank">BonAlim&apos;</a>
+                <Link href="https://github.com/boutterudy/bonAlim" target="_blank">
+                  BonAlim&apos;
                 </Link>{' '}
                 (conseiller alimentaire personnel).
               </p>
@@ -550,7 +606,10 @@ const AboutMe: NextPage = () => {
                   alt="React logo"
                   quality={100}
                   className="desatured"
-                />
+                  style={{
+                    maxWidth: "100%",
+                    height: "auto"
+                  }} />
               ),
             },
             {
@@ -588,10 +647,12 @@ const AboutMe: NextPage = () => {
           content: (
             <p>
               Après avoir obtenu mon{' '}
-              <Link href="https://www.eni-ecole.fr/formations/developpement/niveau-7-bac5-manager-de-solutions-digitales-et-data/">
-                <a target="_blank">
+              <Link
+                href="https://www.eni-ecole.fr/formations/developpement/niveau-7-bac5-manager-de-solutions-digitales-et-data/"
+                target="_blank">
+                
                   Bac +5 Manager de Solutions Digitales et Data
-                </a>
+                
               </Link>
               , je souhaite{' '}
               <span className="bold">rester au sein de la même entreprise</span>{' '}
@@ -655,10 +716,12 @@ const AboutMe: NextPage = () => {
           <p>
             Arrivant à terme du{' '}
             <span className="bold">
-              <Link href="https://www.eni-ecole.fr/formations/developpement/niveau-6-bac4-concepteur-developpeur-dapplications/">
-                <a target="_blank">
+              <Link
+                href="https://www.eni-ecole.fr/formations/developpement/niveau-6-bac4-concepteur-developpeur-dapplications/"
+                target="_blank">
+                
                   Bac +4 Concepteur Développeur d’Applications
-                </a>
+                
               </Link>
             </span>{' '}
             et ayant travaillé pendant plus d’1 an en entreprise, il est pour
@@ -746,8 +809,10 @@ const AboutMe: NextPage = () => {
             espace en ligne pour l’entreprise{' '}
             <span className="bold">Sowlver</span>, dans le cadre du stage
             réalisé durant mon{' '}
-            <Link href="https://www.eni-ecole.fr/formations/developpement/niveau-6-bac4-concepteur-developpeur-dapplications/">
-              <a target="_blank">Bac +4</a>
+            <Link
+              href="https://www.eni-ecole.fr/formations/developpement/niveau-6-bac4-concepteur-developpeur-dapplications/"
+              target="_blank">
+              Bac +4
             </Link>
             , et durant lequel j’ai pu tester et développer mes compétences avec
             ces langages et frameworks, tout en m’initiant à la gestion de
@@ -766,7 +831,10 @@ const AboutMe: NextPage = () => {
               alt="TypeScript logo"
               quality={100}
               className="desatured"
-            />
+              style={{
+                maxWidth: "100%",
+                height: "auto"
+              }} />
           ),
         },
         {
@@ -779,7 +847,10 @@ const AboutMe: NextPage = () => {
               alt="Sass logo"
               quality={100}
               className="desatured"
-            />
+              style={{
+                maxWidth: "100%",
+                height: "auto"
+              }} />
           ),
         },
         {
@@ -792,7 +863,10 @@ const AboutMe: NextPage = () => {
               alt="React logo"
               quality={100}
               className="desatured"
-            />
+              style={{
+                maxWidth: "100%",
+                height: "auto"
+              }} />
           ),
         },
         {
@@ -805,7 +879,10 @@ const AboutMe: NextPage = () => {
               alt="Next.js logo"
               quality={100}
               className="desatured"
-            />
+              style={{
+                maxWidth: "100%",
+                height: "auto"
+              }} />
           ),
         },
         {
@@ -818,7 +895,10 @@ const AboutMe: NextPage = () => {
               alt="NestJS logo"
               quality={100}
               className="desatured"
-            />
+              style={{
+                maxWidth: "100%",
+                height: "auto"
+              }} />
           ),
         },
       ],
@@ -836,8 +916,8 @@ const AboutMe: NextPage = () => {
           mes connaissances autour du <span className="bold">cinéma</span>,
           regarder des <span className="bold">documentaires</span>, faire du{' '}
           <span className="bold">bénévolat</span> (
-          <Link href="https://www.fasm85.fr/">
-            <a target="_blank">FASM</a>
+          <Link href="https://www.fasm85.fr/" target="_blank">
+            FASM
           </Link>
           ), développer des projets personnels et{' '}
           <span className="bold">voyager</span> lorsque j’en ai l’opportunité.
@@ -868,7 +948,10 @@ const AboutMe: NextPage = () => {
               alt="Next.js logo"
               quality={100}
               className="desatured"
-            />
+              style={{
+                maxWidth: "100%",
+                height: "auto"
+              }} />
           ),
         },
         {

@@ -1,6 +1,11 @@
 import { WorkExperienceTaskType } from './WorkExperienceTaskType'
+
 export type WorkExperienceType = {
-  logo: string
+  logo: {
+    src: string
+    width: number
+    height: number
+  }
   company: string
   begin: Date
   end: Date
