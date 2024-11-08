@@ -5,7 +5,7 @@ import PageLayout from '../common/components/layouts/PageLayout/PageLayout'
 import TextHeader from '../common/components/elements/TextHeader/TextHeader'
 import Article from '../common/components/elements/Article/Article'
 import Link from 'next/link'
-import Image from 'next/image'
+import Image from "next/legacy/image"
 import Icon from '../common/components/elements/Icon/Icon'
 import { CSSProperties } from 'react'
 import { getAgeFromBirthdate } from '../common/utils/DateUtil'

@@ -1,6 +1,6 @@
 import { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
+import Image from "next/legacy/image"
 import ContactMeBlock from '../common/components/elements/ContactMeBlock/ContactMeBlock'
 import Icon from '../common/components/elements/Icon/Icon'
 import ProjectsList from '../common/components/elements/ProjectsList/ProjectsList'

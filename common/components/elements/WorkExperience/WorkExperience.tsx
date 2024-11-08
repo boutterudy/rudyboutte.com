@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from "next/legacy/image"
 import { WorkExperienceType } from '../../../types/WorkExperienceType'
 import {
   getDifferenceBetweenDates,

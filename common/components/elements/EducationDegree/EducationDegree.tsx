@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from "next/legacy/image"
 import { DegreeType } from '../../../types/DegreeType'
 import { getMonthName } from '../../../utils/DateUtil'
 import { capitalizeFirstLetter } from '../../../utils/StringUtil'
