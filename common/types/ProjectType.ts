@@ -1,5 +1,5 @@
 import { ReactElement } from 'react'
-import Image from "next/image"
+import Image from "next/legacy/image"
 import { TagType } from './TagType'
 import Icon from '../components/elements/Icon/Icon'
 

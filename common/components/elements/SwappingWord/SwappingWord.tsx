@@ -105,9 +105,11 @@ const SwappingWord = ({ words }: SwappingWordProps) => {
         <span
           key={index}
           className={styles.word}
-          ref={(el: HTMLSpanElement) =>
-            (wordsRef.current = [...wordsRef.current, el])
-          }
+          ref={(el: HTMLSpanElement | null) => {
+            if (el && !wordsRef.current.includes(el)) {
+              wordsRef.current.push(el)
+            }
+          }}
         >
           {word}
         </span>

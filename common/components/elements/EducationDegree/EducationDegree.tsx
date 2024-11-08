@@ -1,4 +1,4 @@
-import Image from "next/image"
+import Image from 'next/legacy/image'
 import { DegreeType } from '../../../types/DegreeType'
 import { getMonthName } from '../../../utils/DateUtil'
 import { capitalizeFirstLetter } from '../../../utils/StringUtil'
@@ -12,20 +12,16 @@ const EducationDegree = ({ degree }: EducationDegreeProps) => {
   const begin = degree.begin
   const end = degree.end
   return (
-    (<div className={styles.educationDegree}>
+    <div className={styles.educationDegree}>
       <div className={styles.introduction}>
         <div className={styles.logoWrapper}>
           <Image
             className={styles.logo}
-            src={degree.logo}
-            alt={degree.school + ' logo'}
-            width="100%"
-            height="100%"
-            style={{
-              maxWidth: "100%",
-              height: "auto",
-              objectFit: "contain"
-            }} />
+            src={degree.logo.src}
+            alt={`${degree.school} logo`}
+            width={degree.logo.width}
+            height={degree.logo.height}
+          />
         </div>
         <div className={styles.informations}>
           <small className={styles.details}>
@@ -66,8 +62,8 @@ const EducationDegree = ({ degree }: EducationDegreeProps) => {
           })}
         </ul>
       </div>
-    </div>)
-  );
+    </div>
+  )
 }
 
 export default EducationDegree

@@ -1,17 +1,12 @@
 import { NextPage } from 'next'
 import Head from 'next/head'
-import Image from "next/image"
+import Image from 'next/legacy/image'
 import ContactMeBlock from '../common/components/elements/ContactMeBlock/ContactMeBlock'
 import Icon from '../common/components/elements/Icon/Icon'
 import ProjectsList from '../common/components/elements/ProjectsList/ProjectsList'
 import TextHeader from '../common/components/elements/TextHeader/TextHeader'
 import PageLayout from '../common/components/layouts/PageLayout/PageLayout'
 import { ProjectType } from '../common/types/ProjectType'
-import ProjectPreviewCountriesAPI from '../public/images/projects/REST-Countries-API.png'
-import ProjectPreview30DaysOfReact from '../public/images/projects/30-Days-Of-React-Baby-Twitter.png'
-import ProjectPreviewPerfimaas from '../public/images/projects/Perfimaas.png'
-import ProjectPreviewMyToolbox from '../public/images/projects/My-Toolbox.png'
-import ProjectPreviewPortfolio from '../public/images/projects/Portfolio.png'
 import { Colors } from '../common/constants/colors'
 import SwappingWord from '../common/components/elements/SwappingWord/SwappingWord'
 
@@ -52,12 +47,14 @@ const MyProjects: NextPage = () => {
       ],
       preview: (
         <Image
-          src={ProjectPreviewPortfolio}
+          src="/images/projects/Portfolio.png"
           alt="Screenshot of my portfolio"
+          width={875}
+          height={414}
           style={{
-            maxWidth: "100%",
-            height: "auto"
-          }} />
+            maxWidth: '100%',
+          }}
+        />
       ),
       date: new Date(2022, 6),
       icon: <Icon lib="remix-icon" icon="globe-line" />,
@@ -76,12 +73,14 @@ const MyProjects: NextPage = () => {
       ],
       preview: (
         <Image
-          src={ProjectPreviewCountriesAPI}
+          src="/images/projects/REST-Countries-API.png"
           alt="REST Countries API with color theme switcher screenshot"
+          width={875}
+          height={414}
           style={{
-            maxWidth: "100%",
-            height: "auto"
-          }} />
+            maxWidth: '100%',
+          }}
+        />
       ),
       date: new Date(2022, 1),
       icon: <Icon lib="remix-icon" icon="globe-line" />,
@@ -100,12 +99,14 @@ const MyProjects: NextPage = () => {
       ],
       preview: (
         <Image
-          src={ProjectPreview30DaysOfReact}
+          src="/images/projects/30-Days-Of-React-Baby-Twitter.png"
           alt="Baby Twitter screenshot"
+          width={875}
+          height={414}
           style={{
-            maxWidth: "100%",
-            height: "auto"
-          }} />
+            maxWidth: '100%',
+          }}
+        />
       ),
       date: new Date(2022, 1),
       icon: <Icon lib="remix-icon" icon="twitter-fill" />,
@@ -125,12 +126,14 @@ const MyProjects: NextPage = () => {
       ],
       preview: (
         <Image
-          src={ProjectPreviewMyToolbox}
+          src="/images/projects/My-Toolbox.png"
           alt="My Toolbox screenshot"
+          width={875}
+          height={414}
           style={{
-            maxWidth: "100%",
-            height: "auto"
-          }} />
+            maxWidth: '100%',
+          }}
+        />
       ),
       date: new Date(2021, 0),
       icon: <Icon lib="remix-icon" icon="tools-fill" />,
@@ -146,13 +149,14 @@ const MyProjects: NextPage = () => {
       ],
       preview: (
         <Image
-          src={ProjectPreviewPerfimaas}
+          src="/images/projects/Perfimaas.png"
           alt="Perfimaas registration page mock-up"
-          fill
-          sizes="100vw"
+          width={875}
+          height={414}
           style={{
-            objectFit: "contain"
-          }} />
+            objectFit: 'contain',
+          }}
+        />
       ),
       date: new Date(2020, 7),
       icon: <Icon lib="remix-icon" icon="money-dollar-circle-fill" />,

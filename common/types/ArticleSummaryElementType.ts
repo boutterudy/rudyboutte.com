@@ -1,4 +1,4 @@
-import Image from "next/image"
+import Image from "next/legacy/image"
 import { ReactElement } from 'react'
 import Icon from '../components/elements/Icon/Icon'
 export type ArticleSummaryElementType = {
