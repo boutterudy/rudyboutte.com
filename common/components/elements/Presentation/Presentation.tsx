@@ -7,21 +7,21 @@ import TextBlock from '../TextBlock/TextBlock'
 const Presentation = () => {
   const actions = (
     <>
-      <Link href="/a-propos">
-        <a className="noAnimation">
-          <Button
-            leftIcon={<Icon lib="remix-icon" icon="user-shared-2-line" />}
-          >
-            À propos de moi
-          </Button>
-        </a>
+      <Link href="/a-propos" className="noAnimation">
+
+        <Button
+          leftIcon={<Icon lib="remix-icon" icon="user-shared-2-line" />}
+        >
+          À propos de moi
+        </Button>
+
       </Link>
-      <Link href="/mes-projets">
-        <a className="noAnimation">
-          <Button leftIcon={<Icon lib="remix-icon" icon="code-s-slash-fill" />}>
-            Découvrir mes projets
-          </Button>
-        </a>
+      <Link href="/mes-projets" className="noAnimation">
+
+        <Button leftIcon={<Icon lib="remix-icon" icon="code-s-slash-fill" />}>
+          Découvrir mes projets
+        </Button>
+
       </Link>
     </>
   )

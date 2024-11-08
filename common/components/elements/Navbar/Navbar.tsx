@@ -22,7 +22,7 @@ const Navbar = () => {
   }, [])
 
   return (
-    <nav
+    (<nav
       className={
         styles.navbar +
         (isNavExpanded === true ? ' ' + styles.expanded : '') +
@@ -33,14 +33,14 @@ const Navbar = () => {
       <div className={styles.logoContainer}>
         <div className={styles.logo}>
           <Link href="/">
-            <a>RUDY BOUTTE</a>
+            RUDY BOUTTE
           </Link>
           <span className={styles.info}>
             Développeur Front chez{' '}
-            <Link href="https://gensdeconfiance.com/">
-              <a target="_blank">
-                <span className={styles.important}>Gens de Confiance</span>
-              </a>
+            <Link href="https://gensdeconfiance.com/" target="_blank">
+
+              <span className={styles.important}>Gens de Confiance</span>
+
             </Link>
           </span>
         </div>
@@ -51,59 +51,54 @@ const Navbar = () => {
           onClick={() => setIsNavExpanded(!isNavExpanded)}
         />
       </div>
-
       <ul className={styles.links}>
         <li>
-          <Link href="/mes-projets">
-            <a className="underline">
-              <Icon
-                lib="remix-icon"
-                icon="code-s-slash-fill"
-                className={styles.icon}
-              />
-              Mes projets
-            </a>
+          <Link href="/mes-projets" className="underline">
+
+            <Icon
+              lib="remix-icon"
+              icon="code-s-slash-fill"
+              className={styles.icon}
+            />Mes projets
+                        
           </Link>
         </li>
         <li>
-          <Link href="/mon-parcours">
-            <a className="underline">
-              <Icon
-                lib="remix-icon"
-                icon="route-fill"
-                className={styles.icon}
-              />
-              Mon parcours
-            </a>
+          <Link href="/mon-parcours" className="underline">
+
+            <Icon
+              lib="remix-icon"
+              icon="route-fill"
+              className={styles.icon}
+            />Mon parcours
+                        
           </Link>
         </li>
         <li>
-          <Link href="/a-propos">
-            <a className="underline">
-              <Icon
-                lib="remix-icon"
-                icon="user-shared-2-line"
-                className={styles.icon}
-              />
-              À propos
-            </a>
+          <Link href="/a-propos" className="underline">
+
+            <Icon
+              lib="remix-icon"
+              icon="user-shared-2-line"
+              className={styles.icon}
+            />À propos
+                        
           </Link>
         </li>
         <li>
-          <Link href="/contact">
-            <a className="underline">
-              <Icon
-                lib="remix-icon"
-                icon="discuss-line"
-                className={styles.icon}
-              />
-              Contact
-            </a>
+          <Link href="/contact" className="underline">
+
+            <Icon
+              lib="remix-icon"
+              icon="discuss-line"
+              className={styles.icon}
+            />Contact
+                        
           </Link>
         </li>
       </ul>
-    </nav>
-  )
+    </nav>)
+  );
 }
 
 export default Navbar

@@ -103,7 +103,7 @@ const Home: NextPage = () => {
   ]
 
   return (
-    <PageLayout>
+    (<PageLayout>
       <Head>
         <title>Rudy Boutte – Portfolio</title>
         <meta
@@ -112,23 +112,23 @@ const Home: NextPage = () => {
         />
       </Head>
       <Header>
-        <Link href="/a-propos">
-          <a className="noAnimation" title="À propos">
-            <Image
-              className={styles.pictureOfMe}
-              src={HomepagePicture}
-              width={412}
-              height={550}
-              alt="Rudy Boutte in front of yellow flowers"
-            />
-          </a>
+        <Link href="/a-propos" className="noAnimation" title="À propos">
+
+          <Image
+            className={styles.pictureOfMe}
+            src={HomepagePicture}
+            width={412}
+            height={550}
+            alt="Rudy Boutte in front of yellow flowers"
+          />
+
         </Link>
       </Header>
       <Presentation />
       <ProjectsList projects={projects} />
       <ContactMeBlock />
-    </PageLayout>
-  )
+    </PageLayout>)
+  );
 }
 
 export default Home
