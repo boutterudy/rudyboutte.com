@@ -5,7 +5,7 @@ import PageLayout from '../common/components/layouts/PageLayout/PageLayout'
 import TextHeader from '../common/components/elements/TextHeader/TextHeader'
 import Article from '../common/components/elements/Article/Article'
 import Link from 'next/link'
-import Image from "next/legacy/image"
+import Image from "next/image"
 import Icon from '../common/components/elements/Icon/Icon'
 import { CSSProperties } from 'react'
 import { getAgeFromBirthdate } from '../common/utils/DateUtil'
@@ -97,7 +97,10 @@ const AboutMe: NextPage = () => {
               alt="Garry's mod logo"
               quality={100}
               className="desatured"
-            />
+              style={{
+                maxWidth: "100%",
+                height: "auto"
+              }} />
           ),
         },
         {
@@ -110,7 +113,10 @@ const AboutMe: NextPage = () => {
               alt="Lua logo"
               quality={100}
               className="desatured"
-            />
+              style={{
+                maxWidth: "100%",
+                height: "auto"
+              }} />
           ),
         },
         {
@@ -193,7 +199,10 @@ const AboutMe: NextPage = () => {
                   alt="TypeScript logo"
                   quality={100}
                   className="desatured"
-                />
+                  style={{
+                    maxWidth: "100%",
+                    height: "auto"
+                  }} />
               ),
             },
             {
@@ -206,7 +215,10 @@ const AboutMe: NextPage = () => {
                   alt="NestJS logo"
                   quality={100}
                   className="desatured"
-                />
+                  style={{
+                    maxWidth: "100%",
+                    height: "auto"
+                  }} />
               ),
             },
           ],
@@ -294,7 +306,10 @@ const AboutMe: NextPage = () => {
                   alt="TypeScript logo"
                   quality={100}
                   className="desatured"
-                />
+                  style={{
+                    maxWidth: "100%",
+                    height: "auto"
+                  }} />
               ),
             },
             {
@@ -307,7 +322,10 @@ const AboutMe: NextPage = () => {
                   alt="React logo"
                   quality={100}
                   className="desatured"
-                />
+                  style={{
+                    maxWidth: "100%",
+                    height: "auto"
+                  }} />
               ),
             },
             {
@@ -320,7 +338,10 @@ const AboutMe: NextPage = () => {
                   alt="Next.js logo"
                   quality={100}
                   className="desatured"
-                />
+                  style={{
+                    maxWidth: "100%",
+                    height: "auto"
+                  }} />
               ),
             },
           ],
@@ -397,7 +418,10 @@ const AboutMe: NextPage = () => {
                   alt="TypeScript logo"
                   quality={100}
                   className="desatured"
-                />
+                  style={{
+                    maxWidth: "100%",
+                    height: "auto"
+                  }} />
               ),
             },
             {
@@ -410,7 +434,10 @@ const AboutMe: NextPage = () => {
                   alt="NestJS logo"
                   quality={100}
                   className="desatured"
-                />
+                  style={{
+                    maxWidth: "100%",
+                    height: "auto"
+                  }} />
               ),
             },
             {
@@ -423,7 +450,10 @@ const AboutMe: NextPage = () => {
                   alt="React logo"
                   quality={100}
                   className="desatured"
-                />
+                  style={{
+                    maxWidth: "100%",
+                    height: "auto"
+                  }} />
               ),
             },
             {
@@ -436,7 +466,10 @@ const AboutMe: NextPage = () => {
                   alt="Next.js logo"
                   quality={100}
                   className="desatured"
-                />
+                  style={{
+                    maxWidth: "100%",
+                    height: "auto"
+                  }} />
               ),
             },
             {
@@ -449,7 +482,10 @@ const AboutMe: NextPage = () => {
                   alt="Sass logo"
                   quality={100}
                   className="desatured"
-                />
+                  style={{
+                    maxWidth: "100%",
+                    height: "auto"
+                  }} />
               ),
             },
             {
@@ -462,7 +498,10 @@ const AboutMe: NextPage = () => {
                   alt="Passport library logo"
                   quality={100}
                   className="desatured"
-                />
+                  style={{
+                    maxWidth: "100%",
+                    height: "auto"
+                  }} />
               ),
             },
             {
@@ -475,7 +514,10 @@ const AboutMe: NextPage = () => {
                   alt="NextAuth.js logo"
                   quality={100}
                   className="desatured"
-                />
+                  style={{
+                    maxWidth: "100%",
+                    height: "auto"
+                  }} />
               ),
             },
           ],
@@ -564,7 +606,10 @@ const AboutMe: NextPage = () => {
                   alt="React logo"
                   quality={100}
                   className="desatured"
-                />
+                  style={{
+                    maxWidth: "100%",
+                    height: "auto"
+                  }} />
               ),
             },
             {
@@ -786,7 +831,10 @@ const AboutMe: NextPage = () => {
               alt="TypeScript logo"
               quality={100}
               className="desatured"
-            />
+              style={{
+                maxWidth: "100%",
+                height: "auto"
+              }} />
           ),
         },
         {
@@ -799,7 +847,10 @@ const AboutMe: NextPage = () => {
               alt="Sass logo"
               quality={100}
               className="desatured"
-            />
+              style={{
+                maxWidth: "100%",
+                height: "auto"
+              }} />
           ),
         },
         {
@@ -812,7 +863,10 @@ const AboutMe: NextPage = () => {
               alt="React logo"
               quality={100}
               className="desatured"
-            />
+              style={{
+                maxWidth: "100%",
+                height: "auto"
+              }} />
           ),
         },
         {
@@ -825,7 +879,10 @@ const AboutMe: NextPage = () => {
               alt="Next.js logo"
               quality={100}
               className="desatured"
-            />
+              style={{
+                maxWidth: "100%",
+                height: "auto"
+              }} />
           ),
         },
         {
@@ -838,7 +895,10 @@ const AboutMe: NextPage = () => {
               alt="NestJS logo"
               quality={100}
               className="desatured"
-            />
+              style={{
+                maxWidth: "100%",
+                height: "auto"
+              }} />
           ),
         },
       ],
@@ -888,7 +948,10 @@ const AboutMe: NextPage = () => {
               alt="Next.js logo"
               quality={100}
               className="desatured"
-            />
+              style={{
+                maxWidth: "100%",
+                height: "auto"
+              }} />
           ),
         },
         {

@@ -1,6 +1,6 @@
 import { NextPage } from 'next'
 import Head from 'next/head'
-import Image from "next/legacy/image"
+import Image from "next/image"
 import ContactMeBlock from '../common/components/elements/ContactMeBlock/ContactMeBlock'
 import Icon from '../common/components/elements/Icon/Icon'
 import ProjectsList from '../common/components/elements/ProjectsList/ProjectsList'
@@ -51,7 +51,13 @@ const MyProjects: NextPage = () => {
         { title: 'Adobe XD', color: Colors.ADOBEXD },
       ],
       preview: (
-        <Image src={ProjectPreviewPortfolio} alt="Screenshot of my portfolio" />
+        <Image
+          src={ProjectPreviewPortfolio}
+          alt="Screenshot of my portfolio"
+          style={{
+            maxWidth: "100%",
+            height: "auto"
+          }} />
       ),
       date: new Date(2022, 6),
       icon: <Icon lib="remix-icon" icon="globe-line" />,
@@ -72,7 +78,10 @@ const MyProjects: NextPage = () => {
         <Image
           src={ProjectPreviewCountriesAPI}
           alt="REST Countries API with color theme switcher screenshot"
-        />
+          style={{
+            maxWidth: "100%",
+            height: "auto"
+          }} />
       ),
       date: new Date(2022, 1),
       icon: <Icon lib="remix-icon" icon="globe-line" />,
@@ -93,7 +102,10 @@ const MyProjects: NextPage = () => {
         <Image
           src={ProjectPreview30DaysOfReact}
           alt="Baby Twitter screenshot"
-        />
+          style={{
+            maxWidth: "100%",
+            height: "auto"
+          }} />
       ),
       date: new Date(2022, 1),
       icon: <Icon lib="remix-icon" icon="twitter-fill" />,
@@ -112,7 +124,13 @@ const MyProjects: NextPage = () => {
         { title: 'Adobe XD', color: Colors.ADOBEXD },
       ],
       preview: (
-        <Image src={ProjectPreviewMyToolbox} alt="My Toolbox screenshot" />
+        <Image
+          src={ProjectPreviewMyToolbox}
+          alt="My Toolbox screenshot"
+          style={{
+            maxWidth: "100%",
+            height: "auto"
+          }} />
       ),
       date: new Date(2021, 0),
       icon: <Icon lib="remix-icon" icon="tools-fill" />,
@@ -130,9 +148,11 @@ const MyProjects: NextPage = () => {
         <Image
           src={ProjectPreviewPerfimaas}
           alt="Perfimaas registration page mock-up"
-          layout="fill"
-          objectFit="contain"
-        />
+          fill
+          sizes="100vw"
+          style={{
+            objectFit: "contain"
+          }} />
       ),
       date: new Date(2020, 7),
       icon: <Icon lib="remix-icon" icon="money-dollar-circle-fill" />,

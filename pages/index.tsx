@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from "next/legacy/image"
+import Image from "next/image"
 import Link from 'next/link'
 import ContactMeBlock from '../common/components/elements/ContactMeBlock/ContactMeBlock'
 import Header from '../common/components/elements/Header/Header'
@@ -33,7 +33,13 @@ const Home: NextPage = () => {
         { title: 'Adobe XD', color: Colors.ADOBEXD },
       ],
       preview: (
-        <Image src={ProjectPreviewPortfolio} alt="Screenshot of my portfolio" />
+        <Image
+          src={ProjectPreviewPortfolio}
+          alt="Screenshot of my portfolio"
+          style={{
+            maxWidth: "100%",
+            height: "auto"
+          }} />
       ),
       date: new Date(2022, 6),
       icon: <Icon lib="remix-icon" icon="globe-line" />,
@@ -54,7 +60,10 @@ const Home: NextPage = () => {
         <Image
           src={ProjectPreviewCountriesAPI}
           alt="REST Countries API with color theme switcher screenshot"
-        />
+          style={{
+            maxWidth: "100%",
+            height: "auto"
+          }} />
       ),
       date: new Date(2022, 1),
       icon: <Icon lib="remix-icon" icon="globe-line" />,
@@ -75,7 +84,10 @@ const Home: NextPage = () => {
         <Image
           src={ProjectPreview30DaysOfReact}
           alt="Baby Twitter screenshot"
-        />
+          style={{
+            maxWidth: "100%",
+            height: "auto"
+          }} />
       ),
       date: new Date(2022, 1),
       icon: <Icon lib="remix-icon" icon="twitter-fill" />,
@@ -93,9 +105,11 @@ const Home: NextPage = () => {
         <Image
           src={ProjectPreviewPerfimaas}
           alt="Perfimaas registration page mock-up"
-          layout="fill"
-          objectFit="contain"
-        />
+          fill
+          sizes="100vw"
+          style={{
+            objectFit: "contain"
+          }} />
       ),
       date: new Date(2020, 7),
       icon: <Icon lib="remix-icon" icon="money-dollar-circle-fill" />,
@@ -120,7 +134,10 @@ const Home: NextPage = () => {
             width={412}
             height={550}
             alt="Rudy Boutte in front of yellow flowers"
-          />
+            style={{
+              maxWidth: "100%",
+              height: "auto"
+            }} />
 
         </Link>
       </Header>
