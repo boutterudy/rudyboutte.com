@@ -10,31 +10,32 @@ const LanguageSwitcher = ({ className }: LanguageSwitcherProps) => {
   const router = useRouter();
 
   return (
-    <div
+    (<div
       className={
         styles.languageSwitcher + (className !== undefined ? className : '')
       }
     >
-      <Link href={router.asPath} locale={'fr-FR'}>
-        <a
-          className={
-            router.locale === 'fr-FR' ? styles.active : styles.inactive
-          }
-        >
+      <Link
+        href={router.asPath}
+        locale={'fr-FR'}
+        className={
+          router.locale === 'fr-FR' ? styles.active : styles.inactive
+        }>
+        
           FR
-        </a>
-      </Link>
-      /
-      <Link href={router.asPath} locale={'en-GB'}>
-        <a
-          className={
-            router.locale === 'en-GB' ? styles.active : styles.inactive
-          }
-        >
+        
+      </Link>/
+            <Link
+        href={router.asPath}
+        locale={'en-GB'}
+        className={
+          router.locale === 'en-GB' ? styles.active : styles.inactive
+        }>
+        
           EN
-        </a>
+        
       </Link>
-    </div>
+    </div>)
   );
 };
 

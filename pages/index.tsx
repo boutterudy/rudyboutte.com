@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
+import Image from 'next/legacy/image'
 import Link from 'next/link'
 import ContactMeBlock from '../common/components/elements/ContactMeBlock/ContactMeBlock'
 import Header from '../common/components/elements/Header/Header'
@@ -12,10 +12,6 @@ import { Colors } from '../common/constants/colors'
 import { ProjectType } from '../common/types/ProjectType'
 import HomepagePicture from '../public/images/me.jpg'
 import styles from '../styles/pages/Home.module.scss'
-import ProjectPreviewCountriesAPI from '../public/images/projects/REST-Countries-API.png'
-import ProjectPreview30DaysOfReact from '../public/images/projects/30-Days-Of-React-Baby-Twitter.png'
-import ProjectPreviewPerfimaas from '../public/images/projects/Perfimaas.png'
-import ProjectPreviewPortfolio from '../public/images/projects/Portfolio.png'
 
 const Home: NextPage = () => {
   const projects: ProjectType[] = [
@@ -33,7 +29,12 @@ const Home: NextPage = () => {
         { title: 'Adobe XD', color: Colors.ADOBEXD },
       ],
       preview: (
-        <Image src={ProjectPreviewPortfolio} alt="Screenshot of my portfolio" />
+        <Image
+          src="/images/projects/Portfolio.png"
+          alt="Screenshot of my portfolio"
+          width={875}
+          height={414}
+        />
       ),
       date: new Date(2022, 6),
       icon: <Icon lib="remix-icon" icon="globe-line" />,
@@ -52,8 +53,10 @@ const Home: NextPage = () => {
       ],
       preview: (
         <Image
-          src={ProjectPreviewCountriesAPI}
+          src="/images/projects/REST-Countries-API.png"
           alt="REST Countries API with color theme switcher screenshot"
+          width={875}
+          height={414}
         />
       ),
       date: new Date(2022, 1),
@@ -73,8 +76,10 @@ const Home: NextPage = () => {
       ],
       preview: (
         <Image
-          src={ProjectPreview30DaysOfReact}
+          src="/images/projects/30-Days-Of-React-Baby-Twitter.png"
           alt="Baby Twitter screenshot"
+          width={875}
+          height={414}
         />
       ),
       date: new Date(2022, 1),
@@ -91,10 +96,10 @@ const Home: NextPage = () => {
       ],
       preview: (
         <Image
-          src={ProjectPreviewPerfimaas}
+          src="/images/projects/Perfimaas.png"
           alt="Perfimaas registration page mock-up"
-          layout="fill"
-          objectFit="contain"
+          width={875}
+          height={414}
         />
       ),
       date: new Date(2020, 7),
@@ -112,16 +117,14 @@ const Home: NextPage = () => {
         />
       </Head>
       <Header>
-        <Link href="/a-propos">
-          <a className="noAnimation" title="À propos">
-            <Image
-              className={styles.pictureOfMe}
-              src={HomepagePicture}
-              width={412}
-              height={550}
-              alt="Rudy Boutte in front of yellow flowers"
-            />
-          </a>
+        <Link href="/a-propos" className="noAnimation" title="À propos">
+          <Image
+            className={styles.pictureOfMe}
+            src={HomepagePicture}
+            width={412}
+            height={550}
+            alt="Rudy Boutte in front of yellow flowers"
+          />
         </Link>
       </Header>
       <Presentation />

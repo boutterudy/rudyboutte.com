@@ -22,16 +22,18 @@ const Internship: NextPage = () => {
           <p>
             J&apos;ai actuellement pour projet d&apos;intégrer le{' '}
             <span className="bold">
-              <Link href="https://www.eni-ecole.fr/formations/developpement/niveau-7-bac5-manager-de-solutions-digitales-et-data/">
-                <a target="_blank">
+              <Link
+                href="https://www.eni-ecole.fr/formations/developpement/niveau-7-bac5-manager-de-solutions-digitales-et-data/"
+                target="_blank">
+                
                   Bac +5 Manager de Solutions Digitales et Data
-                </a>
+                
               </Link>
             </span>{' '}
             en alternance au sein de{' '}
             <span className="bold">
-              <Link href="https://www.eni-ecole.fr/">
-                <a target="_blank">l&apos;ENI</a>
+              <Link href="https://www.eni-ecole.fr/" target="_blank">
+                l&apos;ENI
               </Link>
               , à Nantes
             </span>
@@ -88,15 +90,19 @@ const Internship: NextPage = () => {
               </ul>
               <p>
                 Pour plus d&apos;informations, se référer au{' '}
-                <Link href="https://www.eni-ecole.fr/formations/developpement/niveau-7-bac5-manager-de-solutions-digitales-et-data/">
-                  <a target="_blank">site de l&apos;école</a>
+                <Link
+                  href="https://www.eni-ecole.fr/formations/developpement/niveau-7-bac5-manager-de-solutions-digitales-et-data/"
+                  target="_blank">
+                  site de l&apos;école
                 </Link>{' '}
                 et au{' '}
-                <Link href="https://www.francecompetences.fr/recherche/rncp/34408/">
-                  <a target="_blank">
+                <Link
+                  href="https://www.francecompetences.fr/recherche/rncp/34408/"
+                  target="_blank">
+                  
                     répertoire national des certifications professionnelles
                     (RNCP)
-                  </a>
+                  
                 </Link>
                 .
               </p>
@@ -151,29 +157,37 @@ const Internship: NextPage = () => {
                 Pour tout contrat d&apos;alternance signé avant janvier 2023, le
                 gouvernement propose une{' '}
                 <span className="bold">
-                  <Link href="https://entreprendre.service-public.fr/vosdroits/F23556">
-                    <a target="_blank">
+                  <Link
+                    href="https://entreprendre.service-public.fr/vosdroits/F23556"
+                    target="_blank">
+                    
                       aide exceptionnelle allant jusqu&apos;à 8 000€
-                    </a>
+                    
                   </Link>
                 </span>
                 , tant{' '}
-                <Link href="https://entreprendre.service-public.fr/vosdroits/F35391">
-                  <a target="_blank">avec un contrat de professionnalisation</a>
+                <Link
+                  href="https://entreprendre.service-public.fr/vosdroits/F35391"
+                  target="_blank">
+                  avec un contrat de professionnalisation
                 </Link>{' '}
                 qu&apos;
-                <Link href="https://entreprendre.service-public.fr/vosdroits/F23556">
-                  <a target="_blank">avec un contrat d&apos;apprentissage</a>
+                <Link
+                  href="https://entreprendre.service-public.fr/vosdroits/F23556"
+                  target="_blank">
+                  avec un contrat d&apos;apprentissage
                 </Link>
                 .
               </p>
               <p>
                 Pour plus d&apos;informations, se référer au{' '}
-                <Link href="https://travail-emploi.gouv.fr/IMG/pdf/guide_employeur.pdf">
-                  <a target="_blank">
+                <Link
+                  href="https://travail-emploi.gouv.fr/IMG/pdf/guide_employeur.pdf"
+                  target="_blank">
+                  
                     guide proposé par le ministère du travail pour
                     l&apos;embauche de personnes en contrats aidés
-                  </a>
+                  
                 </Link>
                 .
               </p>

@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from 'next/legacy/image'
 import { WorkExperienceType } from '../../../types/WorkExperienceType'
 import {
   getDifferenceBetweenDates,
@@ -27,9 +27,6 @@ const WorkExperience = ({ workExperience }: WorkExperienceProps) => {
             className={styles.logo}
             src={workExperience.logo}
             alt={workExperience.company + ' logo'}
-            width="100%"
-            height="100%"
-            objectFit="contain"
           />
         </div>
         <div className={styles.informations}>
