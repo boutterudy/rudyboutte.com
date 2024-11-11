@@ -20,11 +20,6 @@ export const portfolioProject: ProjectType = {
     <Image
       src="/images/projects/Portfolio.png"
       alt="Screenshot of my portfolio"
-      width={875}
-      height={414}
-      style={{
-        maxWidth: '100%',
-      }}
     />
   ),
   date: new Date(2022, 6),
@@ -46,11 +41,7 @@ export const countriesProject: ProjectType = {
     <Image
       src="/images/projects/REST-Countries-API.png"
       alt="REST Countries API with color theme switcher screenshot"
-      width={875}
-      height={414}
-      style={{
-        maxWidth: '100%',
-      }}
+      layout="fill"
     />
   ),
   date: new Date(2022, 1),
@@ -72,11 +63,7 @@ export const twitterProject: ProjectType = {
     <Image
       src="/images/projects/30-Days-Of-React-Baby-Twitter.png"
       alt="Baby Twitter screenshot"
-      width={875}
-      height={414}
-      style={{
-        maxWidth: '100%',
-      }}
+      layout="fill"
     />
   ),
   date: new Date(2022, 1),
@@ -99,8 +86,7 @@ export const toolboxProject: ProjectType = {
     <Image
       src="/images/projects/My-Toolbox.png"
       alt="My Toolbox screenshot"
-      width={875}
-      height={414}
+      layout="fill"
       style={{
         maxWidth: '100%',
       }}
@@ -122,8 +108,7 @@ export const perfimaasProject: ProjectType = {
     <Image
       src="/images/projects/Perfimaas.png"
       alt="Perfimaas registration page mock-up"
-      width={875}
-      height={414}
+      layout="fill"
       style={{
         objectFit: 'contain',
       }}
