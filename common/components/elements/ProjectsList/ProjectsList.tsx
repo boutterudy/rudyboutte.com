@@ -25,6 +25,7 @@ const ProjectsList = ({ projects }: ProjectsListProps) => {
             <div className={styles.previewWrapper}>
               {cloneElement(project.preview as ReactElement, {
                 className: styles.preview,
+                layout: 'fill',
                 objectFit: 'cover',
               })}
             </div>
