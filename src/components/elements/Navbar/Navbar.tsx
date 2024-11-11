@@ -3,8 +3,11 @@ import { useEffect, useState } from 'react'
 import Icon from '../Icon/Icon'
 import styles from './Navbar.module.scss'
 import { Link } from '../../../i18n/routing'
+import { useTranslations } from 'next-intl'
 
 const Navbar = () => {
+  const t = useTranslations('Navbar')
+
   /* States */
   const [isScrolled, setIsScrolled] = useState<boolean>(false)
   const [isNavExpanded, setIsNavExpanded] = useState<boolean>(false)
@@ -30,15 +33,21 @@ const Navbar = () => {
         (isScrolled === true ? ' ' + styles.scrolled : '')
       }
     >
-      {/*<LanguageSwitcher className={styles.languageSwitcher} />*/}
+      {/*
+        TODO: Add Language Switcher in the NavBar
+        <LanguageSwitcher className={styles.languageSwitcher} />
+      */}
       <div className={styles.logoContainer}>
         <div className={styles.logo}>
-          <Link href="/">RUDY BOUTTE</Link>
+          <Link href="/">{t('infos.headline')}</Link>
           <span className={styles.info}>
-            Développeur Front chez{' '}
-            <Link href="https://gensdeconfiance.com/" target="_blank">
-              <span className={styles.important}>Gens de Confiance</span>
-            </Link>
+            {t.rich('infos.details', {
+              a: (chunks) => (
+                <Link href="https://gensdeconfiance.com/" target="_blank">
+                  {chunks}
+                </Link>
+              ),
+            })}
           </span>
         </div>
         <Icon
@@ -56,13 +65,13 @@ const Navbar = () => {
               icon="code-s-slash-fill"
               className={styles.icon}
             />
-            Mes projets
+            {t('links.my_projects')}
           </Link>
         </li>
         <li>
           <Link href="/mon-parcours" className="underline">
             <Icon lib="remix-icon" icon="route-fill" className={styles.icon} />
-            Mon parcours
+            {t('links.my_background')}
           </Link>
         </li>
         <li>
@@ -72,7 +81,7 @@ const Navbar = () => {
               icon="user-shared-2-line"
               className={styles.icon}
             />
-            À propos
+            {t('links.about_me')}
           </Link>
         </li>
         <li>
@@ -82,7 +91,7 @@ const Navbar = () => {
               icon="discuss-line"
               className={styles.icon}
             />
-            Contact
+            {t('links.contact')}
           </Link>
         </li>
       </ul>

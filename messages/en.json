@@ -1,6 +1,14 @@
 {
-  "HomePage": {
-    "title": "Hello world!",
-    "about": "Go to the about page"
+  "Navbar": {
+    "infos": {
+      "headline": "RUDY BOUTTE",
+      "details": "Front-End Developer at <a>Gens de Confiance</a>"
+    },
+    "links": {
+      "my_projects": "My projects",
+      "my_background": "My background",
+      "about_me": "About me",
+      "contact": "Contact"
+    }
   }
 }
