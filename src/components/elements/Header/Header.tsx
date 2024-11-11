@@ -24,7 +24,7 @@ const Header = ({ children, arrow }: HeaderProps) => {
         ) : (
           <div></div>
         )}
-        <p className={styles.copyright}>©2022</p>
+        <p className={styles.copyright}>©{new Date().getFullYear()}</p>
       </div>
     </header>
   )
