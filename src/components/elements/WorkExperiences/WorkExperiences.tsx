@@ -3,6 +3,7 @@ import { WorkExperiencesNumberPerYearType } from '../../../types/WorkExperiences
 import { WorkExperienceType } from '../../../types/WorkExperienceType'
 import WorkExperience from '../WorkExperience/WorkExperience'
 import styles from './WorkExperiences.module.scss'
+import { useTranslations } from 'next-intl'
 
 type WorkExperiencesProps = {
   workExperiences: WorkExperienceType[]
@@ -13,9 +14,15 @@ const WorkExperiences = ({
   workExperiences,
   workExperiencesNumberPerYear,
 }: WorkExperiencesProps) => {
+  const t = useTranslations('WorkExperiences')
+
   return (
     <section>
-      <h1 className={styles.title}>Mes expériences professionnelles</h1>
+      <h1 className={styles.title}>
+        {t.rich('headline', {
+          br: () => <br />,
+        })}
+      </h1>
       {workExperiencesNumberPerYear.map((numberPerYear, yearGroupIndex) => (
         <div
           key={yearGroupIndex}

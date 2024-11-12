@@ -71,7 +71,7 @@ const Navbar = () => {
         <li>
           <Link href="/mon-parcours" className="underline">
             <Icon lib="remix-icon" icon="route-fill" className={styles.icon} />
-            {t('links.my_background')}
+            {t('links.my_journey')}
           </Link>
         </li>
         <li>

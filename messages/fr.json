@@ -6,7 +6,7 @@
     },
     "links": {
       "my_projects": "Mes projets",
-      "my_background": "Mon parcours",
+      "my_journey": "Mon parcours",
       "about_me": "À propos",
       "contact": "Contact"
     }
@@ -58,5 +58,137 @@
   },
   "MyProjects": {
     "headline": "Découvrez quelques-uns de mes <important>récents\nprojets</important> avec <important><SwappingWord></SwappingWord></important>"
+  },
+  "MyJourney": {
+    "headline": "Découvrez en un peu plus sur mon parcours :\n<important>mes formations</important> et <important>mes expériences\nprofessionnelles</important>.",
+    "workExperiences": {
+      "gens_de_confiance": {
+        "occupation": "Développeur front-end",
+        "description": "Développement d'une application web (Front)."
+      },
+      "sowlver": {
+        "occupation": "Développeur Fullstack",
+        "description": "Maquettage et développement d'une application web (Full Stack).",
+        "tasks": {
+          "0": {
+            "description": "Développement d'un espace en ligne"
+          },
+          "1": {
+            "description": "Développement d'une API complète avec système d'authentification"
+          },
+          "2": {
+            "description": "Maquettage d'un espace en ligne"
+          }
+        }
+      },
+      "ateris_2020_2021": {
+        "occupation": "Développeur",
+        "description": "Développements variés (Front / Back / Fullstack) sous différents environnements (Windows / Linux).",
+        "tasks": {
+          "0": {
+            "description": "Développement d'un portail captif avec plusieurs systèmes d'authentification"
+          },
+          "1": {
+            "description": "Développement et maintenance de plusieurs sites web"
+          },
+          "2": {
+            "description": "Développement d'un outil de déchiffrement PGP"
+          },
+          "3": {
+            "description": "Développement d'un script de migration mail d'ISPConfig vers Zimbra"
+          },
+          "4": {
+            "description": "Développement d'un installateur et configurateur d'AndroidTV automatisé"
+          }
+        }
+      },
+      "apinet_2020_07": {
+        "occupation": "Développeur",
+        "description": "Développement d'une application AndroidTV (Front).",
+        "tasks": {
+          "0": {
+            "description": "Développement d'un launcher pour AndroidTV"
+          }
+        }
+      },
+      "apinet_2020_01_2020_02": {
+        "occupation": "Développeur d'applications mobiles",
+        "description": "Développement d'une application multiplateforme (Front).",
+        "tasks": {
+          "0": {
+            "description": "Développement d'une application mobile de gestion"
+          }
+        }
+      },
+      "apinet_2019": {
+        "occupation": "Développeur web",
+        "description": "Développement d'une application web (Full Stack).",
+        "tasks": {
+          "0": {
+            "description": "Développement d'une interface web de gestion"
+          }
+        }
+      },
+      "ateris_2019": {
+        "occupation": "Développeur back-end",
+        "description": "Développement de scripts (Back) et configuration d'un serveur sous Linux.",
+        "tasks": {
+          "0": {
+            "description": "Mise en place d'un serveur d'autoconfiguration dédié à des box"
+          },
+          "1": {
+            "description": "Mise en place d'un système de diffusion des chaînes TNT via plusieurs flux RTMP"
+          }
+        }
+      },
+      "ateris_2017_10_2017_11": {
+        "occupation": "Technicien informatique",
+        "description": "Développement de scripts (Back) et gestion d'un réseau informatique.",
+        "tasks": {
+          "0": {
+            "description": "Mise en place d'un système domotique avec contrôle à distance du matériel"
+          },
+          "1": {
+            "description": "Installation et configuration de différents équipements afin de mettre en place un réseau informatique pour un grand événement"
+          }
+        }
+      },
+      "ateris_2017_02": {
+        "occupation": "Technicien informatique",
+        "description": "Développement de scripts (Back) sous Linux.",
+        "tasks": {
+          "0": {
+            "description": "Mise en place d'un système de diffusion automatique d'une chaîne télévisée vers différentes plates-formes web en direct"
+          }
+        }
+      },
+      "altea": {
+        "occupation": "Technicien informatique",
+        "description": "Installations et maintenance informatique.",
+        "tasks": {
+          "0": {
+            "description": "Installations de matériels et logiciels informatiques"
+          },
+          "1": {
+            "description": "Maintenance informatique"
+          }
+        }
+      },
+      "pc_pro_tech": {
+        "occupation": "Technicien informatique",
+        "description": "Gestion d'un réseau informatique et mise en place d'un système de vidéo-surveillance.",
+        "tasks": {
+          "0": {
+            "description": "Cartographie d'un réseau informatique et réorganisation d'une baie de brassage"
+          },
+          "1": {
+            "description": "Installation et paramétrage d'un système de vidéo-surveillance"
+          }
+        }
+      }
+    }
+  },
+  "WorkExperiences": {
+    "headline": "Mes expériences<br></br>professionnelles"
   }
 }

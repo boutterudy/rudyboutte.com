@@ -6,7 +6,7 @@
     },
     "links": {
       "my_projects": "My projects",
-      "my_background": "My background",
+      "my_journey": "My journey",
       "about_me": "About me",
       "contact": "Contact"
     }
@@ -58,5 +58,137 @@
   },
   "MyProjects": {
     "headline": "Discover some of my <important>recent\nprojects</important> with <important><SwappingWord></SwappingWord></important>"
+  },
+  "MyJourney": {
+    "headline": "Find out more about my background:\n<important>my education</important> and <important>my professional experience</important>.",
+    "workExperiences": {
+      "gens_de_confiance": {
+        "occupation": "Front-end developer",
+        "description": "Development of a web application (Front)."
+      },
+      "sowlver": {
+        "occupation": "Fullstack developer",
+        "description": "Design and development of a web application (Full Stack).",
+        "tasks": {
+          "0": {
+            "description": "Development of an online space"
+          },
+          "1": {
+            "description": "Development of a complete API with authentication system"
+          },
+          "2": {
+            "description": "Designing an online space"
+          }
+        }
+      },
+      "ateris_2020_2021": {
+        "occupation": "Software developer",
+        "description": "Varied development (Front / Back / Fullstack) in different environments (Windows / Linux).",
+        "tasks": {
+          "0": {
+            "description": "Development of a captive portal with several authentication systems"
+          },
+          "1": {
+            "description": "Development and maintenance of several websites"
+          },
+          "2": {
+            "description": "Development of a PGP decryption tool"
+          },
+          "3": {
+            "description": "Development of a mail migration script from ISPConfig to Zimbra"
+          },
+          "4": {
+            "description": "Development of an automated AndroidTV installer and configurator"
+          }
+        }
+      },
+      "apinet_2020_07": {
+        "occupation": "Software developer",
+        "description": "Development of an AndroidTV application (Front).",
+        "tasks": {
+          "0": {
+            "description": "Development of a launcher for AndroidTV"
+          }
+        }
+      },
+      "apinet_2020_01_2020_02": {
+        "occupation": "Mobile applications developer",
+        "description": "Development of a multiplatform application (Front).",
+        "tasks": {
+          "0": {
+            "description": "Development of a mobile management application"
+          }
+        }
+      },
+      "apinet_2019": {
+        "occupation": "Web developer",
+        "description": "Development of a web application (Full Stack).",
+        "tasks": {
+          "0": {
+            "description": "Development of a web management interface"
+          }
+        }
+      },
+      "ateris_2019": {
+        "occupation": "Back-end developer",
+        "description": "Development of scripts (Back) and configuration of a Linux server.",
+        "tasks": {
+          "0": {
+            "description": "Setting up an autoconfiguration server dedicated to boxes"
+          },
+          "1": {
+            "description": "Implementation of a system for broadcasting DTT channels via several RTMP streams"
+          }
+        }
+      },
+      "ateris_2017_10_2017_11": {
+        "occupation": "IT Technician",
+        "description": "Development of scripts (Back) and management of a computer network.",
+        "tasks": {
+          "0": {
+            "description": "Installation of a home automation system with remote control of equipment"
+          },
+          "1": {
+            "description": "Installation and configuration of various equipment to set up a computer network for a major event"
+          }
+        }
+      },
+      "ateris_2017_02": {
+        "occupation": "IT Technician",
+        "description": "Development of scripts (Back) under Linux.",
+        "tasks": {
+          "0": {
+            "description": "Implementation of a system for automatically broadcasting a television channel to various live web platforms"
+          }
+        }
+      },
+      "altea": {
+        "occupation": "IT Technician",
+        "description": "IT installations and maintenance.",
+        "tasks": {
+          "0": {
+            "description": "Installation of computer hardware and software"
+          },
+          "1": {
+            "description": "IT maintenance"
+          }
+        }
+      },
+      "pc_pro_tech": {
+        "occupation": "IT Technician",
+        "description": "Management of a computer network and installation of a video surveillance system.",
+        "tasks": {
+          "0": {
+            "description": "Mapping a computer network and reorganising a patch bay"
+          },
+          "1": {
+            "description": "Installation and configuration of a video surveillance system"
+          }
+        }
+      }
+    }
+  },
+  "WorkExperiences": {
+    "headline": "My professional<br></br>experience"
   }
 }

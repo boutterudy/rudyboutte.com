@@ -9,6 +9,7 @@ import { WorkExperiencesNumberPerYearType } from '../../../types/WorkExperiences
 import { WorkExperienceType } from '../../../types/WorkExperienceType'
 import styles from '../../../styles/pages/MyJourney.module.scss'
 import { allDegrees } from '../../../constants/degress'
+import { useTranslations } from 'next-intl'
 
 const aterisLogo = {
   src: '/images/companies/ateris-informatique-logo.png',
@@ -23,11 +24,13 @@ const apinetLogo = {
 }
 
 const MyJourney: NextPage = () => {
+  const t = useTranslations('MyJourney')
+
   const headerTitle = (
     <h1>
-      Découvrez en un peu plus sur mon parcours :{' '}
-      <span className="bold">mes formations</span> et{' '}
-      <span className="bold">mes expériences professionnelles</span>.
+      {t.rich('headline', {
+        important: (chunks) => <span className="bold">{chunks}</span>,
+      })}
     </h1>
   )
 
@@ -42,8 +45,8 @@ const MyJourney: NextPage = () => {
       company: 'Gens de Confiance',
       begin: new Date(2022, 10, 2),
       end: new Date(),
-      occupation: 'Développeur front-end',
-      description: "Développement d'une application web (Front).",
+      occupation: t('workExperiences.gens_de_confiance.occupation'),
+      description: t('workExperiences.gens_de_confiance.description'),
     },
     {
       logo: {
@@ -54,21 +57,19 @@ const MyJourney: NextPage = () => {
       company: 'Sowlver',
       begin: new Date(2022, 4),
       end: new Date(2022, 5, 30),
-      occupation: 'Développeur Fullstack',
-      description:
-        "Maquettage et développement d'une application web (Full Stack).",
+      occupation: t('workExperiences.sowlver.occupation'),
+      description: t('workExperiences.sowlver.description'),
       tasks: [
         {
-          description: "Développement d'un espace en ligne",
+          description: t('workExperiences.sowlver.tasks.0.description'),
           skills: ['TypeScript', 'React', 'Next.js', 'NextAuth.js', 'SCSS'],
         },
         {
-          description:
-            "Développement d'une API complète avec système d'authentification",
+          description: t('workExperiences.sowlver.tasks.1.description'),
           skills: ['TypeScript', 'NestJS', 'Passport'],
         },
         {
-          description: "Maquettage d'un espace en ligne",
+          description: t('workExperiences.sowlver.tasks.2.description'),
           skills: ['Adobe XD'],
         },
       ],
@@ -78,49 +79,55 @@ const MyJourney: NextPage = () => {
       company: 'Ateris Informatique',
       begin: new Date(2020, 7),
       end: new Date(2021, 4, 31),
-      occupation: 'Développeur',
-      description:
-        'Développements variés (Front / Back / Fullstack) sous différents environnements (Windows / Linux).',
+      occupation: t('workExperiences.ateris_2020_2021.occupation'),
+      description: t('workExperiences.ateris_2020_2021.description'),
       tasks: [
         {
-          description:
-            "Développement d'un portail captif avec plusieurs systèmes d'authentification",
+          description: t(
+            'workExperiences.ateris_2020_2021.tasks.0.description'
+          ),
           skills: [
             'OpenWRT',
             'OpenNDS',
             'Gammu',
             'Shell',
             'PHP',
-            'Javascript',
+            'JavaScript',
             'SQL',
             'HTML',
             'CSS',
           ],
         },
         {
-          description: 'Développement et maintenance de plusieurs sites web',
+          description: t(
+            'workExperiences.ateris_2020_2021.tasks.1.description'
+          ),
           skills: [
-            'Wordpress',
+            'WordPress',
             'ImpressPages',
             'PHP',
-            'Javascript',
+            'JavaScript',
             'SQL',
             'HTML',
             'CSS',
           ],
         },
         {
-          description: "Développement d'un outil de déchiffrement PGP",
+          description: t(
+            'workExperiences.ateris_2020_2021.tasks.2.description'
+          ),
           skills: ['Shell', 'GnuPG'],
         },
         {
-          description:
-            "Développement d'un script de migration mail d'ISPConfig vers Zimbra",
+          description: t(
+            'workExperiences.ateris_2020_2021.tasks.3.description'
+          ),
           skills: ['Shell', 'Zimbra CLI'],
         },
         {
-          description:
-            "Développement d'un installateur et configurateur d'AndroidTV automatisé",
+          description: t(
+            'workExperiences.ateris_2020_2021.tasks.4.description'
+          ),
           skills: ['Shell', 'Android Debug Bridge'],
         },
       ],
@@ -130,11 +137,11 @@ const MyJourney: NextPage = () => {
       company: 'Apinet',
       begin: new Date(2020, 6, 1),
       end: new Date(2020, 6, 31),
-      occupation: 'Développeur',
-      description: "Développement d'une application AndroidTV (Front).",
+      occupation: t('workExperiences.apinet_2020_07.occupation'),
+      description: t('workExperiences.apinet_2020_07.description'),
       tasks: [
         {
-          description: "Développement d'un launcher pour AndroidTV",
+          description: t('workExperiences.apinet_2020_07.tasks.0.description'),
           skills: ['Java', 'Android Studio'],
         },
       ],
@@ -144,14 +151,16 @@ const MyJourney: NextPage = () => {
       company: 'Apinet',
       begin: new Date(2020, 0),
       end: new Date(2020, 1),
-      occupation: "Développeur d'applications mobiles",
-      description: "Développement d'une application multiplateforme (Front).",
+      occupation: t('workExperiences.apinet_2020_01_2020_02.occupation'),
+      description: t('workExperiences.apinet_2020_01_2020_02.description'),
       tasks: [
         {
-          description: "Développement d'une application mobile de gestion",
+          description: t(
+            'workExperiences.apinet_2020_01_2020_02.tasks.0.description'
+          ),
           skills: [
             'Cordova',
-            'Javascript',
+            'JavaScript',
             'jQuery',
             'Bootstrap',
             'HTML',
@@ -165,11 +174,11 @@ const MyJourney: NextPage = () => {
       company: 'Apinet',
       begin: new Date(2019, 6),
       end: new Date(2019, 7, 30),
-      occupation: 'Développeur web',
-      description: "Développement d'une application web (Full Stack).",
+      occupation: t('workExperiences.apinet_2019.occupation'),
+      description: t('workExperiences.apinet_2019.description'),
       tasks: [
         {
-          description: "Développement d'une interface web de gestion",
+          description: t('workExperiences.apinet_2019.tasks.0.description'),
           skills: ['PHP', 'AngularJS', 'MAMP', 'SQL'],
         },
       ],
@@ -179,18 +188,15 @@ const MyJourney: NextPage = () => {
       company: 'Ateris Informatique',
       begin: new Date(2019, 4),
       end: new Date(2019, 5, 30),
-      occupation: 'Développeur back-end',
-      description:
-        "Développement de scripts (Back) et configuration d'un serveur sous Linux.",
+      occupation: t('workExperiences.ateris_2019.occupation'),
+      description: t('workExperiences.ateris_2019.description'),
       tasks: [
         {
-          description:
-            "Mise en place d'un serveur d'autoconfiguration dédié à des box",
+          description: t('workExperiences.ateris_2019.tasks.0.description'),
           skills: ['Bash', 'NodeJS', 'TR-069'],
         },
         {
-          description:
-            "Mise en place d'un système de diffusion des chaînes TNT via plusieurs flux RTMP",
+          description: t('workExperiences.ateris_2019.tasks.1.description'),
           skills: ['Bash', 'FFMPEG'],
         },
       ],
@@ -200,18 +206,19 @@ const MyJourney: NextPage = () => {
       company: 'Ateris Informatique',
       begin: new Date(2017, 9),
       end: new Date(2017, 10, 30),
-      occupation: 'Technicien informatique',
-      description:
-        "Développement de scripts (Back) et gestion d'un réseau informatique.",
+      occupation: t('workExperiences.ateris_2017_10_2017_11.occupation'),
+      description: t('workExperiences.ateris_2017_10_2017_11.description'),
       tasks: [
         {
-          description:
-            "Mise en place d'un système domotique avec contrôle à distance du matériel",
+          description: t(
+            'workExperiences.ateris_2017_10_2017_11.tasks.0.description'
+          ),
           skills: ['Bash', 'Lua', 'Python'],
         },
         {
-          description:
-            'Installation et configuration de différents équipements afin de mettre en place un réseau informatique pour un grand événement',
+          description: t(
+            'workExperiences.ateris_2017_10_2017_11.tasks.1.description'
+          ),
           skills: ['VLANs', 'pfSense'],
         },
       ],
@@ -221,12 +228,11 @@ const MyJourney: NextPage = () => {
       company: 'Ateris Informatique',
       begin: new Date(2017, 1),
       end: new Date(2017, 1, 28),
-      occupation: 'Technicien informatique',
-      description: 'Développement de scripts (Back) sous Linux.',
+      occupation: t('workExperiences.ateris_2017_02.occupation'),
+      description: t('workExperiences.ateris_2017_02.description'),
       tasks: [
         {
-          description:
-            "Mise en place d'un système de diffusion automatique d'une chaîne télévisée vers différentes plates-formes web en direct",
+          description: t('workExperiences.ateris_2017_02.tasks.0.description'),
           skills: ['Bash', 'FFMPEG'],
         },
       ],
@@ -240,15 +246,15 @@ const MyJourney: NextPage = () => {
       company: 'Altéa Informatique',
       begin: new Date(2016, 5),
       end: new Date(2016, 5, 30),
-      occupation: 'Technicien informatique',
-      description: 'Installations et maintenance informatique.',
+      occupation: t('workExperiences.altea.occupation'),
+      description: t('workExperiences.altea.description'),
       tasks: [
         {
-          description: 'Installations de matériels et logiciels informatiques',
+          description: t('workExperiences.altea.tasks.0.description'),
           skills: [],
         },
         {
-          description: 'Maintenance informatique',
+          description: t('workExperiences.altea.tasks.1.description'),
           skills: [],
         },
       ],
@@ -262,18 +268,15 @@ const MyJourney: NextPage = () => {
       company: 'PC PRO&TECH',
       begin: new Date(2016, 0),
       end: new Date(2016, 0, 30),
-      occupation: 'Technicien informatique',
-      description:
-        "Gestion d'un réseau informatique et mise en place d'un système de vidéo-surveillance.",
+      occupation: t('workExperiences.pc_pro_tech.occupation'),
+      description: t('workExperiences.pc_pro_tech.description'),
       tasks: [
         {
-          description:
-            "Cartographie d'un réseau informatique et réorganisation d'une baie de brassage",
+          description: t('workExperiences.pc_pro_tech.tasks.0.description'),
           skills: [],
         },
         {
-          description:
-            "Installation et paramétrage d'un système de vidéo-surveillance",
+          description: t('workExperiences.pc_pro_tech.tasks.1.description'),
           skills: [],
         },
       ],
