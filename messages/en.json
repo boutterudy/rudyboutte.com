@@ -1,7 +1,12 @@
 {
   "common": {
     "from_to": "{from} to {to}",
-    "today": "today"
+    "today": "today",
+    "months": "{count, plural, =0 {} =1 {1 month} other {# months}}",
+    "days": "{count, plural, =0 {} =1 {1 day} other {# days}}",
+    "hours": "{count, plural, =0 {} =1 {1 hour} other {# hours}}",
+    "seconds": "{count, plural, =0 {} =1 {1 second} other {# seconds}}",
+    "milliseconds": "{count, plural, =0 {} =1 {1 millisecond} other {# milliseconds}}"
   },
   "Navbar": {
     "infos": {

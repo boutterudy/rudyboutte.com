@@ -1,3 +1,5 @@
+import { getTranslations } from 'next-intl/server'
+
 const getMonthName = (d: Date) => d.toLocaleString('default', { month: 'long' })
 
 const secondInMs = 1000
@@ -12,32 +14,37 @@ const monthInMs = dayInMs * 30.4167
  * @param d2 Date (end)
  * @returns Difference between dates as string
  */
-const getDifferenceBetweenDates = (d1: Date, d2: Date) => {
+const getDifferenceBetweenDates = async (d1: Date, d2: Date) => {
+  const t = await getTranslations('common')
   const diffInMs = Math.abs(d2.getTime() - d1.getTime())
+
   // If in months (round to month if >= 28 days)
   if (diffInMs >= 28 * dayInMs) {
-    return Math.round(diffInMs / monthInMs) + ' mois'
+    return t('months', {
+      count: Math.round(diffInMs / monthInMs),
+    })
   }
 
   // If in days
   if (diffInMs >= dayInMs) {
     const diffInDays = Math.round(diffInMs / dayInMs)
-    return diffInDays + ' jour' + (diffInDays > 1 ? 's' : '')
+    return t('days', { count: diffInDays })
   }
 
   // If in hours
   if (diffInMs >= hourInMs) {
-    const diffInHours = diffInMs / dayInMs
-    return diffInHours + ' heure' + (diffInHours > 1 ? 's' : '')
+    const diffInHours = Math.round(diffInMs / hourInMs)
+    return t('hours', { count: diffInHours })
   }
 
   // If in seconds
   if (diffInMs >= secondInMs) {
-    const diffInSeconds = diffInMs / secondInMs
-    return diffInSeconds + ' seconde' + (diffInSeconds > 1 ? 's' : '')
+    const diffInSeconds = Math.round(diffInMs / secondInMs)
+    return t('seconds', { count: diffInSeconds })
   }
 
-  return diffInMs + ' milliseconde' + (diffInMs > 1 ? 's' : '')
+  // If in milliseconds
+  return t('milliseconds', { count: diffInMs })
 }
 
 /**

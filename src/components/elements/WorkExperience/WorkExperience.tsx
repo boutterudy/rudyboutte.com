@@ -6,15 +6,15 @@ import {
 } from '../../../utils/DateUtil'
 import { capitalizeFirstLetter } from '../../../utils/StringUtil'
 import styles from './WorkExperience.module.scss'
-import { useTranslations } from 'next-intl'
+import { getTranslations } from 'next-intl/server'
 
 type WorkExperienceProps = {
   workExperience: WorkExperienceType
 }
 
-const WorkExperience = ({ workExperience }: WorkExperienceProps) => {
-  const t = useTranslations('WorkExperience')
-  const tCommon = useTranslations('common')
+const WorkExperience = async ({ workExperience }: WorkExperienceProps) => {
+  const t = await getTranslations('WorkExperience')
+  const tCommon = await getTranslations('common')
 
   const begin = workExperience.begin
   const end = workExperience.end
@@ -52,7 +52,7 @@ const WorkExperience = ({ workExperience }: WorkExperienceProps) => {
                     : tCommon('today'))
                 : '') +
               ' (' +
-              getDifferenceBetweenDates(begin, end) +
+              (await getDifferenceBetweenDates(begin, end)) +
               ') - ' +
               workExperience.occupation}
           </small>
