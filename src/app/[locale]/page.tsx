@@ -21,7 +21,7 @@ const Home: NextPage = () => {
         />
       </Head>
       <Header>
-        <Link href="/a-propos" className="noAnimation" title="À propos">
+        <Link href="/mon-parcours" className="noAnimation" title="Mon parcours">
           <Image
             className={styles.pictureOfMe}
             src={HomepagePicture}
