@@ -6,25 +6,11 @@ import Header from '../../components/elements/Header/Header'
 import Presentation from '../../components/elements/Presentation/Presentation'
 import ProjectsList from '../../components/elements/ProjectsList/ProjectsList'
 import PageLayout from '../../components/layouts/PageLayout/PageLayout'
-import { ProjectType } from '../../types/ProjectType'
 import HomepagePicture from '../../../public/images/me.jpg'
 import styles from '../../styles/pages/Home.module.scss'
-import {
-  portfolioProject,
-  countriesProject,
-  twitterProject,
-  perfimaasProject,
-} from '../../constants/projects'
 import { Link } from '../../i18n/routing'
 
 const Home: NextPage = () => {
-  const projects: ProjectType[] = [
-    portfolioProject,
-    countriesProject,
-    twitterProject,
-    perfimaasProject,
-  ]
-
   return (
     <PageLayout>
       <Head>
@@ -46,7 +32,9 @@ const Home: NextPage = () => {
         </Link>
       </Header>
       <Presentation />
-      <ProjectsList projects={projects} />
+      <ProjectsList
+        displayedProjects={['portfolio', 'countries', 'twitter', 'perfimaas']}
+      />
       <ContactMeBlock />
     </PageLayout>
   )

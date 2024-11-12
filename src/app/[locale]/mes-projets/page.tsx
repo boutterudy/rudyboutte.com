@@ -5,7 +5,6 @@ import ProjectsList from '../../../components/elements/ProjectsList/ProjectsList
 import TextHeader from '../../../components/elements/TextHeader/TextHeader'
 import PageLayout from '../../../components/layouts/PageLayout/PageLayout'
 import SwappingWord from '../../../components/elements/SwappingWord/SwappingWord'
-import { allProjects } from '../../../constants/projects'
 
 const MyProjects: NextPage = () => {
   const headerTitle = (
@@ -38,7 +37,7 @@ const MyProjects: NextPage = () => {
         />
       </Head>
       <TextHeader title={headerTitle} />
-      <ProjectsList projects={allProjects} />
+      <ProjectsList />
       <ContactMeBlock />
     </PageLayout>
   )

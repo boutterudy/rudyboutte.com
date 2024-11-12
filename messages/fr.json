@@ -19,5 +19,30 @@
       "about_me": "À propos de moi",
       "discover_my_projects": "Découvrir mes projets"
     }
+  },
+  "ProjectsList": {
+    "portfolio": {
+      "title": "Portfolio",
+      "description": "Site mettant en avant mes compétences et permettant d'accéder aux informations utiles me concernant, notamment dans le cadre de ma recherche d'alternance."
+    },
+    "countries": {
+      "title": "Explorateur de pays avec sélecteur de thème",
+      "description": "Application Web permettant d'accéder à la liste de tous les pays et de découvrir plus de détails sur chacun d'eux (population, capitale, langues, etc...)."
+    },
+    "twitter": {
+      "title": "Bébé Twitter",
+      "description": "Reproduction simplifiée du célèbre réseau social Twitter, avec du contenu généré à partir de plusieurs APIs publiques, développé dans le cadre du défi \"30 jours de React\"."
+    },
+    "toolbox": {
+      "title": "My Toolbox",
+      "description": "Boîte à outils en ligne, permettant pour l'instant d'utiliser un générateur de mot de passe et de mettre en avant mes autres projets personnels."
+    },
+    "perfimaas": {
+      "title": "API de Perfimaas",
+      "description": "\"API de Perfimaas, l'assistant de gestion des finances personnelles ayant pour but d'accompagner les citoyens du monde à gérer plus sainement leurs finances."
+    },
+    "cta": {
+      "demo": "Démo"
+    }
   }
 }

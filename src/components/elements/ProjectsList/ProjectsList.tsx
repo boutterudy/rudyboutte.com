@@ -4,19 +4,158 @@ import Badge from '../Badge/Badge'
 import Button from '../Button/Button'
 import Icon from '../Icon/Icon'
 import styles from './ProjectsList.module.scss'
-import { getLocale } from 'next-intl/server'
+import { getLocale, getTranslations } from 'next-intl/server'
 import { Link } from '../../../i18n/routing'
+import { Colors } from '../../../constants/colors'
+import Image from 'next/legacy/image'
+
+type Project = 'portfolio' | 'countries' | 'twitter' | 'toolbox' | 'perfimaas'
 
 type ProjectsListProps = {
-  projects: ProjectType[]
+  displayedProjects?: Array<Project>
 }
 
-const ProjectsList = async ({ projects }: ProjectsListProps) => {
+const ProjectsList = async ({
+  displayedProjects = [
+    'portfolio',
+    'countries',
+    'twitter',
+    'toolbox',
+    'perfimaas',
+  ],
+}: ProjectsListProps) => {
   const locale = await getLocale()
+  const t = await getTranslations('ProjectsList')
+
+  const portfolio: ProjectType = {
+    title: t('portfolio.title'),
+    description: t('portfolio.description'),
+    demo: 'https://rudyboutte.com/',
+    github: 'https://github.com/boutterudy/rudyboutte.com',
+    tags: [
+      { title: 'TypeScript', color: Colors.TYPESCRIPT },
+      { title: 'React', color: Colors.REACT },
+      { title: 'Next.js', color: Colors.NEXTJS },
+      { title: 'SCSS', color: Colors.SCSS },
+      { title: 'Adobe XD', color: Colors.ADOBEXD },
+    ],
+    preview: (
+      <Image
+        src="/images/projects/Portfolio.png"
+        alt="Screenshot of my portfolio"
+      />
+    ),
+    date: new Date(2022, 6),
+    icon: <Icon lib="remix-icon" icon="globe-line" />,
+  }
+
+  const countries: ProjectType = {
+    title: t('countries.title'),
+    description: t('countries.description'),
+    demo: 'https://rest-countries-api-lac.vercel.app/',
+    github: 'https://github.com/boutterudy/REST-Countries-API',
+    tags: [
+      { title: 'TypeScript', color: Colors.TYPESCRIPT },
+      { title: 'React', color: Colors.REACT },
+      { title: 'Next.js', color: Colors.NEXTJS },
+      { title: 'SCSS', color: Colors.SCSS },
+    ],
+    preview: (
+      <Image
+        src="/images/projects/REST-Countries-API.png"
+        alt="REST Countries API with color theme switcher screenshot"
+        layout="fill"
+      />
+    ),
+    date: new Date(2022, 1),
+    icon: <Icon lib="remix-icon" icon="globe-line" />,
+  }
+
+  const twitter: ProjectType = {
+    title: t('twitter.title'),
+    description: t('twitter.description'),
+    demo: 'https://30-days-of-react-two.vercel.app/solutions/day-28',
+    github:
+      'https://github.com/boutterudy/30-Days-Of-React/tree/exercice-solutions',
+    tags: [
+      { title: 'JavaScript', color: Colors.JAVASCRIPT },
+      { title: 'React', color: Colors.REACT },
+      { title: 'SCSS', color: Colors.SCSS },
+    ],
+    preview: (
+      <Image
+        src="/images/projects/30-Days-Of-React-Baby-Twitter.png"
+        alt="Baby Twitter screenshot"
+        layout="fill"
+      />
+    ),
+    date: new Date(2022, 1),
+    icon: <Icon lib="remix-icon" icon="twitter-fill" />,
+  }
+
+  const toolbox: ProjectType = {
+    title: t('toolbox.title'),
+    description: t('toolbox.description'),
+    demo: 'https://www.rudy.cloud/',
+    github: 'https://github.com/boutterudy/mytoolbox',
+    tags: [
+      { title: 'TypeScript', color: Colors.TYPESCRIPT },
+      { title: 'React', color: Colors.REACT },
+      { title: 'Next.js', color: Colors.NEXTJS },
+      { title: 'CSS', color: Colors.CSS },
+      { title: 'Adobe XD', color: Colors.ADOBEXD },
+    ],
+    preview: (
+      <Image
+        src="/images/projects/My-Toolbox.png"
+        alt="My Toolbox screenshot"
+        layout="fill"
+        style={{
+          maxWidth: '100%',
+        }}
+      />
+    ),
+    date: new Date(2021, 0),
+    icon: <Icon lib="remix-icon" icon="tools-fill" />,
+  }
+
+  const perfimaas: ProjectType = {
+    title: t('perfimaas.title'),
+    description: t('perfimaas.description'),
+    github: 'https://github.com/boutterudy/Perfimaas',
+    tags: [
+      { title: 'TypeScript', color: Colors.TYPESCRIPT },
+      { title: 'NestJS', color: Colors.NESTJS },
+    ],
+    preview: (
+      <Image
+        src="/images/projects/Perfimaas.png"
+        alt="Perfimaas registration page mock-up"
+        layout="fill"
+        style={{
+          objectFit: 'contain',
+        }}
+      />
+    ),
+    date: new Date(2020, 7),
+    icon: <Icon lib="remix-icon" icon="money-dollar-circle-fill" />,
+  }
+
+  const allProjects: Record<Project, ProjectType> = {
+    portfolio,
+    countries,
+    twitter,
+    toolbox,
+    perfimaas,
+  }
+
+  const projectsToDisplay = displayedProjects.map(
+    (projectKey) => allProjects[projectKey]
+  )
 
   return (
     <section className={styles.projectsList}>
-      {projects.map((project, index) => (
+      {projectsToDisplay.map((project, index) => (
         <div key={index} className={styles.project}>
           <Link
             href={project.demo !== undefined ? project.demo : project.github}
@@ -55,7 +194,7 @@ const ProjectsList = async ({ projects }: ProjectsListProps) => {
                         theme="small"
                         leftIcon={<Icon lib="remix-icon" icon="window-fill" />}
                       >
-                        Démo
+                        {t('cta.demo')}
                       </Button>
                     </Link>
                   )}
