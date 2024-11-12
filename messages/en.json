@@ -55,5 +55,8 @@
     "mail_copy": {
       "success": "Email address copied to clipboard"
     }
+  },
+  "MyProjects": {
+    "headline": "Discover some of my <important>recent\nprojects</important> with <important><SwappingWord></SwappingWord></important>"
   }
 }

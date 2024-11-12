@@ -55,5 +55,8 @@
     "mail_copy": {
       "success": "Adresse mail copiée dans le presse-papiers"
     }
+  },
+  "MyProjects": {
+    "headline": "Découvrez quelques-uns de mes <important>récents\nprojets</important> avec <important><SwappingWord></SwappingWord></important>"
   }
 }

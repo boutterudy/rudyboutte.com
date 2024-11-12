@@ -5,25 +5,29 @@ import ProjectsList from '../../../components/elements/ProjectsList/ProjectsList
 import TextHeader from '../../../components/elements/TextHeader/TextHeader'
 import PageLayout from '../../../components/layouts/PageLayout/PageLayout'
 import SwappingWord from '../../../components/elements/SwappingWord/SwappingWord'
+import { useTranslations } from 'next-intl'
 
 const MyProjects: NextPage = () => {
+  const t = useTranslations('MyProjects')
+
   const headerTitle = (
     <h1>
-      Découvrez quelques-uns de mes{' '}
-      <span className="bold">récents projets</span> avec{' '}
-      <span className="bold">
-        <SwappingWord
-          words={[
-            'TypeScript.',
-            'React.',
-            'Next.js.',
-            'SCSS.',
-            'NestJS.',
-            'JavaScript.',
-            'CSS.',
-          ]}
-        />
-      </span>
+      {t.rich('headline', {
+        important: (chunks) => <span className="bold">{chunks}</span>,
+        SwappingWord: () => (
+          <SwappingWord
+            words={[
+              'TypeScript.',
+              'React.',
+              'Next.js.',
+              'SCSS.',
+              'NestJS.',
+              'JavaScript.',
+              'CSS.',
+            ]}
+          />
+        ),
+      })}
     </h1>
   )
 
@@ -31,6 +35,7 @@ const MyProjects: NextPage = () => {
     <PageLayout>
       <Head>
         <title>Rudy Boutte – Mes projets</title>
+        {/* TODO: Add Meta Description translation*/}
         <meta
           name="description"
           content="J'adore me lancer dans de nouveaux défis. Découvrez quelques-uns de mes récents projets."
