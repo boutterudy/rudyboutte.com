@@ -1,4 +1,8 @@
 {
+  "common": {
+    "from_to": "{from} to {to}",
+    "today": "today"
+  },
   "Navbar": {
     "infos": {
       "headline": "RUDY BOUTTE",
@@ -186,9 +190,171 @@
           }
         }
       }
+    },
+    "degrees": {
+      "bac_4": {
+        "title": "Bachelor's degree (BSc) in Computer Science",
+        "curriculum": {
+          "element_1": {
+            "description": "Algorithms"
+          },
+          "element_2": {
+            "description": "Front-end web development",
+            "skills": {
+              "skill_1": "HTML",
+              "skill_2" : "CSS",
+              "skill_3" : "JavaScript",
+              "skill_4" : "Angular"
+            }
+          },
+          "element_3": {
+            "description": "Back-end web development",
+            "skills": {
+              "skill_1": "PHP",
+              "skill_2": "Symfony"
+            }
+          },
+          "element_4": {
+            "description": "Project management",
+            "skills": {
+              "skill_1": "Agile Method",
+              "skill_2": "Resource management",
+              "skill_3": "Gantt"
+            }
+          },
+          "element_5": {
+            "description": "SQL query language",
+            "skills": {
+              "skill_1": "SQL",
+              "skill_2": "SQL Server"
+            }
+          },
+          "element_6": {
+            "description": "Object-oriented programming",
+            "skills": {
+              "skill_1": "Java"
+            }
+          },
+          "element_7": {
+            "description": "Layered development",
+            "skills": {
+              "skill_1": "Java SE"
+            }
+          },
+          "element_8": {
+            "description": "Server administration",
+            "skills": {
+              "skill_1": "Apache",
+              "skill_2": "Linux"
+            }
+          },
+          "element_9": {
+            "description": "Cross-platform technologies",
+            "skills": {
+              "skill_1": "Xamarin",
+              "skill_2": "Ionic"
+            }
+          }
+        }
+      },
+      "bac_2": {
+        "title": "Higher National Diploma (HND) in Software Development",
+        "curriculum": {
+          "element_1": {
+            "description": "Full stack web development",
+            "skills": {
+              "skill_1": "HTML",
+              "skill_2" : "CSS",
+              "skill_3" : "PHP",
+              "skill_4" : "Symfony",
+              "skill_5" : "Model–view–controller (MVC)",
+              "skill_6" : "JavaScript"
+            }
+          },
+          "element_2": {
+            "description": "SQL query language",
+            "skills": {
+              "skill_1": "SQL",
+              "skill_2" : "MySQL",
+              "skill_3" : "SQL Server"
+            }
+          },
+          "element_3": {
+            "description": "Project management and design",
+            "skills": {
+              "skill_1": "Merise",
+              "skill_2": "Unified Modelling Language (UML)",
+              "skill_3": "Agile"
+            }
+          },
+          "element_4": {
+            "description": "System configuration",
+            "skills": {
+              "skill_1": "Switches",
+              "skill_2": "Wifi equipment",
+              "skill_3": "Routers"
+            }
+          },
+          "element_5": {
+            "description": "Server installation and administration",
+            "skills": {
+              "skill_1": "Debian",
+              "skill_2": "Windows 10",
+              "skill_3": "Windows Server 2016 & 2019"
+            }
+          },
+          "element_6": {
+            "description": "Server virtualisation",
+            "skills": {
+              "skill_1": "VMWare"
+            }
+          }
+        }
+      },
+      "bac": {
+        "title": "BTEC National Diploma in Information Technology, with Distinction",
+        "curriculum": {
+          "element_1": {
+            "description": "Preparing materials"
+          },
+          "element_2": {
+            "description": "Systems installation, configuration and commissioning"
+          },
+          "element_3": {
+            "description": "Systems maintenance"
+          },
+          "element_4": {
+            "description": "Testing and checking compliance"
+          },
+          "element_5": {
+            "description": "Business organisation"
+          }
+        }
+      }
+    },
+    "schools": {
+      "eni": {
+        "name": "ENI Ecole Informatique",
+        "city": "Nantes"
+      },
+      "esupec": {
+        "name": "ESUPEC",
+        "city": "Cholet"
+      },
+      "jean_monnet": {
+        "name": "Lycée Jean Monnet",
+        "city": "Les Herbiers"
+      }
     }
   },
   "WorkExperiences": {
     "headline": "My professional<br></br>experience"
+  },
+  "EducationDegree": {
+    "studied_topics": "Subjects studied:",
+    "diploma_level": "Diploma level"
+  },
+  "WorkExperience": {
+    "accomplished_missions": "Assignments completed:"
   }
 }

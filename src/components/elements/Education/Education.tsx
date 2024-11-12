@@ -12,16 +12,6 @@ const Education = ({
   degrees,
   workExperiencesNumberPerYear,
 }: EducationProps) => {
-  // Get number of work experiences from the beginning to end of that degree
-  /*const workExperiencesNumber = workExperiences.filter(
-    (workExperience: WorkExperienceType) => {
-      return (
-        workExperience.end.getTime() >= degree.begin.getTime() &&
-        workExperience.end.getTime() <= degree.end.getTime()
-      );
-    }
-  ).length;*/
-
   const getTotalYearsCount = (begin: Date, end: Date) => {
     const beginYear = begin.getFullYear()
     const endYear = end.getFullYear()

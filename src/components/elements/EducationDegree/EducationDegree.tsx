@@ -3,12 +3,16 @@ import { DegreeType } from '../../../types/DegreeType'
 import { getMonthName } from '../../../utils/DateUtil'
 import { capitalizeFirstLetter } from '../../../utils/StringUtil'
 import styles from './EducationDegree.module.scss'
+import { useTranslations } from 'next-intl'
 
 type EducationDegreeProps = {
   degree: DegreeType
 }
 
 const EducationDegree = ({ degree }: EducationDegreeProps) => {
+  const t = useTranslations('EducationDegree')
+  const tCommon = useTranslations('common')
+
   const begin = degree.begin
   const end = degree.end
   return (
@@ -25,14 +29,15 @@ const EducationDegree = ({ degree }: EducationDegreeProps) => {
         </div>
         <div className={styles.informations}>
           <small className={styles.details}>
-            {capitalizeFirstLetter(getMonthName(begin)) +
-              ' ' +
-              begin.getFullYear() +
-              ' à ' +
-              capitalizeFirstLetter(getMonthName(end)) +
-              ' ' +
-              end.getFullYear() +
-              ' - Diplôme de niveau ' +
+            {tCommon('from_to', {
+              from: `${capitalizeFirstLetter(
+                getMonthName(begin)
+              )} ${begin.getFullYear()}`,
+              to: `${capitalizeFirstLetter(
+                getMonthName(end)
+              )} ${end.getFullYear()}`,
+            }) +
+              ` - ${t('diploma_level')} ` +
               degree.level}
           </small>
           <div className={styles.title}>
@@ -46,7 +51,7 @@ const EducationDegree = ({ degree }: EducationDegreeProps) => {
         </div>
       </div>
       <div className={styles.tasksContainer}>
-        <p className={styles.title}>Sujets étudiés :</p>
+        <p className={styles.title}>{t('studied_topics')}</p>
         <ul className={styles.tasks}>
           {degree.curriculum.map((subject, index) => {
             const skills =

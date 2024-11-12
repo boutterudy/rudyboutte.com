@@ -6,14 +6,19 @@ import {
 } from '../../../utils/DateUtil'
 import { capitalizeFirstLetter } from '../../../utils/StringUtil'
 import styles from './WorkExperience.module.scss'
+import { useTranslations } from 'next-intl'
 
 type WorkExperienceProps = {
   workExperience: WorkExperienceType
 }
 
 const WorkExperience = ({ workExperience }: WorkExperienceProps) => {
+  const t = useTranslations('WorkExperience')
+  const tCommon = useTranslations('common')
+
   const begin = workExperience.begin
   const end = workExperience.end
+
   return (
     <div className={styles.workExperience}>
       <div
@@ -36,12 +41,15 @@ const WorkExperience = ({ workExperience }: WorkExperienceProps) => {
               begin.getFullYear() +
               (begin.getMonth() !== end.getMonth() ||
               begin.getFullYear() !== end.getFullYear()
-                ? ' à ' +
+                ? tCommon('from_to', {
+                    from: '',
+                    to: '',
+                  }) +
                   (new Date().toDateString() !== end.toDateString()
                     ? capitalizeFirstLetter(
                         getMonthName(end) + ' ' + end.getFullYear()
                       )
-                    : "aujourd'hui")
+                    : tCommon('today'))
                 : '') +
               ' (' +
               getDifferenceBetweenDates(begin, end) +
@@ -61,7 +69,7 @@ const WorkExperience = ({ workExperience }: WorkExperienceProps) => {
       </div>
       {workExperience.tasks && (
         <div className={styles.tasksContainer}>
-          <p className={styles.title}>Missions réalisées :</p>
+          <p className={styles.title}>{t('accomplished_missions')}</p>
           <ul className={styles.tasks}>
             {workExperience.tasks.map((task, index) => {
               const skills =

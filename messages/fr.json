@@ -1,4 +1,8 @@
 {
+  "common": {
+    "from_to": "{from} à {to}",
+    "today": "aujourd'hui"
+  },
   "Navbar": {
     "infos": {
       "headline": "RUDY BOUTTE",
@@ -186,9 +190,171 @@
           }
         }
       }
+    },
+    "degrees": {
+      "bac_4": {
+        "title": "Bac +4 Concepteur Développeur d'Applications",
+        "curriculum": {
+          "element_1": {
+            "description": "Algorithmique"
+          },
+          "element_2": {
+            "description": "Développement Web côté front-end",
+            "skills": {
+              "skill_1": "HTML",
+              "skill_2" : "CSS",
+              "skill_3" : "JavaScript",
+              "skill_4" : "Angular"
+            }
+          },
+          "element_3": {
+            "description": "Développement Web côté back-end",
+            "skills": {
+              "skill_1": "PHP",
+              "skill_2": "Symfony"
+            }
+          },
+          "element_4": {
+            "description": "Gestion de projet",
+            "skills": {
+              "skill_1": "Méthode Agile",
+              "skill_2": "Gestion des ressources",
+              "skill_3": "Gantt"
+            }
+          },
+          "element_5": {
+            "description": "Langage de requête SQL",
+            "skills": {
+              "skill_1": "SQL",
+              "skill_2": "SQL Server"
+            }
+          },
+          "element_6": {
+            "description": "Programmation Orientée Objet",
+            "skills": {
+              "skill_1": "Java"
+            }
+          },
+          "element_7": {
+            "description": "Développement en couches",
+            "skills": {
+              "skill_1": "Java SE"
+            }
+          },
+          "element_8": {
+            "description": "Administration d'un serveur",
+            "skills": {
+              "skill_1": "Apache",
+              "skill_2": "Linux"
+            }
+          },
+          "element_9": {
+            "description": "Technologies Cross-Platform",
+            "skills": {
+              "skill_1": "Xamarin",
+              "skill_2": "Ionic"
+            }
+          }
+        }
+      },
+      "bac_2": {
+        "title": "Bac +2 BTS SIO option SLAM",
+        "curriculum": {
+          "element_1": {
+            "description": "Développement Web full stack",
+            "skills": {
+              "skill_1": "HTML",
+              "skill_2" : "CSS",
+              "skill_3" : "PHP",
+              "skill_4" : "Symfony",
+              "skill_5" : "Modèle-vue-contrôleur (MVP)",
+              "skill_6" : "JavaScript"
+            }
+          },
+          "element_2": {
+            "description": "Langage de requête SQL",
+            "skills": {
+              "skill_1": "SQL",
+              "skill_2" : "MySQL",
+              "skill_3" : "SQL Server"
+            }
+          },
+          "element_3": {
+            "description": "Gestion de projet et conception",
+            "skills": {
+              "skill_1": "Merise",
+              "skill_2": "Langage de Modélisation Unifié (UML)",
+              "skill_3": "Agile"
+            }
+          },
+          "element_4": {
+            "description": "Configuration de systèmes",
+            "skills": {
+              "skill_1": "Commutateurs",
+              "skill_2": "Matériel Wifi",
+              "skill_3": "Routeurs"
+            }
+          },
+          "element_5": {
+            "description": "Installation et administration de serveurs",
+            "skills": {
+              "skill_1": "Debian",
+              "skill_2": "Windows 10",
+              "skill_3": "Windows Server 2016 & 2019"
+            }
+          },
+          "element_6": {
+            "description": "Virtualisation de serveurs",
+            "skills": {
+              "skill_1": "VMWare"
+            }
+          }
+        }
+      },
+      "bac": {
+        "title": "Bac. Pro. SEN - mention très bien",
+        "curriculum": {
+          "element_1": {
+            "description": "Préparation des matériels"
+          },
+          "element_2": {
+            "description": "Installation, configuration et mise en route des systèmes"
+          },
+          "element_3": {
+            "description": "Maintenance des systèmes"
+          },
+          "element_4": {
+            "description": "Test et vérification de la conformité"
+          },
+          "element_5": {
+            "description": "Organisation de son activité"
+          }
+        }
+      }
+    },
+    "schools": {
+      "eni": {
+        "name": "ENI Ecole Informatique",
+        "city": "Nantes"
+      },
+      "esupec": {
+        "name": "ESUPEC",
+        "city": "Cholet"
+      },
+      "jean_monnet": {
+        "name": "Lycée Jean Monnet",
+        "city": "Les Herbiers"
+      }
     }
   },
   "WorkExperiences": {
     "headline": "Mes expériences<br></br>professionnelles"
+  },
+  "EducationDegree": {
+    "studied_topics": "Sujets étudiés :",
+    "diploma_level": "Diplôme de niveau"
+  },
+  "WorkExperience": {
+    "accomplished_missions": "Missions réalisées :"
   }
 }

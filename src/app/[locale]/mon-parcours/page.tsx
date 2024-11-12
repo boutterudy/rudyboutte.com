@@ -8,8 +8,8 @@ import PageLayout from '../../../components/layouts/PageLayout/PageLayout'
 import { WorkExperiencesNumberPerYearType } from '../../../types/WorkExperiencesNumberPerYearType'
 import { WorkExperienceType } from '../../../types/WorkExperienceType'
 import styles from '../../../styles/pages/MyJourney.module.scss'
-import { allDegrees } from '../../../constants/degress'
 import { useTranslations } from 'next-intl'
+import { DegreeType } from '../../../types/DegreeType'
 
 const aterisLogo = {
   src: '/images/companies/ateris-informatique-logo.png',
@@ -318,6 +318,124 @@ const MyJourney: NextPage = () => {
       ? (yearInArray.count += 1)
       : addYearInArray(endYear)
   })
+
+  const degreesSkills: { [key: string]: { [key: string]: string[] } } = {
+    bac_4: {
+      element_1: [],
+      element_2: ['skill_1', 'skill_2', 'skill_3', 'skill_4'],
+      element_3: ['skill_1', 'skill_2'],
+      element_4: ['skill_1', 'skill_2', 'skill_3'],
+      element_5: ['skill_1', 'skill_2'],
+      element_6: ['skill_1'],
+      element_7: ['skill_1'],
+      element_8: ['skill_1', 'skill_2'],
+      element_9: ['skill_1', 'skill_2'],
+    },
+    bac_2: {
+      element_1: [
+        'skill_1',
+        'skill_2',
+        'skill_3',
+        'skill_4',
+        'skill_5',
+        'skill_6',
+      ],
+      element_2: ['skill_1', 'skill_2', 'skill_3'],
+      element_3: ['skill_1', 'skill_2', 'skill_3'],
+      element_4: ['skill_1', 'skill_2', 'skill_3'],
+      element_5: ['skill_1', 'skill_2', 'skill_3'],
+      element_6: ['skill_1'],
+    },
+  }
+
+  const allDegrees: DegreeType[] = [
+    {
+      logo: {
+        src: '/images/schools/ENI-logo.png',
+        width: 100,
+        height: 100,
+      },
+      level: 6,
+      title: t('degrees.bac_4.title'),
+      school: {
+        name: t('schools.eni.name'),
+        city: t('schools.eni.city'),
+      },
+      link: '',
+      begin: new Date(2021, 9),
+      end: new Date(2022, 6),
+      curriculum: [
+        'element_1',
+        'element_2',
+        'element_3',
+        'element_4',
+        'element_5',
+        'element_6',
+        'element_7',
+        'element_8',
+        'element_9',
+      ].map((key) => ({
+        description: t(`degrees.bac_4.curriculum.${key}.description`),
+        skills: degreesSkills.bac_4[key].map((skill_key) =>
+          t(`degrees.bac_4.curriculum.${key}.skills.${skill_key}`)
+        ),
+      })),
+    },
+    {
+      logo: {
+        src: '/images/schools/ESUPEC-logo.png',
+        width: 100,
+        height: 70.18,
+      },
+      level: 5,
+      title: 'Bac +2 BTS SIO option SLAM',
+      school: {
+        name: 'ESUPEC',
+        city: 'Cholet',
+      },
+      link: '',
+      begin: new Date(2018, 9),
+      end: new Date(2020, 7),
+      curriculum: [
+        'element_1',
+        'element_2',
+        'element_3',
+        'element_4',
+        'element_5',
+      ].map((key) => ({
+        description: t(`degrees.bac_2.curriculum.${key}.description`),
+        skills: degreesSkills.bac_2[key].map((skill_key) =>
+          t(`degrees.bac_2.curriculum.${key}.skills.${skill_key}`)
+        ),
+      })),
+    },
+    {
+      logo: {
+        src: '/images/schools/jean-monnet-logo.png',
+        width: 100,
+        height: 28.52,
+      },
+      level: 4,
+      title: 'Bac. Pro. SEN - mention très bien',
+      school: {
+        name: 'Lycée Jean Monnet',
+        city: 'Les Herbiers',
+      },
+      link: '',
+      begin: new Date(2015, 9),
+      end: new Date(2018, 6),
+      curriculum: [
+        'element_1',
+        'element_2',
+        'element_3',
+        'element_4',
+        'element_5',
+      ].map((key) => ({
+        description: t(`degrees.bac.curriculum.${key}.description`),
+        skills: [],
+      })),
+    },
+  ]
 
   return (
     <PageLayout>
