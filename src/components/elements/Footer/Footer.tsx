@@ -3,8 +3,8 @@ import { useState } from 'react'
 import Icon from '../Icon/Icon'
 import Popover from '../Popover/Popover'
 import styles from './Footer.module.scss'
-import { Link } from '../../../i18n/routing'
 import { useTranslations } from 'next-intl'
+import Link from 'next/link'
 
 const Footer = () => {
   const t = useTranslations('Footer')

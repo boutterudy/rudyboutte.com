@@ -4,8 +4,8 @@ import Button from '../Button/Button'
 import Icon from '../Icon/Icon'
 import Popover from '../Popover/Popover'
 import TextBlock from '../TextBlock/TextBlock'
-import { Link } from '../../../i18n/routing'
 import { useTranslations } from 'next-intl'
+import Link from 'next/link'
 
 type ContactMeBlockProps = {
   noPadding?: boolean

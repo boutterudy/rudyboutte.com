@@ -3,7 +3,9 @@ import { useEffect, useState } from 'react'
 import Icon from '../Icon/Icon'
 import styles from './Navbar.module.scss'
 import { Link } from '../../../i18n/routing'
+import { default as NextLink } from 'next/link'
 import { useTranslations } from 'next-intl'
+import LanguageSwitcher from '../LanguageSwitcher/LanguageSwitcher'
 
 const Navbar = () => {
   const t = useTranslations('Navbar')
@@ -33,19 +35,15 @@ const Navbar = () => {
         (isScrolled === true ? ' ' + styles.scrolled : '')
       }
     >
-      {/*
-        TODO: Add Language Switcher in the NavBar
-        <LanguageSwitcher className={styles.languageSwitcher} />
-      */}
       <div className={styles.logoContainer}>
         <div className={styles.logo}>
           <Link href="/">{t('infos.headline')}</Link>
           <span className={styles.info}>
             {t.rich('infos.details', {
               a: (chunks) => (
-                <Link href="https://gensdeconfiance.com/" target="_blank">
+                <NextLink href="https://gensdeconfiance.com/" target="_blank">
                   {chunks}
-                </Link>
+                </NextLink>
               ),
             })}
           </span>
@@ -57,6 +55,7 @@ const Navbar = () => {
           onClick={() => setIsNavExpanded(!isNavExpanded)}
         />
       </div>
+      <LanguageSwitcher className={styles.languageSwitcher} />
       <ul className={styles.links}>
         <li>
           <Link href="/mes-projets" className="underline">

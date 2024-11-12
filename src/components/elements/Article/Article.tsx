@@ -4,7 +4,7 @@ import { ArticleSummaryElementType } from '../../../types/ArticleSummaryElementT
 import { stringToId } from '../../../utils/StringUtil'
 import TableOfContents from '../TableOfContents/TableOfContents'
 import styles from './Article.module.scss'
-import { Link } from '../../../i18n/routing'
+import Link from 'next/link'
 
 type ArticleProps = {
   introduction?: ReactElement

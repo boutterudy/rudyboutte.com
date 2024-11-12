@@ -23,7 +23,7 @@ export const routing = defineRouting({
       fr: '/mon-parcours',
       en: '/my-journey',
     },
-    contact: 'contact',
+    '/contact': '/contact',
   },
 })
 

@@ -5,9 +5,9 @@ import Button from '../Button/Button'
 import Icon from '../Icon/Icon'
 import styles from './ProjectsList.module.scss'
 import { getLocale, getTranslations } from 'next-intl/server'
-import { Link } from '../../../i18n/routing'
 import { Colors } from '../../../constants/colors'
 import Image from 'next/legacy/image'
+import Link from 'next/link'
 
 type Project = 'portfolio' | 'countries' | 'twitter' | 'toolbox' | 'perfimaas'
 
