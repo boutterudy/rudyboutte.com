@@ -5,12 +5,15 @@ import Icon from '../Icon/Icon'
 import Popover from '../Popover/Popover'
 import TextBlock from '../TextBlock/TextBlock'
 import { Link } from '../../../i18n/routing'
+import { useTranslations } from 'next-intl'
 
 type ContactMeBlockProps = {
   noPadding?: boolean
 }
 
 const ContactMeBlock = ({ noPadding }: ContactMeBlockProps) => {
+  const t = useTranslations('ContactMeBlock')
+
   /* States */
   const [displayEmailPopover, setDisplayEmailPopover] = useState<
     boolean | undefined
@@ -18,11 +21,9 @@ const ContactMeBlock = ({ noPadding }: ContactMeBlockProps) => {
 
   const title = (
     <h1>
-      Contactez-moi
-      <br />
-      Je serais très <span className="bold">heureux de</span>
-      <br />
-      <span className="bold">collaborer avec vous</span>
+      {t.rich('headline', {
+        important: (chunks) => <span className="bold">{chunks}</span>,
+      })}
     </h1>
   )
 
@@ -34,11 +35,11 @@ const ContactMeBlock = ({ noPadding }: ContactMeBlockProps) => {
         className="noAnimation"
       >
         <Button leftIcon={<Icon lib="remix-icon" icon="linkedin-box-fill" />}>
-          Par LinkedIn
+          {t('cta.linkedin')}
         </Button>
       </Link>
       <Popover
-        message="Adresse mail copiée dans le presse-papiers"
+        message={t('mail_copy.success')}
         display={displayEmailPopover}
         position="bottom"
         leftIcon={<Icon lib="remix-icon" icon="checkbox-circle-fill" />}
@@ -55,7 +56,7 @@ const ContactMeBlock = ({ noPadding }: ContactMeBlockProps) => {
           }}
           rightIcon={<Icon lib="remix-icon" icon="file-copy-line" />}
         >
-          Par mail
+          {t('cta.mail')}
         </Button>
       </Popover>
     </>
@@ -63,7 +64,7 @@ const ContactMeBlock = ({ noPadding }: ContactMeBlockProps) => {
 
   return (
     <TextBlock
-      subtitle="N'hésitez plus"
+      subtitle={t('caption')}
       title={title}
       actions={actions}
       noPadding={noPadding}

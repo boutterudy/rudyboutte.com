@@ -44,5 +44,16 @@
     "cta": {
       "demo": "Demo"
     }
+  },
+  "ContactMeBlock": {
+    "caption": "Don't hesitate",
+    "headline": "Contact me\nI would be very <important>happy\n to work with you</important>",
+    "cta": {
+      "linkedin": "By LinkedIn",
+      "mail": "By Mail"
+    },
+    "mail_copy": {
+      "success": "Email address copied to clipboard"
+    }
   }
 }

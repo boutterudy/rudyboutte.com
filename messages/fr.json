@@ -44,5 +44,16 @@
     "cta": {
       "demo": "Démo"
     }
+  },
+  "ContactMeBlock": {
+    "caption": "N'hésitez plus",
+    "headline": "Contactez-moi\nJe serais très <important>heureux de\ncollaborer avec vous</important>",
+    "cta": {
+      "linkedin": "Par LinkedIn",
+      "mail": "Par Mail"
+    },
+    "mail_copy": {
+      "success": "Adresse mail copiée dans le presse-papiers"
+    }
   }
 }
