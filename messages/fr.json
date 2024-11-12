@@ -1,0 +1,366 @@
+{
+  "common": {
+    "from_to": "{from} à {to}",
+    "today": "aujourd'hui",
+    "months": "{count, plural, =0 {} =1 {1 mois} other {# mois}}",
+    "days": "{count, plural, =0 {} =1 {1 jour} other {# jours}}",
+    "hours": "{count, plural, =0 {} =1 {1 heure} other {# heures}}",
+    "seconds": "{count, plural, =0 {} =1 {1 seconde} other {# secondes}}",
+    "milliseconds": "{count, plural, =0 {} =1 {1 milliseconde} other {# millisecondes}}"
+  },
+  "Navbar": {
+    "infos": {
+      "headline": "RUDY BOUTTE",
+      "details": "Développeur Front-End chez <a>Gens de Confiance</a>"
+    },
+    "links": {
+      "my_projects": "Mes projets",
+      "my_journey": "Mon parcours",
+      "contact": "Contact"
+    }
+  },
+  "Footer": {
+    "copyright": "© {from}-{to} Tous droits réservés, fait avec <3 par <link>Rudy</link>"
+  },
+  "Presentation": {
+    "caption": "Enchanté",
+    "headline": "Je m'appelle Rudy Boutte.\n<important>Développeur Web polyvalent</important>,\nqui aime <important><SwappingWord></SwappingWord></important>",
+    "details": "À rejoint Gens de Confiance en Novembre 2022.",
+    "cta": {
+      "discover_my_projects": "Découvrir mes projets"
+    }
+  },
+  "ProjectsList": {
+    "portfolio": {
+      "title": "Portfolio",
+      "description": "Site mettant en avant mes compétences et permettant d'accéder aux informations utiles me concernant, notamment dans le cadre de ma recherche d'alternance."
+    },
+    "countries": {
+      "title": "Explorateur de pays avec sélecteur de thème",
+      "description": "Application Web permettant d'accéder à la liste de tous les pays et de découvrir plus de détails sur chacun d'eux (population, capitale, langues, etc...)."
+    },
+    "twitter": {
+      "title": "Bébé Twitter",
+      "description": "Reproduction simplifiée du célèbre réseau social Twitter, avec du contenu généré à partir de plusieurs APIs publiques, développé dans le cadre du défi \"30 jours de React\"."
+    },
+    "toolbox": {
+      "title": "My Toolbox",
+      "description": "Boîte à outils en ligne, permettant pour l'instant d'utiliser un générateur de mot de passe et de mettre en avant mes autres projets personnels."
+    },
+    "perfimaas": {
+      "title": "API de Perfimaas",
+      "description": "\"API de Perfimaas, l'assistant de gestion des finances personnelles ayant pour but d'accompagner les citoyens du monde à gérer plus sainement leurs finances."
+    },
+    "cta": {
+      "demo": "Démo"
+    }
+  },
+  "ContactMeBlock": {
+    "caption": "N'hésitez plus",
+    "headline": "Contactez-moi\nJe serais très <important>heureux de\ncollaborer avec vous</important>",
+    "cta": {
+      "linkedin": "Par LinkedIn",
+      "mail": "Par Mail"
+    },
+    "mail_copy": {
+      "success": "Adresse mail copiée dans le presse-papiers"
+    }
+  },
+  "MyProjects": {
+    "headline": "Découvrez quelques-uns de mes <important>récents\nprojets</important> avec <important><SwappingWord></SwappingWord></important>"
+  },
+  "MyJourney": {
+    "headline": "Découvrez en un peu plus sur mon parcours :\n<important>mes formations</important> et <important>mes expériences\nprofessionnelles</important>.",
+    "workExperiences": {
+      "gens_de_confiance": {
+        "occupation": "Développeur front-end",
+        "description": "Développement d'une application web (Front)."
+      },
+      "sowlver": {
+        "occupation": "Développeur Fullstack",
+        "description": "Maquettage et développement d'une application web (Full Stack).",
+        "tasks": {
+          "0": {
+            "description": "Développement d'un espace en ligne"
+          },
+          "1": {
+            "description": "Développement d'une API complète avec système d'authentification"
+          },
+          "2": {
+            "description": "Maquettage d'un espace en ligne"
+          }
+        }
+      },
+      "ateris_2020_2021": {
+        "occupation": "Développeur",
+        "description": "Développements variés (Front / Back / Fullstack) sous différents environnements (Windows / Linux).",
+        "tasks": {
+          "0": {
+            "description": "Développement d'un portail captif avec plusieurs systèmes d'authentification"
+          },
+          "1": {
+            "description": "Développement et maintenance de plusieurs sites web"
+          },
+          "2": {
+            "description": "Développement d'un outil de déchiffrement PGP"
+          },
+          "3": {
+            "description": "Développement d'un script de migration mail d'ISPConfig vers Zimbra"
+          },
+          "4": {
+            "description": "Développement d'un installateur et configurateur d'AndroidTV automatisé"
+          }
+        }
+      },
+      "apinet_2020_07": {
+        "occupation": "Développeur",
+        "description": "Développement d'une application AndroidTV (Front).",
+        "tasks": {
+          "0": {
+            "description": "Développement d'un launcher pour AndroidTV"
+          }
+        }
+      },
+      "apinet_2020_01_2020_02": {
+        "occupation": "Développeur d'applications mobiles",
+        "description": "Développement d'une application multiplateforme (Front).",
+        "tasks": {
+          "0": {
+            "description": "Développement d'une application mobile de gestion"
+          }
+        }
+      },
+      "apinet_2019": {
+        "occupation": "Développeur web",
+        "description": "Développement d'une application web (Full Stack).",
+        "tasks": {
+          "0": {
+            "description": "Développement d'une interface web de gestion"
+          }
+        }
+      },
+      "ateris_2019": {
+        "occupation": "Développeur back-end",
+        "description": "Développement de scripts (Back) et configuration d'un serveur sous Linux.",
+        "tasks": {
+          "0": {
+            "description": "Mise en place d'un serveur d'autoconfiguration dédié à des box"
+          },
+          "1": {
+            "description": "Mise en place d'un système de diffusion des chaînes TNT via plusieurs flux RTMP"
+          }
+        }
+      },
+      "ateris_2017_10_2017_11": {
+        "occupation": "Technicien informatique",
+        "description": "Développement de scripts (Back) et gestion d'un réseau informatique.",
+        "tasks": {
+          "0": {
+            "description": "Mise en place d'un système domotique avec contrôle à distance du matériel"
+          },
+          "1": {
+            "description": "Installation et configuration de différents équipements afin de mettre en place un réseau informatique pour un grand événement"
+          }
+        }
+      },
+      "ateris_2017_02": {
+        "occupation": "Technicien informatique",
+        "description": "Développement de scripts (Back) sous Linux.",
+        "tasks": {
+          "0": {
+            "description": "Mise en place d'un système de diffusion automatique d'une chaîne télévisée vers différentes plates-formes web en direct"
+          }
+        }
+      },
+      "altea": {
+        "occupation": "Technicien informatique",
+        "description": "Installations et maintenance informatique.",
+        "tasks": {
+          "0": {
+            "description": "Installations de matériels et logiciels informatiques"
+          },
+          "1": {
+            "description": "Maintenance informatique"
+          }
+        }
+      },
+      "pc_pro_tech": {
+        "occupation": "Technicien informatique",
+        "description": "Gestion d'un réseau informatique et mise en place d'un système de vidéo-surveillance.",
+        "tasks": {
+          "0": {
+            "description": "Cartographie d'un réseau informatique et réorganisation d'une baie de brassage"
+          },
+          "1": {
+            "description": "Installation et paramétrage d'un système de vidéo-surveillance"
+          }
+        }
+      }
+    },
+    "degrees": {
+      "bac_4": {
+        "title": "Bac +4 Concepteur Développeur d'Applications",
+        "curriculum": {
+          "element_1": {
+            "description": "Algorithmique"
+          },
+          "element_2": {
+            "description": "Développement Web côté front-end",
+            "skills": {
+              "skill_1": "HTML",
+              "skill_2" : "CSS",
+              "skill_3" : "JavaScript",
+              "skill_4" : "Angular"
+            }
+          },
+          "element_3": {
+            "description": "Développement Web côté back-end",
+            "skills": {
+              "skill_1": "PHP",
+              "skill_2": "Symfony"
+            }
+          },
+          "element_4": {
+            "description": "Gestion de projet",
+            "skills": {
+              "skill_1": "Méthode Agile",
+              "skill_2": "Gestion des ressources",
+              "skill_3": "Gantt"
+            }
+          },
+          "element_5": {
+            "description": "Langage de requête SQL",
+            "skills": {
+              "skill_1": "SQL",
+              "skill_2": "SQL Server"
+            }
+          },
+          "element_6": {
+            "description": "Programmation Orientée Objet",
+            "skills": {
+              "skill_1": "Java"
+            }
+          },
+          "element_7": {
+            "description": "Développement en couches",
+            "skills": {
+              "skill_1": "Java SE"
+            }
+          },
+          "element_8": {
+            "description": "Administration d'un serveur",
+            "skills": {
+              "skill_1": "Apache",
+              "skill_2": "Linux"
+            }
+          },
+          "element_9": {
+            "description": "Technologies Cross-Platform",
+            "skills": {
+              "skill_1": "Xamarin",
+              "skill_2": "Ionic"
+            }
+          }
+        }
+      },
+      "bac_2": {
+        "title": "Bac +2 BTS SIO option SLAM",
+        "curriculum": {
+          "element_1": {
+            "description": "Développement Web full stack",
+            "skills": {
+              "skill_1": "HTML",
+              "skill_2" : "CSS",
+              "skill_3" : "PHP",
+              "skill_4" : "Symfony",
+              "skill_5" : "Modèle-vue-contrôleur (MVP)",
+              "skill_6" : "JavaScript"
+            }
+          },
+          "element_2": {
+            "description": "Langage de requête SQL",
+            "skills": {
+              "skill_1": "SQL",
+              "skill_2" : "MySQL",
+              "skill_3" : "SQL Server"
+            }
+          },
+          "element_3": {
+            "description": "Gestion de projet et conception",
+            "skills": {
+              "skill_1": "Merise",
+              "skill_2": "Langage de Modélisation Unifié (UML)",
+              "skill_3": "Agile"
+            }
+          },
+          "element_4": {
+            "description": "Configuration de systèmes",
+            "skills": {
+              "skill_1": "Commutateurs",
+              "skill_2": "Matériel Wifi",
+              "skill_3": "Routeurs"
+            }
+          },
+          "element_5": {
+            "description": "Installation et administration de serveurs",
+            "skills": {
+              "skill_1": "Debian",
+              "skill_2": "Windows 10",
+              "skill_3": "Windows Server 2016 & 2019"
+            }
+          },
+          "element_6": {
+            "description": "Virtualisation de serveurs",
+            "skills": {
+              "skill_1": "VMWare"
+            }
+          }
+        }
+      },
+      "bac": {
+        "title": "Bac. Pro. SEN - mention très bien",
+        "curriculum": {
+          "element_1": {
+            "description": "Préparation des matériels"
+          },
+          "element_2": {
+            "description": "Installation, configuration et mise en route des systèmes"
+          },
+          "element_3": {
+            "description": "Maintenance des systèmes"
+          },
+          "element_4": {
+            "description": "Test et vérification de la conformité"
+          },
+          "element_5": {
+            "description": "Organisation de son activité"
+          }
+        }
+      }
+    },
+    "schools": {
+      "eni": {
+        "name": "ENI Ecole Informatique",
+        "city": "Nantes"
+      },
+      "esupec": {
+        "name": "ESUPEC",
+        "city": "Cholet"
+      },
+      "jean_monnet": {
+        "name": "Lycée Jean Monnet",
+        "city": "Les Herbiers"
+      }
+    }
+  },
+  "WorkExperiences": {
+    "headline": "Mes expériences<br></br>professionnelles"
+  },
+  "EducationDegree": {
+    "studied_topics": "Sujets étudiés :",
+    "diploma_level": "Diplôme de niveau"
+  },
+  "WorkExperience": {
+    "accomplished_missions": "Missions réalisées :"
+  }
+}
