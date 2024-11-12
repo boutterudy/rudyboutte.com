@@ -3,18 +3,20 @@ import Icon from '../Icon/Icon'
 import SwappingWord from '../SwappingWord/SwappingWord'
 import TextBlock from '../TextBlock/TextBlock'
 import { Link } from '../../../i18n/routing'
+import { useTranslations } from 'next-intl'
 
 const Presentation = () => {
+  const t = useTranslations('Presentation')
   const actions = (
     <>
       <Link href="/a-propos" className="noAnimation">
         <Button leftIcon={<Icon lib="remix-icon" icon="user-shared-2-line" />}>
-          À propos de moi
+          {t('cta.about_me')}
         </Button>
       </Link>
       <Link href="/mes-projets" className="noAnimation">
         <Button leftIcon={<Icon lib="remix-icon" icon="code-s-slash-fill" />}>
-          Découvrir mes projets
+          {t('cta.discover_my_projects')}
         </Button>
       </Link>
     </>
@@ -22,24 +24,22 @@ const Presentation = () => {
 
   const title = (
     <h1>
-      Je m&apos;appelle Rudy Boutte.
-      <br />
-      <span className="bold">Développeur Web polyvalent,</span>
-      <br />
-      qui aime{' '}
-      <span className="bold">
-        <SwappingWord
-          words={['TypeScript', 'React', 'Next.js', 'SCSS', 'NestJS']}
-        />
-      </span>
+      {t.rich('headline', {
+        important: (chunks) => <span className="bold">{chunks}</span>,
+        SwappingWord: () => (
+          <SwappingWord
+            words={['TypeScript', 'React', 'Next.js', 'SCSS', 'NestJS']}
+          />
+        ),
+      })}
     </h1>
   )
 
   return (
     <TextBlock
-      subtitle="Enchanté"
+      subtitle={t('caption')}
       title={title}
-      description="A rejoint Gens de Confiance en novembre 2022."
+      description={t('details')}
       actions={actions}
     />
   )

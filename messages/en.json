@@ -10,5 +10,14 @@
       "about_me": "About me",
       "contact": "Contact"
     }
+  },
+  "Presentation": {
+    "caption": "Nice to meet you",
+    "headline": "My name is Rudy Boutte.\n<important>Versatile Web developer</important>,\nwho likes <important><SwappingWord></SwappingWord></important>",
+    "details": "Joined Gens de Confiance in November 2022.",
+    "cta": {
+      "about_me": "About me",
+      "discover_my_projects": "Discover my projects"
+    }
   }
 }

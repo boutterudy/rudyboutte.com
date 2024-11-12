@@ -10,5 +10,14 @@
       "about_me": "À propos",
       "contact": "Contact"
     }
+  },
+  "Presentation": {
+    "caption": "Enchanté",
+    "headline": "Je m'appelle Rudy Boutte.\n<important>Développeur Web polyvalent</important>,\nqui aime <important><SwappingWord></SwappingWord></important>",
+    "details": "À rejoint Gens de Confiance en Novembre 2022.",
+    "cta": {
+      "about_me": "À propos de moi",
+      "discover_my_projects": "Découvrir mes projets"
+    }
   }
 }
