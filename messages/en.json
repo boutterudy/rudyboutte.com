@@ -16,16 +16,17 @@
     "links": {
       "my_projects": "My projects",
       "my_journey": "My journey",
-      "about_me": "About me",
       "contact": "Contact"
     }
+  },
+  "Footer": {
+    "copyright": "© {from}-{to} All rights reserved, made with <3 by <link>Rudy</link>"
   },
   "Presentation": {
     "caption": "Nice to meet you",
     "headline": "My name is Rudy Boutte.\n<important>Versatile Web developer</important>,\nwho likes <important><SwappingWord></SwappingWord></important>",
     "details": "Joined Gens de Confiance in November 2022.",
     "cta": {
-      "about_me": "About me",
       "discover_my_projects": "Discover my projects"
     }
   },

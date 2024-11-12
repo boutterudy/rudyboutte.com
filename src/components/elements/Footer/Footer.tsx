@@ -4,8 +4,11 @@ import Icon from '../Icon/Icon'
 import Popover from '../Popover/Popover'
 import styles from './Footer.module.scss'
 import { Link } from '../../../i18n/routing'
+import { useTranslations } from 'next-intl'
 
 const Footer = () => {
+  const t = useTranslations('Footer')
+
   /* States */
   const [displayEmailPopover, setDisplayEmailPopover] = useState<
     boolean | undefined
@@ -96,15 +99,19 @@ const Footer = () => {
         </li>
       </ul>
       <p className={styles.copyright}>
-        © 2021-{new Date().getFullYear()} Tous droits réservés, made with &#60;3
-        by{' '}
-        <Link
-          href="https://github.com/boutterudy"
-          target="_blank"
-          className="underline"
-        >
-          Rudy
-        </Link>
+        {t.rich('copyright', {
+          from: '2021',
+          to: new Date().getFullYear(),
+          link: (chunks) => (
+            <Link
+              href="https://github.com/boutterudy"
+              target="_blank"
+              className="underline"
+            >
+              {chunks}
+            </Link>
+          ),
+        })}
       </p>
     </footer>
   )

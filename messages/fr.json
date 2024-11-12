@@ -16,16 +16,17 @@
     "links": {
       "my_projects": "Mes projets",
       "my_journey": "Mon parcours",
-      "about_me": "À propos",
       "contact": "Contact"
     }
+  },
+  "Footer": {
+    "copyright": "© {from}-{to} Tous droits réservés, fait avec <3 par <link>Rudy</link>"
   },
   "Presentation": {
     "caption": "Enchanté",
     "headline": "Je m'appelle Rudy Boutte.\n<important>Développeur Web polyvalent</important>,\nqui aime <important><SwappingWord></SwappingWord></important>",
     "details": "À rejoint Gens de Confiance en Novembre 2022.",
     "cta": {
-      "about_me": "À propos de moi",
       "discover_my_projects": "Découvrir mes projets"
     }
   },

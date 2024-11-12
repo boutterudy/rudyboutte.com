@@ -9,11 +9,6 @@ const Presentation = () => {
   const t = useTranslations('Presentation')
   const actions = (
     <>
-      <Link href="/a-propos" className="noAnimation">
-        <Button leftIcon={<Icon lib="remix-icon" icon="user-shared-2-line" />}>
-          {t('cta.about_me')}
-        </Button>
-      </Link>
       <Link href="/mes-projets" className="noAnimation">
         <Button leftIcon={<Icon lib="remix-icon" icon="code-s-slash-fill" />}>
           {t('cta.discover_my_projects')}

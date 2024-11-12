@@ -75,16 +75,6 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-          <Link href="/a-propos" className="underline">
-            <Icon
-              lib="remix-icon"
-              icon="user-shared-2-line"
-              className={styles.icon}
-            />
-            {t('links.about_me')}
-          </Link>
-        </li>
-        <li>
           <Link href="/contact" className="underline">
             <Icon
               lib="remix-icon"
