@@ -21,6 +21,7 @@ export async function generateMetadata({
     description: t('description'),
   }
 }
+
 const Home: NextPage = () => {
   return (
     <PageLayout>

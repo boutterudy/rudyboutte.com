@@ -67,6 +67,10 @@
     }
   },
   "MyProjects": {
+    "metadata": {
+      "title": "Rudy Boutte's Projects",
+      "description": "I love taking on new challenges. Check out some of my recent projects."
+    },
     "headline": "Discover some of my <important>recent\nprojects</important> with <important><SwappingWord></SwappingWord></important>"
   },
   "MyJourney": {
