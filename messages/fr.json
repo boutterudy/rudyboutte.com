@@ -363,6 +363,12 @@
   "WorkExperience": {
     "accomplished_missions": "Missions réalisées :"
   },
+  "Home": {
+    "metadata": {
+      "title": "Portfolio de Rudy Boutte",
+      "description": "Je m'appelle Rudy Boutte. Développeur Web polyvalent qui aime TypeScript, React, Next.js, SCSS et NestJS."
+    }
+  },
   "Contact": {
     "metadata": {
       "title": "Contacter Rudy Boutte",

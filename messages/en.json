@@ -363,6 +363,12 @@
   "WorkExperience": {
     "accomplished_missions": "Assignments completed:"
   },
+  "Home": {
+    "metadata": {
+      "title": "Rudy Boutte's Portfolio",
+      "description": "My name is Rudy Boutte. Versatile Web Developer who loves TypeScript, React, Next.js, SCSS and NestJS."
+    }
+  },
   "Contact": {
     "metadata": {
       "title": "Contact Rudy Boutte",
