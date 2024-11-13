@@ -362,5 +362,11 @@
   },
   "WorkExperience": {
     "accomplished_missions": "Missions réalisées :"
+  },
+  "Contact": {
+    "metadata": {
+      "title": "Contacter Rudy Boutte",
+      "description": "Contactez-moi, je serais très heureux de collaborer avec vous."
+    }
   }
 }

@@ -362,5 +362,11 @@
   },
   "WorkExperience": {
     "accomplished_missions": "Assignments completed:"
+  },
+  "Contact": {
+    "metadata": {
+      "title": "Contact Rudy Boutte",
+      "description": "Contact me, I'd be delighted to work with you."
+    }
   }
 }
