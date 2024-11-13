@@ -67,9 +67,17 @@
     }
   },
   "MyProjects": {
+    "metadata": {
+      "title": "Rudy Boutte's Projects",
+      "description": "I love taking on new challenges. Check out some of my recent projects."
+    },
     "headline": "Discover some of my <important>recent\nprojects</important> with <important><SwappingWord></SwappingWord></important>"
   },
   "MyJourney": {
+    "metadata": {
+      "title": "Rudy Boutte's Background",
+      "description": "Find out a little more about my background: my education and professional experience."
+    },
     "headline": "Find out more about my background:\n<important>my education</important> and <important>my professional experience</important>.",
     "workExperiences": {
       "gens_de_confiance": {
@@ -362,5 +370,17 @@
   },
   "WorkExperience": {
     "accomplished_missions": "Assignments completed:"
+  },
+  "Home": {
+    "metadata": {
+      "title": "Rudy Boutte's Portfolio",
+      "description": "My name is Rudy Boutte. Versatile Web Developer who loves TypeScript, React, Next.js, SCSS and NestJS."
+    }
+  },
+  "Contact": {
+    "metadata": {
+      "title": "Contact Rudy Boutte",
+      "description": "Contact me, I'd be delighted to work with you."
+    }
   }
 }

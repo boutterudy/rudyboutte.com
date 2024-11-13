@@ -1,21 +1,26 @@
 import { NextPage } from 'next'
-import Head from 'next/head'
 import ContactMeBlock from '../../../components/elements/ContactMeBlock/ContactMeBlock'
 import TextHeader from '../../../components/elements/TextHeader/TextHeader'
 import PageLayout from '../../../components/layouts/PageLayout/PageLayout'
+import { getTranslations } from 'next-intl/server'
+import { PagePropsWithLocale } from '../../../types/PagePropsWithLocale'
+
+export async function generateMetadata({
+  params: { locale },
+}: PagePropsWithLocale) {
+  const t = await getTranslations({ locale, namespace: 'Contact.metadata' })
+
+  return {
+    title: t('title'),
+    description: t('description'),
+  }
+}
 
 const Contact: NextPage = () => {
   const headerTitle = <ContactMeBlock noPadding={true} />
 
   return (
     <PageLayout>
-      <Head>
-        <title>Rudy Boutte – Contact</title>
-        <meta
-          name="description"
-          content="Contactez-moi, je serais très heureux de collaborer avec vous."
-        />
-      </Head>
       <TextHeader title={headerTitle} arrow={false} />
     </PageLayout>
   )

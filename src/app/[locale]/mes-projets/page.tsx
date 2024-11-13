@@ -1,11 +1,23 @@
 import { NextPage } from 'next'
-import Head from 'next/head'
 import ContactMeBlock from '../../../components/elements/ContactMeBlock/ContactMeBlock'
 import ProjectsList from '../../../components/elements/ProjectsList/ProjectsList'
 import TextHeader from '../../../components/elements/TextHeader/TextHeader'
 import PageLayout from '../../../components/layouts/PageLayout/PageLayout'
 import SwappingWord from '../../../components/elements/SwappingWord/SwappingWord'
 import { useTranslations } from 'next-intl'
+import { PagePropsWithLocale } from '../../../types/PagePropsWithLocale'
+import { getTranslations } from 'next-intl/server'
+
+export async function generateMetadata({
+  params: { locale },
+}: PagePropsWithLocale) {
+  const t = await getTranslations({ locale, namespace: 'MyProjects.metadata' })
+
+  return {
+    title: t('title'),
+    description: t('description'),
+  }
+}
 
 const MyProjects: NextPage = () => {
   const t = useTranslations('MyProjects')
@@ -33,14 +45,6 @@ const MyProjects: NextPage = () => {
 
   return (
     <PageLayout>
-      <Head>
-        <title>Rudy Boutte – Mes projets</title>
-        {/* TODO: Add Meta Description translation*/}
-        <meta
-          name="description"
-          content="J'adore me lancer dans de nouveaux défis. Découvrez quelques-uns de mes récents projets."
-        />
-      </Head>
       <TextHeader title={headerTitle} />
       <ProjectsList />
       <ContactMeBlock />
