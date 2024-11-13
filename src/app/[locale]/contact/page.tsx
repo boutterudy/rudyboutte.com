@@ -3,11 +3,11 @@ import ContactMeBlock from '../../../components/elements/ContactMeBlock/ContactM
 import TextHeader from '../../../components/elements/TextHeader/TextHeader'
 import PageLayout from '../../../components/layouts/PageLayout/PageLayout'
 import { getTranslations } from 'next-intl/server'
-import { PageTransitionEvent } from '../../../types/PagePropsWithLocale'
+import { PagePropsWithLocale } from '../../../types/PagePropsWithLocale'
 
 export async function generateMetadata({
   params: { locale },
-}: PageTransitionEvent) {
+}: PagePropsWithLocale) {
   const t = await getTranslations({ locale, namespace: 'Contact.metadata' })
 
   return {

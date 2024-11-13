@@ -74,6 +74,10 @@
     "headline": "Discover some of my <important>recent\nprojects</important> with <important><SwappingWord></SwappingWord></important>"
   },
   "MyJourney": {
+    "metadata": {
+      "title": "Rudy Boutte's Background",
+      "description": "Find out a little more about my background: my education and professional experience."
+    },
     "headline": "Find out more about my background:\n<important>my education</important> and <important>my professional experience</important>.",
     "workExperiences": {
       "gens_de_confiance": {

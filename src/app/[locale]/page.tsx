@@ -8,12 +8,12 @@ import PageLayout from '../../components/layouts/PageLayout/PageLayout'
 import HomepagePicture from '../../../public/images/me.jpg'
 import styles from '../../styles/pages/Home.module.scss'
 import { Link } from '../../i18n/routing'
-import { PageTransitionEvent } from '../../types/PagePropsWithLocale'
+import { PagePropsWithLocale } from '../../types/PagePropsWithLocale'
 import { getTranslations } from 'next-intl/server'
 
 export async function generateMetadata({
   params: { locale },
-}: PageTransitionEvent) {
+}: PagePropsWithLocale) {
   const t = await getTranslations({ locale, namespace: 'Home.metadata' })
 
   return {

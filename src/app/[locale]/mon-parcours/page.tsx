@@ -10,6 +10,8 @@ import { WorkExperienceType } from '../../../types/WorkExperienceType'
 import styles from '../../../styles/pages/MyJourney.module.scss'
 import { useTranslations } from 'next-intl'
 import { DegreeType } from '../../../types/DegreeType'
+import { getTranslations } from 'next-intl/server'
+import { PagePropsWithLocale } from '../../../types/PagePropsWithLocale'
 
 const aterisLogo = {
   src: '/images/companies/ateris-informatique-logo.png',
@@ -21,6 +23,17 @@ const apinetLogo = {
   src: '/images/companies/apinet-logo.png',
   width: 100,
   height: 98.05,
+}
+
+export async function generateMetadata({
+  params: { locale },
+}: PagePropsWithLocale) {
+  const t = await getTranslations({ locale, namespace: 'MyJourney.metadata' })
+
+  return {
+    title: t('title'),
+    description: t('description'),
+  }
 }
 
 const MyJourney: NextPage = () => {
@@ -441,10 +454,7 @@ const MyJourney: NextPage = () => {
     <PageLayout>
       <Head>
         <title>Rudy Boutte – Mon parcours</title>
-        <meta
-          name="description"
-          content="Découvrez en un peu plus sur mon parcours : mes formations et mes expériences professionnelles."
-        />
+        <meta name="description" content="" />
       </Head>
       <TextHeader title={headerTitle} />
       <div className={styles.container}>

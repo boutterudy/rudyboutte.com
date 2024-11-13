@@ -5,12 +5,12 @@ import TextHeader from '../../../components/elements/TextHeader/TextHeader'
 import PageLayout from '../../../components/layouts/PageLayout/PageLayout'
 import SwappingWord from '../../../components/elements/SwappingWord/SwappingWord'
 import { useTranslations } from 'next-intl'
-import { PageTransitionEvent } from '../../../types/PagePropsWithLocale'
+import { PagePropsWithLocale } from '../../../types/PagePropsWithLocale'
 import { getTranslations } from 'next-intl/server'
 
 export async function generateMetadata({
   params: { locale },
-}: PageTransitionEvent) {
+}: PagePropsWithLocale) {
   const t = await getTranslations({ locale, namespace: 'MyProjects.metadata' })
 
   return {

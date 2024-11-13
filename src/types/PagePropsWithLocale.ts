@@ -1,3 +1,3 @@
-export type PageTransitionEvent = {
+export type PagePropsWithLocale = {
   params: { locale: Promise<string> }
 }
