@@ -67,9 +67,17 @@
     }
   },
   "MyProjects": {
+    "metadata": {
+      "title": "Projets de Rudy Boutte",
+      "description": "J'adore me lancer dans de nouveaux défis. Découvrez quelques-uns de mes récents projets."
+    },
     "headline": "Découvrez quelques-uns de mes <important>récents\nprojets</important> avec <important><SwappingWord></SwappingWord></important>"
   },
   "MyJourney": {
+    "metadata": {
+      "title": "Parcours de Rudy Boutte",
+      "description": "Découvrez en un peu plus sur mon parcours : mes formations et mes expériences professionnelles."
+    },
     "headline": "Découvrez en un peu plus sur mon parcours :\n<important>mes formations</important> et <important>mes expériences\nprofessionnelles</important>.",
     "workExperiences": {
       "gens_de_confiance": {
@@ -362,5 +370,17 @@
   },
   "WorkExperience": {
     "accomplished_missions": "Missions réalisées :"
+  },
+  "Home": {
+    "metadata": {
+      "title": "Portfolio de Rudy Boutte",
+      "description": "Je m'appelle Rudy Boutte. Développeur Web polyvalent qui aime TypeScript, React, Next.js, SCSS et NestJS."
+    }
+  },
+  "Contact": {
+    "metadata": {
+      "title": "Contacter Rudy Boutte",
+      "description": "Contactez-moi, je serais très heureux de collaborer avec vous."
+    }
   }
 }
