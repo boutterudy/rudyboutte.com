@@ -34,6 +34,7 @@ const Home: NextPage = () => {
             height={550}
             alt="Rudy Boutte in front of yellow flowers"
             quality={100}
+            priority
           />
         </Link>
       </Header>
