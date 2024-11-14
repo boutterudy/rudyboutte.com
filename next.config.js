@@ -8,6 +8,8 @@ const nextConfig = {
   reactStrictMode: true,
   trailingSlash: true,
   output: 'standalone',
+  // Cache optimized images for 1 week
+  minimumCacheTTL: 604800,
 }
 
 module.exports = withNextIntl(nextConfig)
