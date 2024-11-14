@@ -2,6 +2,7 @@ import { DegreeType } from '../../../types/DegreeType'
 import { WorkExperiencesNumberPerYearType } from '../../../types/WorkExperiencesNumberPerYearType'
 import EducationDegree from '../EducationDegree/EducationDegree'
 import styles from './Education.module.scss'
+import { useTranslations } from 'next-intl'
 
 type EducationProps = {
   degrees: DegreeType[]
@@ -12,6 +13,8 @@ const Education = ({
   degrees,
   workExperiencesNumberPerYear,
 }: EducationProps) => {
+  const t = useTranslations('Education')
+
   const getTotalYearsCount = (begin: Date, end: Date) => {
     const beginYear = begin.getFullYear()
     const endYear = end.getFullYear()
@@ -27,7 +30,7 @@ const Education = ({
 
   return (
     <section className={styles.education}>
-      <h2 className={styles.title}>Mes formations</h2>
+      <h2 className={styles.title}>{t('headline')}</h2>
       <div className={styles.degrees}>
         {degrees.map((degree, index) => (
           <div
