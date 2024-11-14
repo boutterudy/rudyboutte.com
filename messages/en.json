@@ -364,6 +364,9 @@
   "WorkExperiences": {
     "headline": "My professional<br></br>experience"
   },
+  "Education": {
+    "headline": "My education"
+  },
   "EducationDegree": {
     "studied_topics": "Subjects studied:",
     "diploma_level": "Diploma level"
