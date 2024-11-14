@@ -7,6 +7,7 @@ const withNextIntl = createNextIntlPlugin()
 const nextConfig = {
   reactStrictMode: true,
   trailingSlash: true,
+  output: 'standalone',
 }
 
 module.exports = withNextIntl(nextConfig)
