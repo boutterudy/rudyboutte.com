@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+    <!-- Homepage -->
+    <url>
+        <loc>https://www.rudyboutte.com/</loc>
+        <lastmod>2024-11-14T14:17:18+01:00</lastmod>
+        <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.rudyboutte.com/fr/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.rudyboutte.com/en/"/>
+    </url>
+
+    <!-- French Homepage -->
+    <url>
+        <loc>https://www.rudyboutte.com/fr/</loc>
+        <lastmod>2024-11-14T14:17:18+01:00</lastmod>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.rudyboutte.com/fr/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.rudyboutte.com/en/"/>
+    </url>
+
+    <!-- English Homepage -->
+    <url>
+        <loc>https://www.rudyboutte.com/en/</loc>
+        <lastmod>2024-11-14T14:17:18+01:00</lastmod>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.rudyboutte.com/fr/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.rudyboutte.com/en/"/>
+    </url>
+
+    <!-- French Projects -->
+    <url>
+        <loc>https://www.rudyboutte.com/fr/mes-projets/</loc>
+        <lastmod>2024-11-14T14:17:18+01:00</lastmod>
+        <priority>0.6</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.rudyboutte.com/fr/mes-projets/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.rudyboutte.com/en/my-projects/"/>
+    </url>
+
+    <!-- French Journey -->
+    <url>
+        <loc>https://www.rudyboutte.com/fr/mon-parcours/</loc>
+        <lastmod>2024-11-14T14:17:18+01:00</lastmod>
+        <priority>0.6</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.rudyboutte.com/fr/mon-parcours/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.rudyboutte.com/en/my-journey/"/>
+    </url>
+
+    <!-- French Contact -->
+    <url>
+        <loc>https://www.rudyboutte.com/fr/contact/</loc>
+        <lastmod>2024-11-14T14:17:18+01:00</lastmod>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.rudyboutte.com/fr/contact/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.rudyboutte.com/en/contact/"/>
+    </url>
+
+    <!-- English Projects -->
+    <url>
+        <loc>https://www.rudyboutte.com/en/my-projects/</loc>
+        <lastmod>2024-11-14T14:17:21+01:00</lastmod>
+        <priority>0.6</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.rudyboutte.com/fr/mes-projets/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.rudyboutte.com/en/my-projects/"/>
+    </url>
+
+    <!-- English Journey -->
+    <url>
+        <loc>https://www.rudyboutte.com/en/my-journey/</loc>
+        <lastmod>2024-11-14T14:17:21+01:00</lastmod>
+        <priority>0.6</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.rudyboutte.com/fr/mon-parcours/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.rudyboutte.com/en/my-journey/"/>
+    </url>
+
+    <!-- English Contact -->
+    <url>
+        <loc>https://www.rudyboutte.com/en/contact/</loc>
+        <lastmod>2024-11-14T14:17:21+01:00</lastmod>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.rudyboutte.com/fr/contact/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.rudyboutte.com/en/contact/"/>
+    </url>
+</urlset>
