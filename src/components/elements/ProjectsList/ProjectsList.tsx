@@ -41,8 +41,9 @@ const ProjectsList = async ({
     ],
     preview: (
       <Image
-        src="/images/projects/Portfolio.png"
+        src="/images/projects/Portfolio.webp"
         alt="Screenshot of my portfolio"
+        quality={100}
       />
     ),
     date: new Date(2022, 6),
@@ -62,7 +63,7 @@ const ProjectsList = async ({
     ],
     preview: (
       <Image
-        src="/images/projects/REST-Countries-API.png"
+        src="/images/projects/REST-Countries-API.webp"
         alt="REST Countries API with color theme switcher screenshot"
         layout="fill"
       />
@@ -84,7 +85,7 @@ const ProjectsList = async ({
     ],
     preview: (
       <Image
-        src="/images/projects/30-Days-Of-React-Baby-Twitter.png"
+        src="/images/projects/30-Days-Of-React-Baby-Twitter.webp"
         alt="Baby Twitter screenshot"
         layout="fill"
       />

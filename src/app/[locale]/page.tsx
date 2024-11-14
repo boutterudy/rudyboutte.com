@@ -5,7 +5,7 @@ import Header from '../../components/elements/Header/Header'
 import Presentation from '../../components/elements/Presentation/Presentation'
 import ProjectsList from '../../components/elements/ProjectsList/ProjectsList'
 import PageLayout from '../../components/layouts/PageLayout/PageLayout'
-import HomepagePicture from '../../../public/images/me.jpg'
+import HomepagePicture from '../../../public/images/me.webp'
 import styles from '../../styles/pages/Home.module.scss'
 import { Link } from '../../i18n/routing'
 import { PagePropsWithLocale } from '../../types/PagePropsWithLocale'
@@ -33,6 +33,7 @@ const Home: NextPage = () => {
             width={412}
             height={550}
             alt="Rudy Boutte in front of yellow flowers"
+            quality={100}
           />
         </Link>
       </Header>
