@@ -1,6 +1,7 @@
 import { Metadata, Viewport } from 'next'
 import '../styles/globals.scss'
 import 'remixicon/fonts/remixicon.css'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 
 export const metadata: Metadata = {
   icons: {
@@ -33,7 +34,10 @@ export default function RootLayout({
 }) {
   return (
     <html>
-      <body>{children}</body>
+      <body>
+        {children}
+        <SpeedInsights />
+      </body>
     </html>
   )
 }
