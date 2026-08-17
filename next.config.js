@@ -8,13 +8,11 @@ const nextConfig = {
   reactStrictMode: true,
   trailingSlash: true,
   output: 'standalone',
-  // Cache optimized images for 1 week
-  minimumCacheTTL: 604800,
   images: {
     formats: ['image/avif', 'image/webp'],
     deviceSizes: [320, 420, 768, 1024, 1200],
+    minimumCacheTTL: 604800,
   },
-  swcMinify: true,
   compress: true,
 }
 

@@ -1,5 +1,4 @@
 import { NextPage } from 'next'
-import Head from 'next/head'
 import ContactMeBlock from '../../../components/elements/ContactMeBlock/ContactMeBlock'
 import Education from '../../../components/elements/Education/Education'
 import TextHeader from '../../../components/elements/TextHeader/TextHeader'
@@ -25,9 +24,8 @@ const apinetLogo = {
   height: 98.05,
 }
 
-export async function generateMetadata({
-  params: { locale },
-}: PagePropsWithLocale) {
+export async function generateMetadata({ params }: PagePropsWithLocale) {
+  const { locale } = await params
   const t = await getTranslations({ locale, namespace: 'MyJourney.metadata' })
 
   return {
@@ -452,10 +450,6 @@ const MyJourney: NextPage = () => {
 
   return (
     <PageLayout>
-      <Head>
-        <title>Rudy Boutte – Mon parcours</title>
-        <meta name="description" content="" />
-      </Head>
       <TextHeader title={headerTitle} />
       <div className={styles.container}>
         <WorkExperiences

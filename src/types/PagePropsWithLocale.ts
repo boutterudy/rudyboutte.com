@@ -1,3 +1,3 @@
 export type PagePropsWithLocale = {
-  params: { locale: Promise<string> }
+  params: Promise<{ locale: string }>
 }
